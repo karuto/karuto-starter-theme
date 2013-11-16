@@ -68,7 +68,7 @@
           <b class="red">+</b> <?php if( function_exists('zilla_likes') ) zilla_likes(); ?>
           <?php edit_post_link( __( '- Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
           <?php if(function_exists('wpcc_output_navi')) echo " + "; wpcc_output_navi(); ?>
-          <br>
+          <br/>
         </h3>
         <?php endif; ?>
 
