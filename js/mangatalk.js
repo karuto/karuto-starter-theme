@@ -1,7 +1,7 @@
 // Including jQuery in WordPress (The Right Way)
 // http://digwp.com/2009/06/including-jquery-in-wordpress-the-right-way/
 var $j = jQuery.noConflict();
-
+/*
 $j(function(){
 
   // Making the entire div clickable, by searching the inner hidden link.
@@ -37,3 +37,4 @@ $j(document).ready(function() {
     }
 	});
 });
+*/
