@@ -8,22 +8,15 @@
  */
 ?>
 
-  <div class="layout-feature-post">
-    <article id="post-<?php the_ID(); ?>" 
-      <?php post_class('main-item-style'); ?>>
+    <article id="post-<?php the_ID(); ?>" >
       
       <header class="entry-header">
         <h1 class="entry-title"><?php the_title(); ?></h1>
       </header>
 
-      <div id="page-content" class="entry-content">
+      <div class="entry-content">
         <?php the_content(); ?>
-        <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
       </div><!-- .entry-content -->
-      <footer class="entry-meta">
-        <?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
-      </footer><!-- .entry-meta -->
 
     </article><!-- #post -->
-  </div><!-- .layout-featured-post -->
 

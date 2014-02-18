@@ -182,18 +182,21 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-
+/* KARU NOTES: below is the styling for the minimalist version, 2014/02/18. */
 /* MangaTalk global */
-
 body {
   /*background-color: #E7E7E2;*/
   background-color: #eef0f2;
   background-image: url(http://hi.bdimg.com/static/qhome/img/home/tpl_n0001_theme_001_background.jpg?v=30ab89f5.jpg);
   background-repeat: repeat;
 }
+#page {
+  margin: 0 auto;
+  max-width: 1200px;
+}
 body, input, textarea {
   color: #444;
-  font: 14px/175% "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", FreeSans, sans-serif;
+  font: 18px/175% "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", FreeSans, sans-serif;
   font-weight: 300;
 }
 a {
@@ -204,6 +207,9 @@ a:hover {
   color: darkRed;
   text-shadow: 0px 1px 1px #FF9999;
 }
+
+
+
 
 
 /* Layout rules */

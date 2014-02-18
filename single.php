@@ -9,12 +9,12 @@
 
 get_header(); ?>
 
-    <div id="content" class="layout-content-wrap layout-single-post" role="main">
-
+    <div id="content" class="" role="main">
+		
       <?php while ( have_posts() ) : the_post(); ?>
         <?php get_template_part( 'content', get_post_format() ); ?>
       <?php endwhile; // end of the loop. ?>
 	  
-    </div><!-- .layout-content-wrap -->
+    </div><!-- #content -->
 
 <?php get_footer(); ?>

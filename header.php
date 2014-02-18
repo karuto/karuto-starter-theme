@@ -43,8 +43,10 @@
 <body <?php body_class(); ?>>
 
 <div id="page" class="hfeed">
+    <?php if (!is_single()): ?>
     <header id="masthead" class="site-header" role="header">
       <h1>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
       </h1>
     </header><!-- #masthead -->
+	<?php endif; ?>
