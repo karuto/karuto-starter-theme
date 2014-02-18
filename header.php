@@ -47,6 +47,9 @@
     <header id="masthead" class="site-header" role="header">
       <h1 class="site-title">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+		<ul class="site-pages">
+		<?php wp_list_pages('title_li='); ?>
+		</ul>
       </h1>
     </header><!-- #masthead -->
 	<?php endif; ?>
