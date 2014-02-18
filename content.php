@@ -23,8 +23,13 @@
         <?php endif; ?>
       </header><!-- .entry-header -->   
 
-        <div class="entry-content">
-            <?php the_content(); ?>
-        </div><!-- .entry-content -->
+      <div class="entry-content">
+        <?php the_content(); ?>
+      </div><!-- .entry-content -->
 
+	  <footer class="entry-footer">
+        <h1 class="site-title">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">Back to <?php bloginfo( 'name' ); ?></a>
+        </h1>
+	  </footer>
     </article><!-- #post -->
