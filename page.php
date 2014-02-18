@@ -14,19 +14,13 @@
 
 get_header(); ?>
 
-  <div id="main" class="layout-main-wrap"><!-- This defines the max-width framework -->
-    <div class="layout-main-inner-wrap">
+    <div id="content" class="layout-main-wrap" role="main">
 
-      <div id="primary" class="layout-primary-wrap">
-        <div id="content" class="layout-content-wrap layout-single-post" role="main">
-
-              <?php while ( have_posts() ) : the_post(); ?>
-                <?php get_template_part( 'content', 'page' ); ?>
-                <?php comments_template( '', true ); ?>
-              <?php endwhile; // end of the loop. ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+        <?php get_template_part( 'content', 'page' ); ?>
+      <?php endwhile; // end of the loop. ?>
             
-        </div><!-- .layout-content-wrap -->
-      </div><!-- .layout-primary-wrap -->
+    </div><!-- .layout-main-wrap -->
 
 <?php // get_sidebar(); ?>
 <?php get_footer(); ?>
