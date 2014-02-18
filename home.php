@@ -16,12 +16,6 @@
 
 get_header(); ?>
 
-  <div id="primary" class="layout-primary-wrap">
-    <div id="content" class="layout-content-wrap" role="main">
-
-    <?php get_template_part('mainlooplogic'); ?>
-    
-    </div><!-- .layout-content-wrap -->
-  </div><!-- .layout-primary-wrap -->
+  <?php get_template_part('archive'); ?>
 
 <?php get_footer(); ?>

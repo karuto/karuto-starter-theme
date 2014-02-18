@@ -12,30 +12,47 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @package 
+ * @subpackage 
+ * @since 
  */
 
 get_header(); ?>
 
-<!-- TODO: FIX THE TOP EMTPY MARGIN BUG!!! -->
 
-  <div class="layout-subheader-wrap">
-    <header class="sub-header" roll="banner">
-      <h1 class="archive-title sub-title">文章合集</h1>
-    </header><!-- .sub-header -->
-  </div><!-- .layout-subheader-wrap -->
+<div class="layout-content-list">
 
-  <div id="main" class="layout-main-wrap"><!-- This defines the max-width framework -->
-    <div class="layout-main-inner-wrap clearfix-modern">
+    <?php if ( have_posts() ) : ?>
+      <?php /* Start the Loop */ 
+	  while ( have_posts() ) : the_post(); ?>
 
-    <div id="primary" class="layout-primary-wrap">
-      <div id="content" class="layout-content-wrap" role="main">
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+          <header class="entry-header">
+            <h1 class="entry-title">
+              <a class="entry-title-link" href="<?php the_permalink(); ?>" 
+                title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'twentytwelve' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
+                <?php the_title(); ?>
+              </a>
+            </h1>
+            <span class="entry-date">
+              <a href="<?php the_permalink(); ?>">
+                <?php the_date(); ?>
+              </a>
+              &nbsp;
+              <?php if( function_exists('zilla_likes') ) zilla_likes(); ?>
+              </span>&emsp;
+            <?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', 
+            '</span>' ); ?>
+          </header><!-- .entry-header -->       
+          <div class="entry-summary semi-focus"><?php the_excerpt(); ?></div>
+        </article><!-- #post -->
 
-        <?php get_template_part('mainlooplogic'); ?>
+      <?php endwhile; ?>
 
-      </div><!-- .layout-content-wrap -->
-    </div><!-- .layout-primary-wrap -->
+    <?php else : echo "Nothing here."; ?>
+    <?php endif; // end have_posts() check ?>
+
+</div><!-- .layout-content-list -->
+
 
 <?php get_footer(); ?>
