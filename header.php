@@ -42,7 +42,7 @@
 
 <body <?php body_class(); ?>>
 
-<div id="page" class="hfeed">
+<div id="page" class="minimal hfeed">
     <?php if (!is_single()): ?>
     <header id="masthead" class="site-header" role="header">
       <h1>

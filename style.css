@@ -183,16 +183,30 @@ img {
 }
 
 /* KARU NOTES: below is the styling for the minimalist version, 2014/02/18. */
-/* MangaTalk global */
+
+/* Visual representation:
+
+#page
+	header #masthead .side-header
+	h1 a
+	
+	.layout-content-list
+		article 
+		header .entry-header
+			h1 .entry-title
+				a .entry-title-link
+			span .entry-date
+		.entry-summary .semi-focus
+
+*/
+
+
+/* Minimalist global */
 body {
   /*background-color: #E7E7E2;*/
   background-color: #eef0f2;
   background-image: url(http://hi.bdimg.com/static/qhome/img/home/tpl_n0001_theme_001_background.jpg?v=30ab89f5.jpg);
   background-repeat: repeat;
-}
-#page {
-  margin: 0 auto;
-  max-width: 1200px;
 }
 body, input, textarea {
   color: #444;
@@ -208,7 +222,21 @@ a:hover {
   text-shadow: 0px 1px 1px #FF9999;
 }
 
-
+/* Minimalist components */
+.minimal {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.minimal .entry-header {
+  margin: 30px;
+}
+.minimal .entry-title {
+  font-size: 27px;
+  line-height: 200%;
+}
+.minimal .entry-meta {
+  margin: 0;
+}
 
 
 
@@ -401,9 +429,6 @@ box-shadow:         0px -5px 15px rgba(50, 50, 50, 0.1);
 .external-item:last-child {
   padding-right: 20px;
 }
-
-
-
 
 
 /* This defines the block properties of main-item. */
