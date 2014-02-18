@@ -45,7 +45,7 @@
 <div id="page" class="minimal hfeed">
     <?php if (!is_single()): ?>
     <header id="masthead" class="site-header" role="header">
-      <h1>
+      <h1 class="site-title">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
       </h1>
     </header><!-- #masthead -->

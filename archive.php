@@ -20,7 +20,7 @@
 get_header(); ?>
 
 
-<div class="layout-content-list">
+<div class="archive-list">
 
     <?php if ( have_posts() ) : ?>
       <?php /* Start the Loop */ 
@@ -40,9 +40,7 @@ get_header(); ?>
               </a>
               &nbsp;
               <?php if( function_exists('zilla_likes') ) zilla_likes(); ?>
-              </span>&emsp;
-            <?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', 
-            '</span>' ); ?>
+              </span>
           </header><!-- .entry-header -->       
           <div class="entry-summary semi-focus"><?php the_excerpt(); ?></div>
         </article><!-- #post -->
