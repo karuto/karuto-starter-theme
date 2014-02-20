@@ -225,7 +225,7 @@ a:hover {
 /* Minimalist components */
 .minimal {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 900px;
 }
 .minimal .site-title {
   text-transform: none; 
