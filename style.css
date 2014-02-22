@@ -280,6 +280,12 @@ a:hover {
   margin: 0 30px 10px;
   font-size: 15px;
 }
+.minimal #disqus_thread {
+  margin: 0;
+  padding: 0 30px 30px;
+  border: 0;
+  background-color: transparent;
+}
 
 /* Layout rules */
 /* Notes

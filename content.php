@@ -18,7 +18,7 @@
         <h3 class="entry-meta roboto-font">Written By 
           <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><?php the_author() ?></a>
           on <?php echo get_the_date(); ?>&emsp;
-          <a href="<?php the_permalink(); ?>" rel="bookmark"><?php comments_number( '<span class="red">0 notes</span>', '<span class="red">1 note</span>', '<span class="red">% notes</span>' ); ?></a>
+          <!--<a href="<?php the_permalink(); ?>" rel="bookmark"><?php comments_number( '<span class="red">0 notes</span>', '<span class="red">1 note</span>', '<span class="red">% notes</span>' ); ?></a>-->
         </h3>
         <?php endif; ?>
       </header><!-- .entry-header -->   
