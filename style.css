@@ -801,7 +801,7 @@ img.avatar {
   font-size: 20px;
   font-weight: 900;
   padding: 5px 0;
-  text-shadow: 0px 1px 1px Darkred;
+  /* text-shadow: 0px 1px 1px Darkred; */
 }
 .format-image .wp-caption {
   width: 100%;
