@@ -15,7 +15,7 @@ get_header(); ?>
 			<div class="layout-content-list">
 
 				<h1 class="entry-title">
-					你所寻找之物并不存在。详细内容请参见<a href="/?author=1">文章合集</a>。
+					你所寻找之物并不存在。详细内容请参见<a href="?author=1">文章合集</a>。
 				</h1>
 
 			</div>
