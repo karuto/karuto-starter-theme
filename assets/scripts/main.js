@@ -18,7 +18,7 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-        mtFunctions.globalController();
+        krFunctions.globalController();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -78,14 +78,15 @@
 
 
 // Declare additional namespaces
-var mtFunctions = mtFunctions || {};
+var krFunctions = krFunctions || {};
 
-mtFunctions = {
+krFunctions = {
 
   settings: {
     name: "foo",
     selector: $('#home')
-  },
+  }, /* END settings */
+
   /* Reference: http://getbootstrap.com/css/#grid-options
   xs: width <768px
   sm: width 768-992
@@ -93,8 +94,9 @@ mtFunctions = {
   lg: width >1200
   */
   globalController: function() {
-    var mt = this;
-    this.scrollController(mtNav);
+    var k = this;
+    k.p(this.settings.name);
+    k.p(this.settings.selector);
   }, /* END globalController */
 
   homeController: function() {
