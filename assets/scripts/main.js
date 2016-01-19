@@ -12,14 +12,13 @@
 
 (function($) {
 
-  // Use this variable to set up the common and page specific functions. If you
-  // rename this variable, you will also need to rename the namespace below.
+  // Use this variable to set up the common and page specific functions
   var krNamespace = {
     // All pages
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-        console.log('Test init');
+        mtFunctions.globalController();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -76,3 +75,7 @@
   $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
+
+
+// Declare additional namespaces
+var mtFunctions = mtFunctions || {};
