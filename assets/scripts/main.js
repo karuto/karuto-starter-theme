@@ -94,29 +94,8 @@ mtFunctions = {
   }, /* END globalController */
 
   homeController: function() {
-    // var coverImages = $('#home-cover img');
-    // coverImages.lazyLoad();
-    // coverImages.trigger('lazy-load');
 
-    // Activate story link remove feature
-    var storyRemove = $('#story-remove');
-    if (storyRemove.length) {
-      storyRemove.click(function () {
-        $('.mt-story-banner').fadeOut();
-      });
-    }
-
-    // Retrieve inner link and apply to title of frontpage cover
-    var mtFrontcover = $('#mt-front');
-    if (mtFrontcover.length) {
-      $("#cover-story").click(function () {
-        window.location = $("#cover-story-link").attr("href");
-      });
-    } else {
-      console.log("Front cover did not exist on this page");
-    }
   }, /* END homeController */
-
 
   p: function(printTarget) {
     if (!arguments.length) {
