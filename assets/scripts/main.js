@@ -14,11 +14,12 @@
 
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
-  var Sage = {
+  var krNamespace = {
     // All pages
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        console.log('Test init');
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -46,7 +47,7 @@
   var UTIL = {
     fire: function(func, funcname, args) {
       var fire;
-      var namespace = Sage;
+      var namespace = krNamespace;
       funcname = (funcname === undefined) ? 'init' : funcname;
       fire = func !== '';
       fire = fire && namespace[func];
