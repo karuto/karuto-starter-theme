@@ -82,6 +82,10 @@ var mtFunctions = mtFunctions || {};
 
 mtFunctions = {
 
+  settings: {
+    name: "foo",
+    selector: $('#home')
+  },
   /* Reference: http://getbootstrap.com/css/#grid-options
   xs: width <768px
   sm: width 768-992
