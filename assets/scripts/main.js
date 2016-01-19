@@ -82,36 +82,6 @@ var mtFunctions = mtFunctions || {};
 
 mtFunctions = {
 
-  navOn: function(nav) {
-    // console.log("is-normal");
-    nav.removeClass("is-immersive").addClass("is-normal");
-  },
-
-  navOff: function(nav) {
-    console.log("is-immersive");
-    nav.removeClass("is-normal");
-  },
-
-  scrollController: function(mtNav) {
-    var mt = this;
-    $(window).scroll(function() {
-      var scrollThreshold = $('#mt-front');
-      var hT = scrollThreshold.offset().bottom,
-          hH = scrollThreshold.outerHeight(),
-          wH = $(window).height(),
-          wS = $(this).scrollTop();
-      // console.log("thres height", hT, "outerHeight", hH, "windowHeight", wH, "scrollTop", wS);
-      if ((wS) > (hH)){
-        mtNav.css("position", "fixed");
-        mt.navOn(mtNav);
-      } else {
-        mtNav.css("position", "relative");
-        mt.navOff(mtNav);
-
-      }
-    });
-  }, /* END scrollController */
-
   /* Reference: http://getbootstrap.com/css/#grid-options
   xs: width <768px
   sm: width 768-992
@@ -120,91 +90,6 @@ mtFunctions = {
   */
   globalController: function() {
     var mt = this;
-    $('[data-toggle="tooltip"]').tooltip();
-
-    var mtSearch = $("#mt-search");
-    mtSearch.hide();
-
-    // Top banner related functions
-    var mtNav = $('.mt-banner');
-
-    if (mtNav.length) { // if banner exists
-      // Change banner display mode
-      if ($('.cover-image').length) { // cover exists, immersive mode
-        // Hover toggle visual effect on top banner
-        mtNav.hover(function() {
-          mt.navOff(mtNav);
-        }, function() {
-          mt.navOn(mtNav);
-        });
-        mt.navOff(mtNav);
-      } else { // no cover, normal mode
-        mt.navOn(mtNav);
-      }
-
-      // Toggle global search bar via button switch
-      $("#nav-search").click(function () {
-        var icon = $(this).find("#nav-search-icon");
-        if (icon.hasClass("glyphicon-zoom-out")) {
-          // Currently it's showing search, make it hidden!
-          if (mtSearch.length) { // if search exists
-            mtNav.css("top", "0");
-            $("#cover-story").css("top", "0");
-            mtSearch.hide();
-          }
-          
-          icon.removeClass("glyphicon-zoom-out");
-          icon.addClass("glyphicon-search");
-        } else {
-          // Currently it's not showing search, make it show!
-          if (mtSearch.length) { // if search exists
-            mtNav.css("top", "50px");
-            $("#cover-story").css("top", "50px");
-            mtSearch.show();
-          }
-          
-          icon.removeClass("glyphicon-search");
-          icon.addClass("glyphicon-zoom-out");
-        }
-      });
-      
-    } else {
-      // console.log("Banner did not exist on this page");
-    }
-    
-    var width = $(window).width(); 
-    var screenLargeEnough = ($(window).width() > 1200) ? true : false;
-    // TODO: mobile users won't be able to see this. Find a way to let user disable all hover effects.
-
-    // Hover / toggle effect on article blocks
-    var blocks = $(".mt-block");
-    if (blocks.length) { // if blocks exist
-
-      blocks.mouseenter(function () {
-        // If you hovered over block, darken its background
-        var bg = $(this).find(".cover-shade");
-        bg.css({ opacity: 1 });
-
-        // If you hovered over block, show its summary
-        var summary = $(this).find(".excerpt");
-        summary.removeClass("hidden");
-        summary.addClass("entry-summary");
-      });
-      blocks.mouseleave(function () {
-        // If you lefted block, lighten its background
-        var bg = $(this).find(".cover-shade");
-        bg.css({ opacity: 0.8 });
-
-        // If you lefted block, hide its summary
-        var summary = $(this).find(".excerpt");
-        summary.removeClass("entry-summary");
-        summary.addClass("hidden");
-      });
-
-    } else {
-      // console.log("No blocks exist on this page");
-    }
-
     this.scrollController(mtNav);
   }, /* END globalController */
 
