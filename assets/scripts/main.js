@@ -101,7 +101,7 @@ krFunctions = {
   }, /* END globalController */
 
   homeController: function() {
-
+    console.log($('.open-content'));
   }, /* END homeController */
 
   p: function(printTarget) {
