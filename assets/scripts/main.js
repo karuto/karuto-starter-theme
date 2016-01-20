@@ -86,7 +86,7 @@ krFunctions = {
 
   settings: {
     name: "foo",
-    selector: "home"
+    selector: "bar"
   }, /* END settings */
 
   /* Reference: http://getbootstrap.com/css/#grid-options
@@ -103,8 +103,10 @@ krFunctions = {
 
   homeController: function() {
     var k = this;
-    var x = $('.open-content');
-    k.p(x);
+    $('.open-content').click(function () {
+      console.log();
+      $('.detail-content').toggleClass('detail-content--open');
+    });
   }, /* END homeController */
 
   p: function(printTarget) {

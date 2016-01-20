@@ -1,6 +1,13 @@
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
 .detail-content {
   height: 100%;
-  width: 90%;
+  width: 80%;
   background-color: blue;
   overflow-y: auto;
   overflow-x: hidden;
@@ -8,4 +15,13 @@
   right: 0;
   top: 0;
   bottom: 0;
+
+  transform: translateX(100%);
+  transition: 1s ease-in-out;
+  /*animation-duration: 2s;*/
+  /*animation-name: example;*/
+
+  &--open {
+    transform: translateX(0px);
+  }
 }
