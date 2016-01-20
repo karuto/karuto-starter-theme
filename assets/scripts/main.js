@@ -18,6 +18,7 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        globalFunc();
         krFunctions.globalController();
       },
       finalize: function() {
@@ -80,9 +81,7 @@
 
 
 // Declare additional namespaces
-var krFunctions = krFunctions || {};
-var $j = jQuery;
-krFunctions = {
+var krFunctions = {
 
   settings: {
     name: "foo",
