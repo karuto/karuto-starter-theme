@@ -5,16 +5,17 @@ var globalFunc = (function($) {
   var a = 'yoo';
 
   var contentStackController = function(cardName) {
-    var cardOpen = cardName + '-open';
-    var cardClose = cardName + '-close';
+    var button = '__button';
+    var cardOpen = cardName + button + '--open';
+    var cardClose = cardName + button + '--close';
     var cardActive = cardName + '--active';
-    var cardMask = cardName + '-mask';
+    var cardMask = cardName + '__mask';
     var cardMaskActive = cardMask + '--active';
 
     var activeState = 'translateX(0px)';
     var hiddenState = 'translateX(100%)';
-    var fasterAnimation = '0.5s ease-in-out';
-    var slowerAnimation = '1s ease-in-out';
+    var fasterAnimation = '0.2s ease-in-out';
+    var slowerAnimation = '0.5s ease-in-out';
 
     $(cardOpen).click(function () {
       $(cardMask).css('transition', fasterAnimation);
@@ -33,7 +34,7 @@ var globalFunc = (function($) {
 
   var init = function() {
     x(a);
-    contentStackController('.detail-content');
+    contentStackController('.featuredstage');
     // console.log(_.VERSION);
   };
 

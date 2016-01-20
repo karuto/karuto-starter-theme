@@ -1,0 +1,19 @@
+@mixin e($elements...) {
+  $selector: ();
+  @each $element in $elements {
+    $selector: append($selector, unquote("&__" + $element), comma);
+  }
+  #{$selector} {
+    @content;
+  }
+}
+
+@mixin m($modifiers...) {
+  $selector: ();
+  @each $modifier in $modifiers {
+    $selector: append($selector, unquote("&--" + $modifier), comma);
+  }
+  #{$selector} {
+    @content;
+  }
+}
