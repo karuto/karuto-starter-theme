@@ -27,6 +27,7 @@
     // Home page
     'home': {
       init: function() {
+        console.log($('.open-content');
         // JavaScript to be fired on the home page
         krFunctions.homeController();
       },
@@ -80,7 +81,7 @@
 
 // Declare additional namespaces
 var krFunctions = krFunctions || {};
-
+var $j = jQuery;
 krFunctions = {
 
   settings: {
@@ -101,7 +102,9 @@ krFunctions = {
   }, /* END globalController */
 
   homeController: function() {
-    console.log($('.open-content'));
+    var k = this;
+    var x = $('.open-content');
+    k.p(x);
   }, /* END homeController */
 
   p: function(printTarget) {

@@ -2,6 +2,7 @@
   "dependencies": {
     "main.js": {
       "files": [
+        "scripts/k_global.js",
         "scripts/main.js"
       ],
       "main": true
