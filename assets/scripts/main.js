@@ -104,7 +104,6 @@ krFunctions = {
   homeController: function() {
     var k = this;
     $('.open-content').click(function () {
-      console.log();
       $('.detail-content').toggleClass('detail-content--open');
     });
   }, /* END homeController */
