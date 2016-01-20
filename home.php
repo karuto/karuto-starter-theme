@@ -1,4 +1,5 @@
 <?php get_template_part('templates/page', 'header'); ?>
+<a href="#" class="featuredstage__button--open"><h3>Click me</h3></a>
 
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
@@ -11,10 +12,7 @@
   <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 <?php endwhile; ?>
 
-<a href="#" class="featuredstage__button--open"><h3>Click me</h3></a>
-<section class="card card--fullscreen featuredstage__mask"></section>
-<section class="card card--fullscreen featuredstage">
-  <a href="#" class="featuredstage__button--close"><h3>Click me</h3></a>
-</section>
+<!-- content-single.php includes both mask and content featurestage -->
+<?php get_template_part('templates/content', 'single'); ?>
 
 <?php the_posts_navigation(); ?>

@@ -13,8 +13,8 @@
 }
 
 .featuredstage {
-  width: 95%;
-  background-color: blue;
+  width: 99%;
+  background-color: purple;
 
   @include m(active) {
     transform: translateX(0px) !important;
@@ -22,7 +22,7 @@
 
   @include e(mask) {
     width: 100%;
-    background-color: red;
+    background-color: darkred;
     @include m(active) {
       transform: translateX(0px) !important;
     }
