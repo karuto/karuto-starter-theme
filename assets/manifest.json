@@ -23,6 +23,6 @@
     }
   },
   "config": {
-    "devUrl": "http://localhost:8888/karu/"
+    "devUrl": "http://localhost:8888/mt/"
   }
 }

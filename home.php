@@ -11,8 +11,10 @@
   <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 <?php endwhile; ?>
 
-<a href="#" class="open-content"><h3>Click me</h3></a>
-<section class="detail-content detail-content">
+<a href="#" class="detail-content-open"><h3>Click me</h3></a>
+<section class="karu-card detail-content-mask"></section>
+<section class="karu-card detail-content">
+  <a href="#" class="detail-content-close"><h3>Click me</h3></a>
 </section>
 
 <?php the_posts_navigation(); ?>

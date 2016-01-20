@@ -19,7 +19,6 @@
       init: function() {
         // JavaScript to be fired on all pages
         globalFunc();
-        krFunctions.globalController();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -102,9 +101,7 @@ var krFunctions = {
 
   homeController: function() {
     var k = this;
-    $('.open-content').click(function () {
-      $('.detail-content').toggleClass('detail-content--open');
-    });
+
   }, /* END homeController */
 
   p: function(printTarget) {
