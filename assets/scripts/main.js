@@ -27,7 +27,7 @@
     // Home page
     'home': {
       init: function() {
-        console.log($('.open-content');
+        console.log($('.open-content'));
         // JavaScript to be fired on the home page
         krFunctions.homeController();
       },

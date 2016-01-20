@@ -19,7 +19,10 @@
       ]
     },
     "jquery.js": {
-      "bower": ["jquery"]
+      // "bower": ["jquery"] // fuck bower, using local ref instead
+      "files": [
+        "scripts/jquery.min.js"
+      ]
     }
   },
   "config": {
