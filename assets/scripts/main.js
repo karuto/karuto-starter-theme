@@ -84,7 +84,7 @@ krFunctions = {
 
   settings: {
     name: "foo",
-    selector: $('#home')
+    selector: "home"
   }, /* END settings */
 
   /* Reference: http://getbootstrap.com/css/#grid-options
