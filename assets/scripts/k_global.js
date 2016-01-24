@@ -35,7 +35,6 @@ var globalFunc = (function($) {
   var init = function() {
     x(a);
     contentStackController('.featuredstage');
-    // console.log(_.VERSION);
   };
 
   return function() {

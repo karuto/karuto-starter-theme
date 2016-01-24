@@ -19,6 +19,7 @@
       init: function() {
         // JavaScript to be fired on all pages
         globalFunc();
+        ajaxFunc();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

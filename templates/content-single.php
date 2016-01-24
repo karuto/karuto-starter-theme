@@ -8,6 +8,7 @@
 
 <section class="card card--fullscreen featuredstage">
   <a href="#" class="featuredstage__button--close"><h3>Click me</h3></a>
+  <div class="featuredstage__content"></div>
 </section>
 
 
