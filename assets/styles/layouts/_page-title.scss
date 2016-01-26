@@ -1,9 +1,10 @@
 .karu-theme {
   .page-title {
-
+    margin: 0 0 $spacing-large;
   }
   .page-title__text {
-    
+    font-weight: 300;
+    font-size: $base-font-size;
   }
   .page-title__primary {
 

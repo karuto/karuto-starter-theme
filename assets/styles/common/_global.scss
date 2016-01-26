@@ -5,6 +5,12 @@ body {
 a {
   color: $brand-primary;
 }
+.no-vertical-spacing {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 .card {
   overflow-y: auto;
@@ -22,7 +28,8 @@ a {
 
 .featuredstage {
   width: 99%;
-  background-color: purple;
+  background-color: $color-light-gray;
+  z-index: -1;
 
   @include m(active) {
     transform: translateX(0px) !important;
@@ -30,7 +37,8 @@ a {
 
   @include e(mask) {
     width: 100%;
-    background-color: darkred;
+    background-color: $color-mid-gray;
+    z-index: -2;
     @include m(active) {
       transform: translateX(0px) !important;
     }

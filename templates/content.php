@@ -1,11 +1,11 @@
-<article <?php post_class(); ?>>
-  <header>
-    <h2 class="entry-title" data-postid="<?php $pid = get_the_ID(); echo $pid; ?>">
-      <a href="<?php the_permalink(); ?>">ID: <?php $pid = get_the_ID(); echo $pid; ?>, <?php the_title(); ?></a>
+<article <?php post_class('feed-item'); ?>>
+  <header class="feed-item__header clearfix">
+    <h2 class="feed-item__title" data-postid="<?php $pid = get_the_ID(); echo $pid; ?>">
+      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
     </h2>
-    <?php get_template_part('templates/entry-meta'); ?>
+    <time class="feed-item__time updated" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time>
   </header>
-  <div class="entry-summary">
-    <?php the_excerpt(); ?>
+  <div class="feed-item__summary">
+    <!-- <?php the_excerpt(); ?> -->
   </div>
 </article>

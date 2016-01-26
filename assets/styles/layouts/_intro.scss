@@ -1,12 +1,13 @@
 .karu-theme {
   .homeintro {
-    background: $color-light-gray;
-    margin-bottom: $spacing-xxlarge;
+    /*background: $color-light-gray;*/
+    margin-bottom: $spacing-gigantic;
   }
   .homeintro__wrapper {
 
   }
   .homeintro__text {
-
+    margin-top: 0; /* Reset Bootstrap values */
+    margin-bottom: 0; /* Reset Bootstrap values */
   }
 }

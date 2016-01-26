@@ -2,15 +2,15 @@
   .header__mask {
     background: $color-light-gray;
     position: absolute;
-    height: 500px;
+    height: 300px;
     width: 100%;
-    z-index: -1;
+    z-index: -9;
   }
 
   .banner {
     float: none;
     margin: 0; /* Reset Bootstrap values */
-    padding: $spacing-large 0 $spacing-xxlarge;
+    padding: $spacing-large 0 $spacing-gigantic;
   }
   .karu-global-navi {
     display: inline-block;

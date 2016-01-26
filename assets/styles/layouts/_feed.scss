@@ -1,0 +1,37 @@
+.karu-theme {
+  .feed {
+    margin: 0 0 $spacing-large;
+  }
+  .feed-item {
+    font-weight: 300;
+    color: $color-medium;
+    padding: $spacing 0;
+    border-bottom: 1px solid $color-dark;
+
+  }
+  .feed-item__header {
+  }
+  .feed-item__title {
+    width: 70%;
+    float: left;
+    margin-top: 0; /* Reset Bootstrap values */
+    margin-bottom: 0; /* Reset Bootstrap values */
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    & > a {
+      font-weight: 300;
+      color: $color-medium;
+    }
+  }
+  .feed-item__time {
+    width: 20%;
+    float: right;
+    text-align: right;
+    display: inline-block;
+  }
+  .feed-item__summary {
+  }
+}
