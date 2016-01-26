@@ -8,6 +8,25 @@ $sidebar-sm-columns:    4;
 // Colors
 $brand-primary:         #8B0000;
 
+// Greys
+$color-light-gray: #ECECEC;
+$color-mid-gray:   #CCC;
+$color-dark-gray:  #878787;
+$color-light:      #999;
+$color-silver:     #666;
+$color-granite:    #444;
+$color-chalkboard: #333;
+$color-medium:     $color-silver;
+$color-dark:       $color-chalkboard;
+$color-darker:     #000;
+$color-darkest:     #000;
+
+$color-transparent: rgba(255,255,255,.6);
+
+$darken-percent: 10%;
+
+// Text Colors
+$base-text-color:       #444;
 
 // Spacing
 
