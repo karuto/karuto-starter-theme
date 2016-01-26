@@ -6,4 +6,37 @@ $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Colors
-$brand-primary:         #27ae60;
+$brand-primary:         #8B0000;
+
+
+// Spacing
+
+$rem-base: 16px;
+$spacing: 1rem;
+$spacing-tiny: ($spacing * 0.25);  // DEPRECATED. Please use $spacing-xxsmall instead. 
+$spacing-xxsmall: ($spacing * 0.25);
+$spacing-small: ($spacing * 0.5);
+$spacing-extra-small: ($spacing * 0.75); // DEPRECATED. Please use $spacing-smaller instead  as this has been named incorrectly (xsmall is bigger than small) 
+$spacing-smaller: ($spacing * 0.75);
+$spacing-medium: ($spacing * 1.5);
+$spacing-large: ($spacing * 2);
+$spacing-xlarge: ($spacing * 2.20);
+$spacing-xxlarge: ($spacing * 3);
+$spacing-xxxlarge: ($spacing * 4);
+$spacing-header-footer: 2.25rem; // Global value to match the existing header padding of 2.25em (the combined left padding of .page-header-content and .column)
+$spacing-list: 0.8rem;
+
+$column-spacing: $spacing;
+$column-gutter: $column-spacing * 2;
+$column-padding-tablet: ($spacing * 1.25);
+
+$base-font-size:   100%;
+$base-line-height: 150%;
+
+@mixin body-font-family() {
+  $base-font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+  font-family: $base-font-family;
+  html:lang(ja) & {
+    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+  }
+}
