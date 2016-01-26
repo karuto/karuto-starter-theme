@@ -102,7 +102,13 @@ function assets() {
   }
 
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
-  wp_localize_script( 'sage/js', 'ajaxpagination', array(
+
+  // wp_localize_script: Pass PHP / WP Core data onto client-side JS. 
+  // Params: ($handle, $name, $data)
+  // $handle: the script's name (as registered in wp_enqueue_script that will make use of the data you are trying to pass
+  // $name: the client-side JS object's name encapsulating all the data you wanted to pass
+  // $data: what will become the value of $name
+  wp_localize_script( 'sage/js', 'ajaxcontent', array(
     'ajaxurl' => admin_url( 'admin-ajax.php' )
   ));
 }

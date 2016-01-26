@@ -9,6 +9,19 @@ var ajaxFunc = (function($) {
       e.preventDefault();
       var postid = $(this).attr('data-postid');
       x(postid);
+      $.ajax({
+        url: ajaxcontent.ajaxurl,
+        type: 'post',
+        data: {
+          action: 'ajax_fetch_content',
+          post_id: postid,
+          post_type: 'post'
+        },
+        success: function(data, textStatus, XMLHttpRequest) {
+          console.log("ajax returned:", data);
+        }
+      });
+
     });    
   };
 

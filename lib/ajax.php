@@ -2,12 +2,8 @@
 
 namespace Roots\Sage\Ajax;
 
-/**
- * Ajax interactions
- */
-function my_enqueue_assets() {
-  // wp_enqueue_script('ajax', get_stylesheet_directory_uri() . '../assets/scripts/k_ajax.js'), ['jquery'], null, true);
-}
+
+
 
 // function my_load_ajax_content () {
 //   $pid        = intval($_POST['post_id']);
