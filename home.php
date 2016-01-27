@@ -8,4 +8,8 @@
 
 <a href="#" class="featuredstage__button--open"><h3>Click me</h3></a>
 
-<?php the_posts_navigation(); ?>
+<?php the_posts_navigation(array(
+            'prev_text'          => __( 'O' ),
+            'next_text'          => __( 'N' ),
+            'screen_reader_text' => __( 'Posts navigation' ),
+        )); ?>

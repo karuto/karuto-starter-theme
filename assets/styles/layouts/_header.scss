@@ -1,7 +1,12 @@
 .karu-theme {
   .wrap--header {
-    background: $color-mid-gray;
     width: 100%;
+    overflow: hidden;
+    position: relative;
+    .wrap {
+      z-index: 2;
+      position: relative;
+    }
   }
   .banner {
     position: relative;

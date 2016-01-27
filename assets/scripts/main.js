@@ -30,6 +30,7 @@
       init: function() {
         console.log($('.open-content'));
         // JavaScript to be fired on the home page
+        particles();
         krFunctions.homeController();
       },
       finalize: function() {

@@ -1,12 +1,7 @@
 .karu-theme.home {
   .wrap--header {
     height: 350px;
-    overflow: hidden;
-    position: relative;
-    .wrap {
-      z-index: 2;
-      position: relative;
-    }
+    background: $color-mid-gray;
   }
   .particles-js-canvas-el {
     position: absolute;
