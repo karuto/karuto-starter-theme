@@ -31,10 +31,18 @@
         console.log($('.open-content'));
         // JavaScript to be fired on the home page
         particles();
-        krFunctions.homeController();
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
+      }
+    },
+    'single': {
+      init: function() {
+        // JavaScript to be fired on the single page
+        singleFunc();
+      },
+      finalize: function() {
+        // JavaScript to be fired on the single page, after the init JS
       }
     },
     // About us page, note the change from about-us to about_us.
@@ -79,40 +87,3 @@
   $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
-
-
-// Declare additional namespaces
-var krFunctions = {
-
-  settings: {
-    name: "foo",
-    selector: "bar"
-  }, /* END settings */
-
-  /* Reference: http://getbootstrap.com/css/#grid-options
-  xs: width <768px
-  sm: width 768-992
-  md: width 992-1200
-  lg: width >1200
-  */
-  globalController: function() {
-    var k = this;
-    k.p(this.settings.name);
-    k.p(this.settings.selector);
-  }, /* END globalController */
-
-  homeController: function() {
-    var k = this;
-
-  }, /* END homeController */
-
-  p: function(printTarget) {
-    if (!arguments.length) {
-      console.log("needs input");
-      return false;
-    }
-    console.log(printTarget);  
-    return true;
-  } /* END p */
-
-};

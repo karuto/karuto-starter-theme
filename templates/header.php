@@ -36,8 +36,13 @@
 
 
 <!-- ### SINGLE POST PAGE HEADER -->
-<?php if ( is_singular() ): ?>
-<section class="entryintro">
+<?php if ( is_singular() ): 
+  global $post;
+  if (has_post_thumbnail( $post->ID ) ) {
+    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+  }
+?>
+<section class="entryintro" data-imagesrc="<?php echo $image[0]; ?>">
   <header class="entryintro__wrapper">
     <h1 class="entryintro__title"><?php single_post_title(); ?></h1>
   </header>

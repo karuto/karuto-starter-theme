@@ -3,6 +3,12 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+    background: $color-mid-gray no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
     .wrap {
       z-index: 2;
       position: relative;
@@ -15,7 +21,9 @@
     padding: $spacing-large 0 $spacing-gigantic;
   }
   .karu-logo {
+    display: inline-block;
     padding: $spacing-small $spacing-smaller;
+    margin: 0 $spacing $spacing 0;
     border: 1px solid $color-dark;
   }
   .karu-global-navi {
@@ -29,9 +37,12 @@
     display: inline-block;
     & > a {
       padding: 0; /* Reset Bootstrap values */
-      padding-left: $spacing-medium;
+      margin-left: $spacing-medium;
       color: $subtle-text-color;
       font-weight: 300;
+    }
+    &:first-child > a {
+      margin-left: 0;
     }
   }
 }
