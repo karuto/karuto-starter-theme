@@ -15,7 +15,7 @@ use Roots\Sage\Wrapper;
       </div>
     <![endif]-->
 
-    <div class="wrap--header">
+    <div class="wrap--header" id="particles-js">
       <div class="wrap container" role="header">
         <?php
           do_action('get_header');

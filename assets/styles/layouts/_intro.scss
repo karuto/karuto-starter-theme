@@ -1,4 +1,21 @@
-.karu-theme {
+.karu-theme.home {
+  .wrap--header {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    .wrap {
+      z-index: 2;
+      position: relative;
+    }
+  }
+  .particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
   .homeintro {
     /*background: $color-light-gray;*/
     margin-bottom: $spacing-gigantic;
