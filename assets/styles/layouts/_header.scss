@@ -1,20 +1,22 @@
 .karu-theme {
-  .header__mask {
+  .wrap--header {
     background: $color-light-gray;
-    position: absolute;
-    height: 300px;
     width: 100%;
     z-index: -9;
   }
-
   .banner {
+    position: relative;
     float: none;
     margin: 0; /* Reset Bootstrap values */
     padding: $spacing-large 0 $spacing-gigantic;
   }
+  .karu-logo {
+    padding: $spacing-small $spacing-smaller;
+    border: 1px solid $color-dark;
+  }
   .karu-global-navi {
     display: inline-block;
-    float: right;
+    float: none;
   }
   .menu-all-pages-container {
 
@@ -24,7 +26,8 @@
     & > a {
       padding: 0; /* Reset Bootstrap values */
       padding-left: $spacing-medium;
-
+      color: $subtle-text-color;
+      font-weight: 300;
     }
   }
 }

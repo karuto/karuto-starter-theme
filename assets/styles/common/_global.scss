@@ -1,46 +1,45 @@
+html, body {
+  margin: 0; 
+  padding: 0;
+  height: 100%; 
+}
 body {
   font-size: 1.6rem; /* 16px */
   color: $base-text-color;
 }
-a {
-  color: $brand-primary;
-}
-.no-vertical-spacing {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.card {
-  overflow-y: auto;
-  overflow-x: hidden;
-  position: fixed;
-  right: 0;
-  top: 0;
-  bottom: 0;
-
-  @include m(fullscreen) {
-    height: 100%;
-    transform: translateX(100%);
+.karu-theme {
+  a {
+    color: $brand-primary;
   }
-}
-
-.featuredstage {
-  width: 99%;
-  background-color: $color-light-gray;
-  z-index: -1;
-
-  @include m(active) {
-    transform: translateX(0px) !important;
-  }
-
-  @include e(mask) {
-    width: 100%;
-    background-color: $color-mid-gray;
-    z-index: -2;
-    @include m(active) {
-      transform: translateX(0px) !important;
+  .container {
+    margin-right: $spacing;
+    margin-left: $spacing;
+    /* Large desktop */
+    @media (min-width: 1200px) {
+    }
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 1199px) {
+      width: auto;
     }
   }
+  .no-vertical-spacing {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .card {
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    @include m(fullscreen) {
+      height: 100%;
+      transform: translateX(100%);
+    }
+  }
+
 }

@@ -1,3 +1,18 @@
+/* Guidelines for responsive: 
+http://getbootstrap.com/2.3.2/scaffolding.html
+*/
+/* Large desktop */
+@media (min-width: 1200px) {}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {}
+
 // Glyphicons font path
 $icon-font-path:        "../fonts/";
 
@@ -19,14 +34,15 @@ $color-chalkboard: #333;
 $color-medium:     $color-silver;
 $color-dark:       $color-chalkboard;
 $color-darker:     #000;
-$color-darkest:     #000;
+$color-darkest:    #000;
 
 $color-transparent: rgba(255,255,255,.6);
 
 $darken-percent: 10%;
 
 // Text Colors
-$base-text-color:       #444;
+$base-text-color:  $color-granite;
+$subtle-text-color:  $color-light;
 
 // Spacing
 

@@ -1,0 +1,51 @@
+.karu-theme.single {
+  .container {
+    width: auto;
+  }
+  .wrap--header {
+    width: 30%;
+    height: 100%;
+    min-height: 100vh;
+    background: $color-light-gray;
+    display: inline-block;
+    opacity: 1;
+    position: fixed;
+  }
+  .wrap--content {
+    width: 70%;
+    float: right;
+    padding: $spacing-large 0 $spacing-gigantic;
+  }
+}
+
+.karu-theme {
+  .featuredstage {
+    width: 99%;
+    background-color: $color-light-gray;
+    z-index: -1;
+
+    /* Ajax appilcable */
+    @include m(active) {
+      transform: translateX(0px) !important;
+    }
+
+    /* Ajax appilcable */
+    @include e(mask) {
+      width: 100%;
+      background-color: $color-mid-gray;
+      z-index: -2;
+      @include m(active) {
+        transform: translateX(0px) !important;
+      }
+    }
+
+    /* Single page appilcable (everything below) */
+    .single & {
+      width: auto;
+    }
+
+    @include e(content) {
+      margin: $spacing-large;
+    }
+  }  
+}
