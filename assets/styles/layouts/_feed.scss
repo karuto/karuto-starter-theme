@@ -1,6 +1,6 @@
 .karu-theme {
   .feed {
-    margin: 0 0 $spacing-large;
+    margin: 0 0 $spacing;
   }
   .feed-item {
     font-weight: 300;
@@ -33,5 +33,20 @@
     display: inline-block;
   }
   .feed-item__summary {
+  }
+
+  .nav-links {
+
+  }
+  .nav-next,
+  .nav-previous {
+    padding-bottom: $spacing-xxlarge*2;
+    display: inline-block;
+  }
+  .nav-next {
+    float: left;
+  }
+  .nav-previous {
+    float: right;
   }
 }

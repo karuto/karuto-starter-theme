@@ -6,10 +6,10 @@
 
 <!-- content-single.php includes both mask and content featurestage -->
 
-<a href="#" class="featuredstage__button--open"><h3>Click me</h3></a>
+<!-- <a href="#" class="featuredstage__button--open"><h3>Click me</h3></a> -->
 
 <?php the_posts_navigation(array(
             'prev_text'          => __( '>' ),
             'next_text'          => __( '<' ),
             'screen_reader_text' => __( 'Posts navigation' ),
-        )); ?>
+)); ?>
