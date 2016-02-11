@@ -5,17 +5,15 @@ html, body {
 }
 body {
   font-size: 1.6rem; /* 16px */
-  font-weight: 300;  
-  letter-spacing: 0;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
+  font-weight: 300;
   color: $base-text-color;
 }
 body, button, input, select, textarea {
     font-size: 14px;
     line-height: 1.5;
     font-family: Arial, "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
+    letter-spacing: 0;
+    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -webkit-backface-visibility: hidden;
 }
