@@ -10,7 +10,6 @@
     </article>
   <?php endwhile; ?>
 
-<a href="#" class="featuredstage__button--close"><h3>Click me</h3></a>
 </div>
 
 
