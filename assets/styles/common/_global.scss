@@ -1,3 +1,4 @@
+/* Global DOM definitions */
 html, body {
   margin: 0; 
   padding: 0;
@@ -14,6 +15,8 @@ body, button, input, select, textarea {
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
 }
+
+/* Global elements and helper functions */
 .karu-theme {
   a {
     color: $brand-primary;
@@ -35,18 +38,4 @@ body, button, input, select, textarea {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .card {
-    overflow-y: auto;
-    overflow-x: hidden;
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-
-    @include m(fullscreen) {
-      height: 100%;
-      transform: translateX(100%);
-    }
-  }
-
 }
