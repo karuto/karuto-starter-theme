@@ -1,6 +1,5 @@
 <?php use Roots\Sage\Titles; ?>
 
-
 <div class="page-title">
   <h3 class="page-title__text">
     <span class="page-title__primary">

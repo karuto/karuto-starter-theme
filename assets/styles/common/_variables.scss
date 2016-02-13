@@ -35,14 +35,17 @@ $color-medium:     $color-silver;
 $color-dark:       $color-chalkboard;
 $color-darker:     #000;
 $color-darkest:    #000;
+$color-white:      #FFF;
 
 $color-transparent: rgba(255,255,255,.6);
 
 $darken-percent: 10%;
 
 // Text Colors
-$base-text-color:  $color-granite;
-$subtle-text-color:  $color-light;
+$base-text-color: $color-granite;
+$subtle-text-color: $color-light;
+$header-text-color: $color-white;
+$hero-text-color: $color-white;
 
 // Spacing
 

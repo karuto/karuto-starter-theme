@@ -1,20 +1,11 @@
 .karu-theme {
   .wrap--header {
+    z-index: 2;
     width: 100%;
     overflow: hidden;
     position: absolute;
     left: 0;
     top: 0;
-    background: $color-mid-gray no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    .wrap {
-      z-index: 2;
-      position: relative;
-    }
   }
   .wrap--header__banner {
     position: relative;
@@ -26,7 +17,8 @@
     display: inline-block;
     padding: $spacing-small $spacing-smaller;
     margin: 0 $spacing $spacing 0;
-    border: 1px solid $color-dark;
+    border: 1px solid $header-text-color;
+    color: $header-text-color;
   }
   .wrap--header__banner__navi {
     display: inline-block;
@@ -37,7 +29,7 @@
       & > a {
         padding: 0; /* Reset Bootstrap values */
         margin-left: $spacing-medium;
-        color: $subtle-text-color;
+        color: $header-text-color;
         font-weight: 300;
       }
       &:first-child > a {
@@ -45,17 +37,5 @@
       }
     }
 
-  }
-
-  .hero {
-    /*background: $color-light-gray;*/
-    margin-bottom: $spacing-gigantic;
-  }
-  .hero__wrapper {
-
-  }
-  .hero__text {
-    margin-top: 0; /* Reset Bootstrap values */
-    margin-bottom: 0; /* Reset Bootstrap values */
   }
 }

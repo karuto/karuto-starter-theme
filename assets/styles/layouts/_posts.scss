@@ -1,20 +1,4 @@
 .karu-theme.single {
-  .wrap--header {
-    &:after {
-      overflow: hidden;
-      text-indent: -9999rem;
-      font-size: 0;
-      line-height: 0;
-      background: linear-gradient(135deg, rgba(255,101,100,0.4) 0%, rgba(255,101,100,0) 50%, rgba(255,101,100,0) 100%),linear-gradient(45deg, rgba(40,0,215,0) 0%, rgba(40,0,215,0) 50%, rgba(40,0,215,0.4) 100%),linear-gradient(transparent 5%, rgba(0,0,0,0.8) 100%);
-      content: "gradient mask for image";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-    transition: all 0.2s ease;
-  }
   .hentry {
     & > p {
       color: $color-darkest;
@@ -28,6 +12,9 @@
       text-align: justify;
       margin-bottom: $spacing-medium;
     }
+  }
+  .entry__wrapper {
+    padding: $spacing-large 0;
   }
 }
 

@@ -25,7 +25,8 @@ use Roots\Sage\Wrapper;
     </div>
 
     <div class="wrap--content">
-      <div class="wrap container" role="document">
+      <?php get_template_part('templates/hero'); ?>
+      <div class="container" role="document">
         <div class="row">
           <main class="wrap--content__main col-xs-12">
             <?php include Wrapper\template_path(); ?>
