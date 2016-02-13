@@ -1,6 +1,10 @@
 .karu-theme.single {
   .hentry {
+    padding: $spacing-xlarge 0;
+
     & > p {
+      max-width: 750px;
+      margin: 0 auto $spacing-medium;
       color: $color-darkest;
       font-weight: 400;
       font-style: normal;
@@ -10,11 +14,11 @@
       word-wrap: break-word;
       word-break: break-word;
       text-align: justify;
-      margin-bottom: $spacing-medium;
     }
   }
   .entry__wrapper {
-    padding: $spacing-large 0;
+    margin-top: -($spacing-xlarge * 2);
+    background-color: $color-white;
   }
 }
 
