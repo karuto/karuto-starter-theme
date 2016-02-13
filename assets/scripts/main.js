@@ -28,9 +28,8 @@
     // Home page
     'home': {
       init: function() {
-        console.log($('.open-content'));
         // JavaScript to be fired on the home page
-        particles();
+        // particles();
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

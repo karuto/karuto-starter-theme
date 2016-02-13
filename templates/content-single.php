@@ -1,15 +1,3 @@
-<!-- EVENTUALLY MOVE TO content-mask.php -->
-<!-- MASK DIVIDER
-<?php if (is_singular()): ?>
-<section class="card card--fullscreen featuredstage__mask featuredstage__mask--active">
-<?php else: ?>
-<section class="card card--fullscreen featuredstage__mask">
-<?php endif; ?>
-</section>
-MASK DIVIDER -->
-
-
-
 <div class="entry entry__wrapper">
 
   <?php while (have_posts()) : the_post(); ?>
@@ -24,7 +12,6 @@ MASK DIVIDER -->
     </article>
   <?php endwhile; ?>
 
-<a href="#" class="featuredstage__button--close"><h3>Click me</h3></a>
 </div>
 
 

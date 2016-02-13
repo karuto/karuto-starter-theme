@@ -1,7 +1,4 @@
 .karu-theme.single {
-  .container {
-    width: auto;
-  }
   .wrap--header {
     &:after {
       overflow: hidden;
@@ -16,48 +13,19 @@
       left: 0;
       right: 0;
     }
-    @media (max-width: 991px) {
-    }
-    @media (min-width: 992px) {
-      width: 30%;
-      height: 100%;
-      min-height: 100vh;
-      display: inline-block;
-      opacity: 1;
-      position: fixed;
-    }
     transition: all 0.2s ease;
-  }
-  .wrap--content {
-    @media (max-width: 991px) {
-    }
-    @media (min-width: 992px) {
-      width: 70%;
-      float: right;
-    }
-    padding: $spacing-large 0 $spacing-gigantic;
-    transition: all 0.2s ease;
-  }
-  .entryintro {
-    position: relative;
-  }
-  .entryintro__wrapper {
-  }
-  .entryintro__title {
-    padding: $spacing-large 0;
-  }
-  .entry.entry__wrapper {
-    max-width: 800px;
-    margin-top: $spacing-small;
   }
   .hentry {
     & > p {
       color: $color-darkest;
       font-weight: 400;
       font-style: normal;
-      font-size: 18px;
-      line-height: 1.58;
-      letter-spacing: -0.003em;
+      font-size: 1.6rem;
+      line-height: 2;
+      letter-spacing: normal;    
+      word-wrap: break-word;
+      word-break: break-word;
+      text-align: justify;
       margin-bottom: $spacing-medium;
     }
   }

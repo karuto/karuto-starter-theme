@@ -2,8 +2,10 @@
   .wrap--header {
     width: 100%;
     overflow: hidden;
-    position: relative;
-    background: $color-mid-gray no-repeat center center fixed; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: $color-mid-gray no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,35 +16,46 @@
       position: relative;
     }
   }
-  .banner {
+  .wrap--header__banner {
     position: relative;
     float: none;
     margin: 0; /* Reset Bootstrap values */
-    padding: $spacing-large 0 $spacing-gigantic;
+    padding: $spacing-large 0 $spacing-large;
   }
-  .karu-logo {
+  .wrap--header__banner__logo {
     display: inline-block;
     padding: $spacing-small $spacing-smaller;
     margin: 0 $spacing $spacing 0;
     border: 1px solid $color-dark;
   }
-  .karu-global-navi {
+  .wrap--header__banner__navi {
     display: inline-block;
     float: none;
-  }
-  .menu-all-pages-container {
+
+    .menu-item {
+      display: inline-block;
+      & > a {
+        padding: 0; /* Reset Bootstrap values */
+        margin-left: $spacing-medium;
+        color: $subtle-text-color;
+        font-weight: 300;
+      }
+      &:first-child > a {
+        margin-left: 0;
+      }
+    }
 
   }
-  .menu-item {
-    display: inline-block;
-    & > a {
-      padding: 0; /* Reset Bootstrap values */
-      margin-left: $spacing-medium;
-      color: $subtle-text-color;
-      font-weight: 300;
-    }
-    &:first-child > a {
-      margin-left: 0;
-    }
+
+  .hero {
+    /*background: $color-light-gray;*/
+    margin-bottom: $spacing-gigantic;
+  }
+  .hero__wrapper {
+
+  }
+  .hero__text {
+    margin-top: 0; /* Reset Bootstrap values */
+    margin-bottom: 0; /* Reset Bootstrap values */
   }
 }

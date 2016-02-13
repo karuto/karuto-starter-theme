@@ -19,8 +19,6 @@ body, button, input, select, textarea {
     color: $brand-primary;
   }
   .container {
-    margin-right: $spacing;
-    margin-left: $spacing;
     /* Large desktop */
     @media (min-width: 1200px) {
     }
@@ -28,6 +26,9 @@ body, button, input, select, textarea {
     @media (max-width: 1199px) {
       width: auto;
     }
+  }
+  .wrap--content__main {
+    margin-top: 150px;
   }
   .no-vertical-spacing {
     margin-top: 0;
