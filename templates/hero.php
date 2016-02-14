@@ -9,7 +9,7 @@
       if (has_post_thumbnail( $post->ID ) ) {
         $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
       } else {
-        $image = ["http://i.imgur.com/vC23f1f.jpg"];
+        $image = ["https://raw.githubusercontent.com/karuto/mangatalk-modern/jsbackup/assets/img/thumb_default_lg.jpg"];
       }
     ?>
 
@@ -38,9 +38,9 @@
   <?php if ( is_singular() ): ?>
     <div class="hero__bg" style="background-image: url(<?php echo $image[0]; ?>);"></div>
   <?php elseif ( is_front_page() && is_home() ): ?>
-    <div class="hero__bg" style="background-image: url(http://i.imgur.com/vC23f1f.jpg);"></div>
+    <div class="hero__bg" style="background-image: url(https://raw.githubusercontent.com/karuto/mangatalk-modern/jsbackup/assets/img/thumb_default_lg.jpg);"></div>
   <?php else: ?>
-    <div class="hero__bg" style="background-image: url(http://i.imgur.com/Y4nMS7w.jpg);"></div>
+    <div class="hero__bg" style="background-image: url(https://raw.githubusercontent.com/karuto/mangatalk-modern/jsbackup/assets/img/thumb_default_lg.jpg);"></div>
   <?php endif; ?>
 
 </section>
