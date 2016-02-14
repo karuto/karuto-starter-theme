@@ -76,15 +76,18 @@ $column-spacing: $spacing;
 $column-gutter: $column-spacing * 2;
 $column-padding-tablet: ($spacing * 1.25);
 
+
 // Layout specific pacings
 $headernav-total-height: $spacing-gigantic;
 $hero-total-height: 500px;
 $hero-bottom-offset: $spacing-gigantic;
-$hero-wrapper-padding: $spacing-xxlarge;
+$hero-wrapper-padding: $spacing-xlarge;
 
 
 // Typography
 $base-font-size: 1.4rem; // 14px
 $base-line-height: 1.5;
+$subtle-font-size: 1.4rem;
+$subtle-line-height: 1.2;
 $content-font-size: 1.6rem; // 16px
 $content-line-height: 2;

@@ -1,7 +1,6 @@
 .karu-theme {
   .hero {
     width: 100%;
-    height: $hero-total-height;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -11,6 +10,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.2s ease;
+
+    @media (min-width: 768px) {
+      height: $hero-total-height;
+    }
+    @media (max-width: 767px) {
+      height: 300px;
+    }
   }
   .hero__bg {
     background-position: center;
@@ -38,17 +44,33 @@
     }
   }
   .hero__wrapper {
-    padding-top: $headernav-total-height;
-    padding-bottom: $hero-bottom-offset;
     display: inline-block;
+    padding-top: $headernav-total-height;
     align-self: flex-end; /* bottom-align itself in flex parent */
+    @media (min-width: 768px) {
+      padding-bottom: $hero-bottom-offset;
+    }
+    @media (max-width: 767px) {
+    }
   }
-  .hero__wrapper__content {
+  .hero__content {
     margin-top: 0; /* Reset Bootstrap values */
     margin-bottom: 0; /* Reset Bootstrap values */
     padding-bottom: $hero-wrapper-padding;
     color: $hero-text-color;
   }
-  .hero__text {
+  .hero__content__header {
+    margin-top: 0; /* Reset Bootstrap values */
+    margin-bottom: 0; /* Reset Bootstrap values */
+    line-height: 1.25;
+  }
+  .hero__content__meta {
+    margin-top: $spacing-small;
+  }
+  .hero__content__meta__excerpt {
+    margin-top: 0; /* Reset Bootstrap values */
+    margin-bottom: 0; /* Reset Bootstrap values */
+    font-size: $subtle-font-size;
+    line-height: $subtle-line-height;
   }
 }

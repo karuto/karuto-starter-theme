@@ -1,7 +1,8 @@
 .karu-theme.single {
   .hentry {
-    padding: $hero-wrapper-padding 0;
-
+    @media (min-width: 768px) {
+      padding: $hero-wrapper-padding 0;
+    }
     & > p {
       max-width: 750px;
       margin: 0 auto $spacing-medium;
@@ -22,6 +23,20 @@
       margin-top: -$hero-bottom-offset;
       border-radius: 2px;
     }
+  }
+  .entry__meta {
+    position: relative;
+    @media (min-width: 768px) {
+      float: left;
+      width: $spacing-gigantic;
+      margin-left: $spacing-xxlarge;
+      margin-right: $spacing-xxlarge;
+      margin-top: $hero-wrapper-padding;
+    }
+    @media (max-width: 767px) {
+      margin: $hero-wrapper-padding auto;
+    }
+
   }
 }
 
