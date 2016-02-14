@@ -1,11 +1,12 @@
 .karu-theme.single {
   .hentry {
+    max-width: 750px;
+    margin: 0 auto $spacing-medium;
     @media (min-width: 768px) {
       padding: $hero-wrapper-padding 0;
     }
     & > p {
-      max-width: 750px;
-      margin: 0 auto $spacing-medium;
+      margin-bottom: $spacing-medium;
       color: $color-darkest;
       font-weight: 400;
       font-style: normal;

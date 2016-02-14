@@ -10,7 +10,7 @@
       <h1 class="hero__content__header"><?php single_post_title(); ?></h1>
       <div class="hero__content__meta">
         <h2 class="hero__content__meta__excerpt">
-          写到这里，我已渐渐忘记了自己初衷是想要纪念一座城市，还是纪念一个人。或许一切并没有那么奇怪。
+          <?php the_excerpt(); ?>
         </h2>
       </div>
     <?php endif; ?>

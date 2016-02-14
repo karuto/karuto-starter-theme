@@ -3,7 +3,7 @@
     margin: 0 0 $spacing;
   }
   .feed--featured {
-    width: 500px; /* testing homepage featured feed */
+    max-width: 500px; /* testing homepage featured feed */
     .feed-item__header {
       margin-left: 65px; /* testing homepage featured feed */
     }
