@@ -1,6 +1,7 @@
 <div class="entry entry__wrapper">
   <div class="entry__meta">
-    写到这里，我已渐渐忘记了自己初衷是想要纪念一座城市，还是纪念一个人。或许一切并没有那么奇怪。
+    <div class="entry__meta__date"><?php the_time('M d, Y'); ?></div>
+    <div class="entry__meta__share"></div>
   </div>
 
   <?php while (have_posts()) : the_post(); ?>

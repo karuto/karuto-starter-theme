@@ -26,6 +26,9 @@
   }
   .entry__meta {
     position: relative;
+    color: $subtle-text-color;
+    font-size: $subtle-font-size;
+    line-height: $subtle-line-height;
     @media (min-width: 768px) {
       float: left;
       width: $spacing-gigantic;
