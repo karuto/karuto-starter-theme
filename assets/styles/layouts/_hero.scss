@@ -11,10 +11,10 @@
     background-repeat: no-repeat;
     transition: all 0.2s ease;
 
-    @media (min-width: 768px) {
+    @media (min-width: $desktop-min) {
       height: $hero-total-height;
     }
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-max) {
       height: 300px;
     }
   }
@@ -47,10 +47,10 @@
     display: inline-block;
     padding-top: $headernav-total-height;
     align-self: flex-end; /* bottom-align itself in flex parent */
-    @media (min-width: 768px) {
+    @media (min-width: $desktop-min) {
       padding-bottom: $hero-bottom-offset;
     }
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-max) {
     }
   }
   .hero__content {

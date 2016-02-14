@@ -2,7 +2,7 @@
   .hentry {
     max-width: 750px;
     margin: 0 auto $spacing-medium;
-    @media (min-width: 768px) {
+    @media (min-width: $desktop-min) {
       padding: $hero-wrapper-padding 0;
     }
     & > p {
@@ -20,7 +20,7 @@
   }
   .entry__wrapper {
     background-color: $color-white;
-    @media (min-width: 768px) {
+    @media (min-width: $desktop-min) {
       margin-top: -$hero-bottom-offset;
       border-radius: 2px;
     }
@@ -30,14 +30,14 @@
     color: $subtle-text-color;
     font-size: $subtle-font-size;
     line-height: $subtle-line-height;
-    @media (min-width: 768px) {
+    @media (min-width: $desktop-min) {
       float: left;
       width: $spacing-gigantic;
       margin-left: $spacing-xxlarge;
       margin-right: $spacing-xxlarge;
       margin-top: $hero-wrapper-padding;
     }
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-max) {
       margin: $hero-wrapper-padding auto;
     }
 

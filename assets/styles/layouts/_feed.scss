@@ -1,9 +1,16 @@
 .karu-theme {
   .feed {
     margin: 0 0 $spacing;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+ 
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .feed--featured {
-    max-width: 500px; /* testing homepage featured feed */
     .feed-item__header {
       margin-left: 65px; /* testing homepage featured feed */
     }
@@ -26,9 +33,17 @@
   }
   .feed-item {
     position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    @media (min-width: $desktop-min) {
+      width: 50%;
+    }
   }
   .feed-item__header {
     padding: $spacing-large 0;
+    width: 100%;
     border-bottom: 1px solid $color-dark;
   }
   .feed-item__title {

@@ -3,8 +3,10 @@ http://getbootstrap.com/2.3.2/scaffolding.html
 */
 
 /* Mobile bottom-line */
-@media (max-width: 767px) {}
- 
+$mobile-max: 767px;
+@media (max-width: $mobile-max) {}
+
+$desktop-min: 768px;
 /* Non-mobile bottom-line */
 @media (min-width: 768px) {}
 
