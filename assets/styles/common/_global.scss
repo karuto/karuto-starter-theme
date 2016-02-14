@@ -5,10 +5,10 @@ html, body {
   height: 100%; 
 }
 body, button, input, select, textarea {
-  font-size: 1.4rem; /* 14px */
   color: $base-text-color;
+  font-size: $base-font-size; /* 14px */
+  line-height: $base-line-height;
   font-weight: 300;
-  line-height: 1.5;
   font-family: Arial, "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
   letter-spacing: 0;
   text-rendering: optimizeLegibility;

@@ -11,8 +11,3 @@
   <?php endwhile; ?>
 
 </div>
-
-
-<!-- BELOW NOT USING RIGHT NOW -->
-
-

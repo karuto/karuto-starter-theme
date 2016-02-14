@@ -8,8 +8,8 @@
       color: $color-darkest;
       font-weight: 400;
       font-style: normal;
-      font-size: 1.6rem;
-      line-height: 2;
+      font-size: $content-font-size;
+      line-height: $content-line-height;
       letter-spacing: normal;    
       word-wrap: break-word;
       word-break: break-word;
@@ -19,6 +19,7 @@
   .entry__wrapper {
     margin-top: -($spacing-xlarge * 2);
     background-color: $color-white;
+    border-radius: 2px;
   }
 }
 

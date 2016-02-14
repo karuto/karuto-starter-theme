@@ -13,15 +13,19 @@ http://getbootstrap.com/2.3.2/scaffolding.html
 /* Landscape phones and down */
 @media (max-width: 480px) {}
 
+
 // Glyphicons font path
 $icon-font-path:        "../fonts/";
+
 
 // Grid settings
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
+
 // Colors
 $brand-primary:         #8B0000;
+
 
 // Greys
 $color-light-gray: #ECECEC;
@@ -36,10 +40,9 @@ $color-dark:       $color-chalkboard;
 $color-darker:     #000;
 $color-darkest:    #000;
 $color-white:      #FFF;
-
 $color-transparent: rgba(255,255,255,.6);
-
 $darken-percent: 10%;
+
 
 // Text Colors
 $base-text-color: $color-granite;
@@ -47,8 +50,8 @@ $subtle-text-color: $color-light;
 $header-text-color: $color-white;
 $hero-text-color: $color-white;
 
-// Spacing
 
+// Spacing
 $spacing-rem-base: 16px;
 $spacing: $spacing-rem-base;
 $spacing-xxsmall: ($spacing * 0.25);
@@ -62,18 +65,13 @@ $spacing-xxxlarge: ($spacing * 4);
 $spacing-gigantic: ($spacing * 6);
 $spacing-header-footer: 2.25rem; // Global value to match the existing header padding of 2.25em (the combined left padding of .page-header-content and .column)
 $spacing-list: 0.8rem;
-
 $column-spacing: $spacing;
 $column-gutter: $column-spacing * 2;
 $column-padding-tablet: ($spacing * 1.25);
 
-$base-font-size:   100%;
-$base-line-height: 150%;
 
-@mixin body-font-family() {
-  $base-font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-  font-family: $base-font-family;
-  html:lang(ja) & {
-    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
-  }
-}
+// Typography
+$base-font-size: 1.4rem; // 14px
+$base-line-height: 1.5;
+$content-font-size: 1.6rem; // 16px
+$content-line-height: 2;
