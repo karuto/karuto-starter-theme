@@ -8,6 +8,10 @@
       global $post;
       if (has_post_thumbnail( $post->ID ) ) {
         $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+        if (!$image) {
+          echo '<h1>YOYO##</h1>';
+          $image = array( [0] => "http://i.imgur.com/vC23f1f.jpg", );
+        }
       }
     ?>
 
