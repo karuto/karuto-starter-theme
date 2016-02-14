@@ -1,4 +1,7 @@
 .karu-theme.single {
+  .wrap--content__main {
+    margin-top: 0; /* Override global */
+  }
   .hentry {
     max-width: 750px;
     margin: 0 auto $spacing-medium;

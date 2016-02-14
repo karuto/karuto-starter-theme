@@ -40,6 +40,9 @@
     @media (min-width: $desktop-min) {
       width: 50%;
     }
+    @media (max-width: $mobile-max) {
+      width: 100%;
+    }
   }
   .feed-item__header {
     padding: $spacing-large 0;
