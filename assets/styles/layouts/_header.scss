@@ -19,10 +19,13 @@
     margin: 0 $spacing $spacing 0;
     border: 1px solid $header-text-color;
     color: $header-text-color;
+    font-weight: 600;
+    text-transform: uppercase;
   }
   .wrap--header__banner__navi {
     display: inline-block;
-    float: none;
+    float: right;
+    margin-top: 9px; /* 8px padding + 1px border to match logo baseline */
 
     .menu-item {
       display: inline-block;
@@ -30,7 +33,7 @@
         padding: 0; /* Reset Bootstrap values */
         margin-left: $spacing-medium;
         color: $header-text-color;
-        font-weight: 300;
+        font-weight: 600;
       }
       &:first-child > a {
         margin-left: 0;

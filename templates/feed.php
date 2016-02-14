@@ -1,4 +1,4 @@
-<section class="feed">
+<section class="feed feed--featured">
 
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
