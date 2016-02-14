@@ -1,6 +1,6 @@
 .karu-theme.single {
   .hentry {
-    padding: $spacing-xlarge 0;
+    padding: $hero-wrapper-padding 0;
 
     & > p {
       max-width: 750px;
@@ -17,9 +17,11 @@
     }
   }
   .entry__wrapper {
-    margin-top: -($spacing-xlarge * 2);
     background-color: $color-white;
-    border-radius: 2px;
+    @media (min-width: 768px) {
+      margin-top: -$hero-bottom-offset;
+      border-radius: 2px;
+    }
   }
 }
 

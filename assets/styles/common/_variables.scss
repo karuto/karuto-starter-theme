@@ -1,6 +1,13 @@
 /* Guidelines for responsive: 
 http://getbootstrap.com/2.3.2/scaffolding.html
 */
+
+/* Mobile bottom-line */
+@media (max-width: 767px) {}
+ 
+/* Non-mobile bottom-line */
+@media (min-width: 768px) {}
+
 /* Large desktop */
 @media (min-width: 1200px) {}
  
@@ -51,7 +58,7 @@ $header-text-color: $color-white;
 $hero-text-color: $color-white;
 
 
-// Spacing
+// Globally applicable spacings
 $spacing-rem-base: 16px;
 $spacing: $spacing-rem-base;
 $spacing-xxsmall: ($spacing * 0.25);
@@ -68,6 +75,12 @@ $spacing-list: 0.8rem;
 $column-spacing: $spacing;
 $column-gutter: $column-spacing * 2;
 $column-padding-tablet: ($spacing * 1.25);
+
+// Layout specific pacings
+$headernav-total-height: $spacing-gigantic;
+$hero-total-height: 500px;
+$hero-bottom-offset: $spacing-gigantic;
+$hero-wrapper-padding: $spacing-xxlarge;
 
 
 // Typography

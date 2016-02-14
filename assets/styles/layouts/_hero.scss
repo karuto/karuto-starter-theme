@@ -1,9 +1,9 @@
 .karu-theme {
   .hero {
     width: 100%;
-    height: 500px;
+    height: $hero-total-height;
+    display: flex;
     overflow: hidden;
-    padding-bottom: $spacing-large;
     position: relative;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -38,12 +38,17 @@
     }
   }
   .hero__wrapper {
-    padding-top: 150px;
-    padding-bottom: $spacing-large;
+    padding-top: $headernav-total-height;
+    padding-bottom: $hero-bottom-offset;
+    display: inline-block;
+    align-self: flex-end; /* bottom-align itself in flex parent */
   }
-  .hero__text {
+  .hero__wrapper__content {
     margin-top: 0; /* Reset Bootstrap values */
     margin-bottom: 0; /* Reset Bootstrap values */
+    padding-bottom: $hero-wrapper-padding;
     color: $hero-text-color;
+  }
+  .hero__text {
   }
 }
