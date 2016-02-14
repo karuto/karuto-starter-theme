@@ -53,20 +53,6 @@
     background-color: $color-light-gray;
     z-index: -1;
 
-    /* Ajax appilcable */
-    @include m(active) {
-      transform: translateX(0px) !important;
-    }
-
-    /* Ajax appilcable */
-    @include e(mask) {
-      width: 100%;
-      background-color: $color-mid-gray;
-      z-index: -2;
-      @include m(active) {
-        transform: translateX(0px) !important;
-      }
-    }
 
     /* Single page appilcable (everything below) */
     .single & {
