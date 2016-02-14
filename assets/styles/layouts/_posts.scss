@@ -46,21 +46,3 @@
 
   }
 }
-
-.karu-theme {
-  .featuredstage {
-    width: 99%;
-    background-color: $color-light-gray;
-    z-index: -1;
-
-
-    /* Single page appilcable (everything below) */
-    .single & {
-      width: auto;
-    }
-
-    @include e(content) {
-      margin: $spacing-large;
-    }
-  }  
-}
