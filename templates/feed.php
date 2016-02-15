@@ -36,7 +36,7 @@
             <div class="feed__header__meta">Sorted by date</div>
           </div>
           <?php global $post;
-           $myposts = get_posts('numberposts=6');
+           $myposts = get_posts('numberposts=6&offset=1');
            foreach($myposts as $post) : ?>
             <?php get_template_part('templates/content', 
             get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
