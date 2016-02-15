@@ -33,7 +33,7 @@ $sidebar-sm-columns:    4;
 
 
 // Colors
-$brand-primary:         #8B0000;
+$brand-primary: #cba54d; /* Fabulous gold */
 
 
 // Greys
@@ -54,6 +54,7 @@ $darken-percent: 10%;
 
 
 // Text Colors
+$hightlight-color: $brand-primary;
 $base-text-color: $color-granite;
 $subtle-text-color: $color-light;
 $header-text-color: $color-darkest;

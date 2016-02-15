@@ -31,6 +31,10 @@
         margin-left: $spacing-medium;
         color: $header-text-color;
         font-weight: 600;
+        &:hover {
+          background: none; /* Reset Bootstrap values */
+          color: $hightlight-color;
+        }
       }
       &:first-child > a {
         margin-left: 0;
