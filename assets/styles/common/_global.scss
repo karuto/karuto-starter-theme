@@ -30,6 +30,9 @@ body, button, input, select, textarea {
       width: auto;
     }
   }
+  .flex-stretch {
+    @include flexstretch();
+  }
   .wrap--content__main {
     margin-top: $spacing-xlarge;
   }

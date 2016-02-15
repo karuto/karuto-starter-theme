@@ -17,3 +17,16 @@
     @content;
   }
 }
+
+@mixin flexstretch() {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  flex-direction: row;
+  align-items: stretch; /* force all elements to be vertically equal! */
+}
