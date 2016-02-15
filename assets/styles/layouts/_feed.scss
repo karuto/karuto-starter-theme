@@ -4,13 +4,10 @@
   }
   .feed {
     margin: 0 0 $spacing;
-    @include flexstretch();
   }
   .feed--singlehero {
+    @include flexstretch();
     & > .feed-item {
-      width: 100%;
-      height: 500px;
-      background-image: url(https://raw.githubusercontent.com/karuto/mangatalk-modern/jsbackup/assets/img/thumb_default_lg.jpg);
     }
   }
   .feed--singlehero__bg {
@@ -28,6 +25,22 @@
     @include gradientmask();
   }
   .feed--featured {
+    @include flexstretch();
+    .feed-item { /* Only for home page featured feed */
+      position: relative;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      @media (min-width: $desktop-min) {
+        width: 50%;
+      }
+      @media (max-width: $mobile-max) {
+        width: 100%;
+      }
+    }
+  }
+  .feed--featured,
+  .feed--archive {
     border-top: 3px solid $color-darkest;
     .feed-item__header {
       margin-left: 65px; /* testing homepage featured feed */
@@ -50,21 +63,12 @@
     }
   }
   .feed-item {
+    display: block;
     position: relative;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-
-    @media (min-width: $desktop-min) {
-      width: 50%;
-    }
-    @media (max-width: $mobile-max) {
-      width: 100%;
-    }
   }
   .feed-item__header {
     padding: $spacing-large 0 0;
-    width: 100%;
+    max-width: 100%;
     /*border-bottom: 1px solid $color-dark;*/
   }
   .feed-item__title {

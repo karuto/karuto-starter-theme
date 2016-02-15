@@ -4,6 +4,6 @@
       <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
     </h3>
     <summary class="feed-item__excerpt"><?php the_excerpt(); ?></summary>
-    <time class="feed-item__time updated" datetime="<?= get_post_time('c', true); ?>">5 minute read - <?php the_time('M d, Y'); ?></time>
+    <!-- <time class="feed-item__time updated" datetime="<?= get_post_time('c', true); ?>">5 minute read - <?php the_time('M d, Y'); ?></time> -->
   </header>
 </article>
