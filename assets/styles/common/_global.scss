@@ -42,4 +42,10 @@ body, button, input, select, textarea {
     padding-top: 0;
     padding-bottom: 0;
   }
+  .col--marginbased { /* NOT USED because it breaks Bootstrap grid */
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }

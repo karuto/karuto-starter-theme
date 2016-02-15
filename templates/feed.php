@@ -7,11 +7,12 @@
   <?php get_search_form(); ?>
 <?php else: ?>
 
-<div class="primary-feed-container">
-  <div class="flex-stretch col-lg-6">
-    <section class="feed feed--singlehero">
-      <article class="feed-item">
-      </article>
+<div class="primary-feed-container row">
+  <div class="col-lg-6">
+    <section class="feed--singlehero">
+      <!-- <article class="feed-item">
+      </article> -->
+      <div class="feed--singlehero__bg" style="background-image: url(https://raw.githubusercontent.com/karuto/mangatalk-modern/jsbackup/assets/img/thumb_default_lg.jpg);"></div>
     </section>
   </div>
 

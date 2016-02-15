@@ -9,8 +9,23 @@
   .feed--singlehero {
     & > .feed-item {
       width: 100%;
+      height: 500px;
       background-image: url(https://raw.githubusercontent.com/karuto/mangatalk-modern/jsbackup/assets/img/thumb_default_lg.jpg);
     }
+  }
+  .feed--singlehero__bg {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    z-index: -1;
+    margin: 0 15px; /* matching bootstrap column paddings */
+    @include gradientmask();
   }
   .feed--featured {
     border-top: 3px solid $color-darkest;
