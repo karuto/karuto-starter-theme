@@ -89,8 +89,8 @@
     margin-bottom: $spacing-small;
     font-size: $base-font-size;
     line-height: $base-line-height;
+    color: $subtle-text-color;
     & > p {
-      color: $subtle-text-color;
       margin-top: 0; /* Reset Bootstrap values */
       margin-bottom: 0; /* Reset Bootstrap values */
     }
