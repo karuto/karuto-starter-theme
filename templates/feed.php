@@ -9,7 +9,7 @@
 
 
 
-  <?php if( is_front_page() && is_home() ): ?>
+  <?php if( is_front_page() && is_home() ): /* HOMEPAGE FEED */ ?>
 
     <div class="primary-feed-container row">
       <div class="col-lg-6 col-md-12 col-sm-12">
@@ -31,15 +31,18 @@
             <div class="feed__header__text">过往文章</div>
             <div class="feed__header__meta">Sorted by date</div>
           </div>
-          <?php while (have_posts()) : the_post(); ?>
+          <?php global $post;
+           $myposts = get_posts('numberposts=6');
+           foreach($myposts as $post) : ?>
             <?php get_template_part('templates/content', 
             get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-          <?php endwhile; ?>
+          <?php endforeach; ?>
         </section>
       </div>
     </div><!-- .primary-feed-container -->
 
-  <?php else: ?>
+  <?php else: /* NORMAL ARCHIVE FEED*/ ?>
+
     <section class="feed feed--archive">
       <div class="feed__header">
         <div class="feed__header__text"><?= Titles\title(); ?></div>
