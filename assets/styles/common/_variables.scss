@@ -2,6 +2,8 @@
 http://getbootstrap.com/2.3.2/scaffolding.html
 */
 
+$col-lg-breakpoint: 1200px;
+
 /* Mobile bottom-line */
 $mobile-max: 767px;
 @media (max-width: $mobile-max) {}

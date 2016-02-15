@@ -54,6 +54,7 @@
     margin: $spacing-small 0 0;
     font-size: $subtle-font-size;
     line-height: $subtle-line-height;
+    text-transform: uppercase;
   }
   .feed__header__text {
     display: inline-block;
@@ -61,7 +62,6 @@
   .feed__header__meta {
     display: inline-block;
     float: right;
-    text-transform: uppercase;
     color: $subtler-text-color;
   }
   /***
@@ -121,9 +121,16 @@
       margin-bottom: $singlehero-font-size * 0.5;
     }
     .feed-item__time {
-      font-size: $base-font-size;
-      line-height: $base-line-height;
+      text-transform: uppercase;
+      font-size: $subtle-font-size;
+      line-height: $subtle-line-height;
       color: $hero-text-color;
+      @media (min-width: $col-lg-breakpoint) {
+        position: absolute;
+        bottom: $singlehero-font-size + 3px + 8px; /* See the next 2 lines */
+        padding-bottom: 8px;
+        border-bottom: 3px solid $color-white;
+      }
     }
   }
   .feed-item--singlehero__bg {

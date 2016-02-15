@@ -1,4 +1,4 @@
-
+<?php use Roots\Sage\Titles; ?>
 
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
@@ -28,7 +28,7 @@
       <div class="col-lg-6 col-md-12 col-sm-12">
         <section class="feed feed--featured">
           <div class="feed__header">
-            <div class="feed__header__text">过去的</div>
+            <div class="feed__header__text">过往文章</div>
             <div class="feed__header__meta">Sorted by date</div>
           </div>
           <?php while (have_posts()) : the_post(); ?>
@@ -41,6 +41,10 @@
 
   <?php else: ?>
     <section class="feed feed--archive">
+      <div class="feed__header">
+        <div class="feed__header__text"><?= Titles\title(); ?></div>
+        <div class="feed__header__meta">Sorted by date</div>
+      </div>
       <?php while (have_posts()) : the_post(); ?>
         <?php get_template_part('templates/content', 
         get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
