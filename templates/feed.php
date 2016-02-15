@@ -13,16 +13,20 @@
 
     <div class="primary-feed-container row">
       <div class="col-lg-6 col-md-12 col-sm-12">
-        <article class="feed-item--singlehero hentry">
-          <header class="feed-item__header">
-            <h3 class="feed-item__title">
-              <a href="<?php the_permalink(); ?>">失败的追逐者</a>
-            </h3>
-            <summary class="feed-item__excerpt">时间不曾磨灭森薰笔下那个细腻优雅的维多利亚伦敦魅力，一如这篇 2008 年她进行的专访，至今灼灼其华。</summary>
-            <time class="feed-item__time updated">March 23, 2014</time>
-          </header>
-          <div class="feed-item--singlehero__bg" style="background-image: url(https://raw.githubusercontent.com/karuto/mangatalk-modern/jsbackup/assets/img/thumb_default_lg.jpg);"></div>
-        </article>
+        <?php global $post;
+           $myposts = get_posts('numberposts=1');
+           foreach($myposts as $post) : ?>
+          <article class="feed-item--singlehero hentry">
+            <header class="feed-item__header">
+              <h3 class="feed-item__title" data-postid="<?php $pid = get_the_ID(); echo $pid; ?>">
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              </h3>
+              <summary class="feed-item__excerpt"><?php the_excerpt(); ?></summary>
+              <time class="feed-item__time updated" datetime="<?= get_post_time('c', true); ?>"><?php the_time('M d, Y'); ?></time>
+            </header>
+            <div class="feed-item--singlehero__bg" style="background-image: url(https://raw.githubusercontent.com/karuto/mangatalk-modern/jsbackup/assets/img/thumb_default_lg.jpg);"></div>
+          </article>
+        <?php endforeach; ?>
       </div>
 
       <div class="col-lg-6 col-md-12 col-sm-12">
