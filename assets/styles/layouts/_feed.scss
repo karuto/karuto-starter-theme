@@ -112,9 +112,7 @@
       font-size: $singlehero-font-size;
       line-height: $singlehero-line-height;
       margin-bottom: $singlehero-font-size * 0.5;
-      & > a {
-        color: $hero-text-color;
-      }
+      color: $hero-text-color;
     }
     .feed-item__excerpt {
       color: $hero-text-color;
@@ -131,6 +129,11 @@
         padding-bottom: 8px;
         border-bottom: 3px solid $color-white;
       }
+    }
+  }
+  .feed-item--singlehero__link {
+    &:hover {
+      text-decoration: none;
     }
   }
   .feed-item--singlehero__bg {

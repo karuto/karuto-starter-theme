@@ -1,5 +1,6 @@
 <?php use Roots\Sage\Titles; ?>
 
+<?php if ( is_front_page() || is_home() || is_singular() ): ?>
 <section class="hero">
   <div class="hero__wrapper container">
     <div class="hero__content">
@@ -22,9 +23,8 @@
 
     <?php elseif ( is_front_page() && is_home() ): ?>
       <h1 class="hero__content__header">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/> 
-        Ut enim ad minim veniam, quis nostrud exercitation.<br/>
+        Karuto is a human that make things.<br/>
+        Previously at Boston, he now lives in San Francisco Bay Area.<br/>
       </h1>
     <?php else: ?>
       <h1 class="hero__content__header">
@@ -44,3 +44,4 @@
   <?php endif; ?>
 
 </section>
+<?php endif; ?>

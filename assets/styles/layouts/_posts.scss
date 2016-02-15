@@ -1,9 +1,15 @@
+$single-maxwidth: 750px;
+
 .karu-theme.single {
   .wrap--content__main {
     margin-top: 0; /* Override global */
   }
+  .hero__content {
+    max-width: $single-maxwidth; /* Override global, matching .hentry width */
+    margin: 0 auto;
+  }
   .hentry {
-    max-width: 750px;
+    max-width: $single-maxwidth;
     margin: 0 auto $spacing-medium;
     @media (min-width: $desktop-min) {
       padding: $hero-wrapper-padding 0;
