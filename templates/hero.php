@@ -1,9 +1,10 @@
 <?php use Roots\Sage\Titles; ?>
 
-<?php if ( is_front_page() || is_home() || is_singular() ): 
-  if ( is_singular() ):
-    global $post;
-    if (has_post_thumbnail( $post->ID ) ):
+<?php /* Top logic block */
+  if ( is_front_page() || is_home() || is_singular() ): 
+    if ( is_singular() ):
+      global $post;
+      if (has_post_thumbnail( $post->ID ) ): /* Only display if thumbnail exists for post */
 ?>
 <section class="hero">
   <div class="hero__wrapper container">
@@ -43,6 +44,6 @@
   <?php endif; ?>
 
 </section>
-<?php endif; ?>
+<?php endif; /* Matching all the ifs in top logic block */ ?>
 <?php endif; ?>
 <?php endif; ?>

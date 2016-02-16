@@ -1,4 +1,5 @@
 <div class="entry entry__wrapper">
+  <h1 class="hero__content__header"><?php single_post_title(); ?></h1>
   <div class="entry__meta">
     <div class="entry__meta__date"><?php the_time('M d, Y'); ?></div>
     <div class="entry__meta__share"></div>
