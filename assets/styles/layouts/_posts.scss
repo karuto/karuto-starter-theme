@@ -13,12 +13,17 @@ $single-maxwidth: 750px;
   .entry__wrapper {
     background-color: $color-white;
     .hero__content { /* Override the traditional hero__content which is outside of .hentry */
-      padding-bottom: $hero-wrapper-padding;
-      padding-top: $headernav-total-height;
-      color: $color-darkest;
+      padding: $headernav-total-height 0 $hero-wrapper-padding;
+      color: $color-darkest;      
+      @media (max-width: $mobile-max) {
+        padding: $spacing 0 0;
+      }
     }
     .hero__content__meta__excerpt {
       color: $subtler-text-color;
+      @media (max-width: $mobile-max) {
+        display: none;
+      }
     }
   }
   .has-post-thumbnail .entry__wrapper { /* Override global (ONLY if thumbnail exists) */

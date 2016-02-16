@@ -19,7 +19,10 @@ body, button, input, select, textarea {
 /* Global elements and helper functions */
 .karu-theme {
   a {
-    color: $hightlight-color;
+    &:hover {
+      color: $hightlight-color;
+      text-decoration: none;
+    }
   }
   .container {
     /* Large desktop */

@@ -14,8 +14,13 @@
     <div class="primary-feed-container row">
       <div class="col-lg-6 col-md-12 col-sm-12">
         <?php global $post;
-           $myposts = get_posts('numberposts=1');
-           foreach($myposts as $post) : ?>
+          $myposts = get_posts('numberposts=1');
+          foreach($myposts as $post) : 
+            if (has_post_thumbnail( $post->ID ) ) {
+              $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
+            } else {
+              $image = 'https://raw.githubusercontent.com/karuto/mangatalk-modern/jsbackup/assets/img/thumb_default_lg.jpg';
+            } ?>
           <article class="feed-item--singlehero hentry">
           <a class="feed-item--singlehero__link" href="<?php the_permalink(); ?>">
             <header class="feed-item__header">
@@ -25,7 +30,7 @@
               <summary class="feed-item__excerpt"><?php the_excerpt(); ?></summary>
               <time class="feed-item__time updated" datetime="<?= get_post_time('c', true); ?>"><?php the_time('M d, Y'); ?></time>
             </header>
-            <div class="feed-item--singlehero__bg" style="background-image: url(https://raw.githubusercontent.com/karuto/mangatalk-modern/jsbackup/assets/img/thumb_default_lg.jpg);"></div>
+            <div class="feed-item--singlehero__bg" style="background-image: url(<?php echo $image; ?>);"></div>
           </a>
           </article>
         <?php endforeach; ?>
