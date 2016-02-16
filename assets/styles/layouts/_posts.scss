@@ -17,6 +17,9 @@ $single-maxwidth: 750px;
       padding-top: $headernav-total-height;
       color: $color-darkest;
     }
+    .hero__content__meta__excerpt {
+      color: $subtler-text-color;
+    }
   }
   .has-post-thumbnail .entry__wrapper { /* Override global (ONLY if thumbnail exists) */
     @media (min-width: $desktop-min) {
