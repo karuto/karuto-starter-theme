@@ -12,7 +12,7 @@
   <?php if( is_front_page() && is_home() ): /* HOMEPAGE FEED */ ?>
 
     <div class="primary-feed-container row">
-      <div class="col-lg-6 col-md-12 col-sm-12">
+      <div class="col-lg-6 col-sm-12">
         <?php global $post;
           $myposts = get_posts('numberposts=1');
           foreach($myposts as $post) : 
@@ -36,7 +36,7 @@
         <?php endforeach; ?>
       </div>
 
-      <div class="col-lg-6 col-md-12 col-sm-12">
+      <div class="col-lg-6 col-sm-12">
         <section class="feed feed--featured">
           <div class="feed__header">
             <div class="feed__header__text">过往文章</div>
