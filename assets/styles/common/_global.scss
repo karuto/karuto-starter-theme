@@ -19,6 +19,8 @@ body, button, input, select, textarea {
 /* Global elements and helper functions */
 .karu-theme {
   a {
+    transition: all 0.5s ease;
+    color: $color-darkest;
     &:hover {
       color: $hightlight-color;
       text-decoration: none;

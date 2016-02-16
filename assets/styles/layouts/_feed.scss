@@ -28,7 +28,7 @@
   }
   .feed--featured,
   .feed--archive {
-    border-top: 3px solid $color-darkest;
+    border-top: 3px solid $brand-meta;
     .feed-item__header {
       margin-left: 65px; /* testing homepage featured feed */
     }
@@ -52,6 +52,7 @@
   .feed__header {
     width: 100%;
     margin: $spacing-small 0 0;
+    color: $subtler-text-color;
     font-size: $subtle-font-size;
     line-height: $subtle-line-height;
     text-transform: uppercase;
@@ -62,7 +63,6 @@
   .feed__header__meta {
     display: inline-block;
     float: right;
-    color: $subtler-text-color;
   }
   /***
   Feed item (universial)
@@ -82,7 +82,6 @@
     margin-bottom: $spacing-small; /* Reset Bootstrap values */
     & > a {
       font-weight: 900;
-      color: $color-darkest;
     }
   }
   .feed-item__excerpt {

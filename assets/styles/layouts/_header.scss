@@ -14,26 +14,35 @@
     display: inline-block;
     padding: $spacing-small $spacing-smaller;
     margin: 0 $spacing $spacing 0;
-    border: 1px solid $header-text-color;
-    color: $header-text-color;
-    font-weight: 600;
+    border: 1px solid $brand-meta;
+    color: $subtler-text-color;
     text-transform: uppercase;
+    &:hover {
+      border: 1px solid $brand-primary;
+    }
   }
   .wrap--header__banner__navi {
     display: inline-block;
-    float: right;
     margin-top: 9px; /* 8px padding + 1px border to match logo baseline */
+    @media (min-width: $desktop-min) {
+      float: right;
+    }
+    @media (max-width: $mobile-max) {
+      float: none;
+    }
 
     .menu-item {
       display: inline-block;
+      &:hover {
+        background-color: none; /* Reset Bootstrap values */
+      }
       & > a {
         padding: 0; /* Reset Bootstrap values */
         margin-left: $spacing-medium;
-        color: $header-text-color;
-        font-weight: 600;
+        color: $subtler-text-color;
         &:hover {
-          background: none; /* Reset Bootstrap values */
-          color: $hightlight-color;
+          color: $brand-primary;
+          background-color: transparent; /* Reset Bootstrap values */
         }
       }
       &:first-child > a {

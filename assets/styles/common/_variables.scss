@@ -35,10 +35,6 @@ $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 
-// Colors
-$brand-primary: #cba54d; /* Fabulous gold */
-
-
 // Greys
 $color-light-gray: #ECECEC;
 $color-mid-gray:   #CCC;
@@ -56,6 +52,11 @@ $color-transparent: rgba(255,255,255,.6);
 $darken-percent: 10%;
 
 
+// Colors
+$brand-primary: #cba54d; /* Fabulous gold */
+$brand-meta: $color-light; /* For all the meta components */
+
+
 // Text Colors
 $hightlight-color: $brand-primary;
 $base-text-color: $color-granite;
@@ -63,6 +64,10 @@ $subtler-text-color: $color-light;
 $subtle-text-color: $color-silver;
 $header-text-color: $color-darkest;
 $hero-text-color: $color-white;
+
+
+// Override Bootstrap
+$nav-link-hover-bg: transparent;
 
 
 // Globally applicable spacings
@@ -84,7 +89,7 @@ $column-gutter: $column-spacing * 2;
 $column-padding-tablet: ($spacing * 1.25);
 
 
-// Layout specific pacings
+// Layout specific spacings
 $headernav-total-height: $spacing-gigantic;
 $hero-total-height: 500px;
 $hero-bottom-offset: $spacing-gigantic;
