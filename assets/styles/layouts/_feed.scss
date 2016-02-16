@@ -104,6 +104,7 @@
   ***/
   .feed-item--singlehero {
     @include flexstretch();
+    animation: fade-in-up 0.5s 0.5s both;
     padding: $singlehero-font-size;
     .feed-item__header {
       padding: 0;

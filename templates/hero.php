@@ -1,17 +1,16 @@
 <?php use Roots\Sage\Titles; ?>
 
-<?php if ( is_front_page() || is_home() || is_singular() ): ?>
+<?php if ( is_front_page() || is_home() || is_singular() ): 
+  if ( is_singular() ):
+    global $post;
+    if (has_post_thumbnail( $post->ID ) ):
+?>
 <section class="hero">
   <div class="hero__wrapper container">
     <div class="hero__content">
 
-    <?php if ( is_singular() ): 
-      global $post;
-      if (has_post_thumbnail( $post->ID ) ) {
-        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-      } else {
-        $image = ["https://raw.githubusercontent.com/karuto/mangatalk-modern/jsbackup/assets/img/thumb_default_lg.jpg"];
-      }
+    <?php if ( is_singular() ):
+      $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
     ?>
 
       <h1 class="hero__content__header"><?php single_post_title(); ?></h1>
@@ -44,4 +43,6 @@
   <?php endif; ?>
 
 </section>
+<?php endif; ?>
+<?php endif; ?>
 <?php endif; ?>
