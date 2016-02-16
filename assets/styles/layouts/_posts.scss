@@ -5,15 +5,32 @@ $single-maxwidth: 750px;
     margin-top: 0; /* Override global */
   }
   .hero__content {
-    max-width: $single-maxwidth; /* Override global, matching .hentry width */
     margin: 0 auto;
+    max-width: $single-maxwidth; /* Override global, matching .hentry width */
   }
   .hentry {
+  }
+  .entry__wrapper {
+    background-color: $color-white;
+    .hero__content { /* Override the traditional hero__content which is outside of .hentry */
+      padding-bottom: $hero-wrapper-padding;
+      padding-top: $headernav-total-height;
+      color: $color-darkest;
+    }
+  }
+  .has-post-thumbnail .entry__wrapper { /* Override global (ONLY if thumbnail exists) */
+    @media (min-width: $desktop-min) {
+      margin-top: -$hero-bottom-offset;
+      padding-top: $hero-wrapper-padding;
+      border-radius: 2px;
+    }
+    .hero__content { /* hide it because hero__content will be shown in traditional hero is outside of .hentry */
+      display: none;
+    }
+  }
+  .entry__content {
     max-width: $single-maxwidth;
     margin: 0 auto $spacing-medium;
-    @media (min-width: $desktop-min) {
-      padding: $hero-wrapper-padding 0;
-    }
     & > p {
       margin-bottom: $spacing-medium;
       color: $color-darkest;
@@ -27,13 +44,6 @@ $single-maxwidth: 750px;
       text-align: justify;
     }
   }
-  .entry__wrapper {
-    background-color: $color-white;
-    @media (min-width: $desktop-min) {
-      margin-top: -$hero-bottom-offset;
-      border-radius: 2px;
-    }
-  }
   .entry__meta {
     position: relative;
     text-transform: uppercase;
@@ -45,11 +55,13 @@ $single-maxwidth: 750px;
       width: $spacing-gigantic;
       margin-left: $spacing-xxlarge;
       margin-right: $spacing-xxlarge;
-      margin-top: $hero-wrapper-padding;
+      margin-top: 8px; /* Line up with .entry__content baseline */
     }
     @media (max-width: $mobile-max) {
       margin: $hero-wrapper-padding auto;
     }
-
+  }
+  .entry__meta__date {
+    text-align: center;
   }
 }
