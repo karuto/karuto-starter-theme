@@ -2,11 +2,15 @@
   /***
   High level containers
   ***/
+  .modules-container,
   .primary-feed-container {
     @include flexstretch();
     div[class^="col-"] {
       margin-bottom: $spacing-xxlarge;
     }
+  }
+  .module {
+    border-top: 2px solid $brand-meta;
   }
   .feed {
     margin: 0 0 $spacing;
@@ -28,7 +32,7 @@
   }
   .feed--featured,
   .feed--archive {
-    border-top: 3px solid $brand-meta;
+    border-top: 2px solid $brand-meta;
     .feed-item__header {
       margin-left: 65px; /* testing homepage featured feed */
     }
@@ -125,9 +129,9 @@
       color: $hero-text-color;
       @media (min-width: $col-lg-breakpoint) {
         position: absolute;
-        bottom: $singlehero-font-size + 3px + 8px; /* See the next 2 lines */
+        bottom: $singlehero-font-size + 2px + 8px; /* See the next 2 lines */
         padding-bottom: 8px;
-        border-bottom: 3px solid $color-white;
+        border-bottom: 2px solid $color-white;
       }
     }
   }
