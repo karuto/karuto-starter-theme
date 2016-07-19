@@ -1,48 +1,54 @@
 .karu-theme {
   .wrap--header {
+    z-index: 2;
     width: 100%;
     overflow: hidden;
-    position: relative;
-    background: $color-mid-gray no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    .wrap {
-      z-index: 2;
-      position: relative;
-    }
   }
-  .banner {
+  .wrap--header__banner {
     position: relative;
     float: none;
     margin: 0; /* Reset Bootstrap values */
-    padding: $spacing-large 0 $spacing-gigantic;
+    padding: $spacing-large 0 $spacing-large;
   }
-  .karu-logo {
+  .wrap--header__banner__logo {
     display: inline-block;
     padding: $spacing-small $spacing-smaller;
     margin: 0 $spacing $spacing 0;
-    border: 1px solid $color-dark;
+    border: 1px solid $brand-meta;
+    color: $subtler-text-color;
+    text-transform: uppercase;
+    &:hover {
+      border: 1px solid $brand-primary;
+    }
   }
-  .karu-global-navi {
+  .wrap--header__banner__navi {
     display: inline-block;
-    float: none;
-  }
-  .menu-all-pages-container {
+    margin-top: 9px; /* 8px padding + 1px border to match logo baseline */
+    @media (min-width: $desktop-min) {
+      float: right;
+    }
+    @media (max-width: $mobile-max) {
+      float: none;
+    }
 
-  }
-  .menu-item {
-    display: inline-block;
-    & > a {
-      padding: 0; /* Reset Bootstrap values */
-      margin-left: $spacing-medium;
-      color: $subtle-text-color;
-      font-weight: 300;
+    .menu-item {
+      display: inline-block;
+      &:hover {
+        background-color: none; /* Reset Bootstrap values */
+      }
+      & > a {
+        padding: 0; /* Reset Bootstrap values */
+        margin-left: $spacing-medium;
+        color: $subtler-text-color;
+        &:hover {
+          color: $brand-primary;
+          background-color: transparent; /* Reset Bootstrap values */
+        }
+      }
+      &:first-child > a {
+        margin-left: 0;
+      }
     }
-    &:first-child > a {
-      margin-left: 0;
-    }
+
   }
 }

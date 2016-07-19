@@ -1,37 +1,174 @@
 .karu-theme {
-  .feed {
-    margin: 0 0 $spacing-large;
+  /***
+  High level containers
+  ***/
+  .modules-container,
+  .primary-feed-container {
+    @include flexstretch();
+    div[class^="col-"] {
+      margin-bottom: $spacing-xxlarge;
+    }
   }
+  .module {
+    border-top: 2px solid $brand-meta;
+  }
+  .feed {
+    margin: 0 0 $spacing;
+  }
+  .feed--featured {
+    @include flexstretch();
+    .feed-item { /* Only for home page featured feed */
+      position: relative;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      @media (min-width: $desktop-min) {
+        width: 50%;
+      }
+      @media (max-width: $mobile-max) {
+        width: 100%;
+      }
+    }
+  }
+  .feed--featured,
+  .feed--archive {
+    border-top: 2px solid $brand-meta;
+    .feed-item__header {
+      margin-left: 65px; /* testing homepage featured feed */
+    }
+    & > .feed-item {
+      counter-increment: ind-counter 1;
+      &:before {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        content: counter(ind-counter,decimal-leading-zero);
+        font-family: NeueHaas,sans-serif;
+        font-size: 43px;
+        font-weight: 200;
+        line-height: 1;
+        color: $hightlight-color;
+        text-rendering: optimizeLegibility;
+        visibility: visible;
+      }
+    }
+  }
+  .feed__header {
+    width: 100%;
+    margin: $spacing-small 0 0;
+    color: $subtler-text-color;
+    font-size: $subtle-font-size;
+    line-height: $subtle-line-height;
+    text-transform: uppercase;
+  }
+  .feed__header__text {
+    display: inline-block;
+  }
+  .feed__header__meta {
+    display: inline-block;
+    float: right;
+  }
+  /***
+  Feed item (universial)
+  ***/
   .feed-item {
-    font-weight: 300;
-    color: $color-medium;
-    padding: $spacing 0;
-    border-bottom: 1px solid $color-dark;
-
+    display: block;
+    position: relative;
   }
   .feed-item__header {
+    padding: $spacing-large 0 0;
+    max-width: 100%;
+    /*border-bottom: 1px solid $color-dark;*/
+
   }
   .feed-item__title {
-    width: 70%;
-    float: left;
     margin-top: 0; /* Reset Bootstrap values */
-    margin-bottom: 0; /* Reset Bootstrap values */
+    margin-bottom: $spacing-small; /* Reset Bootstrap values */
+    & > a {
+      font-weight: 900;
+    }
+  }
+  .feed-item__excerpt {
+    margin-bottom: $spacing-small;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    & > a {
-      font-weight: 300;
-      color: $color-medium;
+    color: $subtle-text-color;
+    & > p {
+      margin-top: 0; /* Reset Bootstrap values */
+      margin-bottom: 0; /* Reset Bootstrap values */
     }
   }
   .feed-item__time {
-    width: 20%;
-    float: right;
-    text-align: right;
+    font-size: $subtle-font-size;
+    line-height: $subtle-line-height;
+  }
+  /*** 
+  Feed item (singlehero)
+  ***/
+  .feed-item--singlehero {
+    @include flexstretch();
+    animation: fade-in-up 0.5s 0.5s both;
+    padding: $singlehero-font-size;
+    .feed-item__header {
+      padding: 0;
+    }
+    .feed-item__title {
+      font-size: $singlehero-font-size;
+      line-height: $singlehero-line-height;
+      margin-bottom: $singlehero-font-size * 0.5;
+      color: $hero-text-color;
+    }
+    .feed-item__excerpt {
+      color: $hero-text-color;
+      margin-bottom: $singlehero-font-size * 0.5;
+    }
+    .feed-item__time {
+      text-transform: uppercase;
+      font-size: $subtle-font-size;
+      line-height: $subtle-line-height;
+      color: $hero-text-color;
+      @media (min-width: $col-lg-breakpoint) {
+        position: absolute;
+        bottom: $singlehero-font-size + 2px + 8px; /* See the next 2 lines */
+        padding-bottom: 8px;
+        border-bottom: 2px solid $color-white;
+      }
+    }
+  }
+  .feed-item--singlehero__link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .feed-item--singlehero__bg {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    z-index: -1;
+    margin: 0 15px; /* matching bootstrap column paddings */
+    @include gradientmask();
+  }
+  /*** 
+  Navigation pagination links (universial)
+  ***/
+  .nav-links {
+
+  }
+  .nav-next,
+  .nav-previous {
+    padding-bottom: $spacing-xxlarge*2;
     display: inline-block;
   }
-  .feed-item__summary {
+  .nav-next {
+    float: left;
+  }
+  .nav-previous {
+    float: right;
   }
 }

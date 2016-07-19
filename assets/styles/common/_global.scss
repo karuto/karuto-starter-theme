@@ -1,19 +1,32 @@
+/* Global DOM definitions */
 html, body {
   margin: 0; 
   padding: 0;
   height: 100%; 
 }
-body {
-  font-size: 1.6rem; /* 16px */
+body, button, input, select, textarea {
   color: $base-text-color;
+  font-size: $base-font-size; /* 14px */
+  line-height: $base-line-height;
+  font-weight: 300;
+  font-family: Arial, "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
 }
+
+/* Global elements and helper functions */
 .karu-theme {
   a {
-    color: $brand-primary;
+    transition: all 0.5s ease;
+    color: $color-darkest;
+    &:hover {
+      color: $hightlight-color;
+      text-decoration: none;
+    }
   }
   .container {
-    margin-right: $spacing;
-    margin-left: $spacing;
     /* Large desktop */
     @media (min-width: 1200px) {
     }
@@ -22,24 +35,22 @@ body {
       width: auto;
     }
   }
+  .flex-stretch {
+    @include flexstretch();
+  }
+  .wrap--content__main {
+    margin-top: $spacing-xlarge;
+  }
   .no-vertical-spacing {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
   }
-  .card {
-    overflow-y: auto;
-    overflow-x: hidden;
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-
-    @include m(fullscreen) {
-      height: 100%;
-      transform: translateX(100%);
-    }
+  .col--marginbased { /* NOT USED because it breaks Bootstrap grid */
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 15px;
+    margin-right: 15px;
   }
-
 }

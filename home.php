@@ -1,15 +1,34 @@
 <!-- ### PAGE TITLE -->
-<?php get_template_part('templates/page', 'header'); ?>
+<?php /*get_template_part('templates/page-header');*/ ?>
 
 <!-- ### CONTENT FEED -->
 <?php get_template_part('templates/feed'); ?>
 
-<!-- content-single.php includes both mask and content featurestage -->
+<div class="modules-container row">
+  <div class="col-lg-6 col-xs-12">
+    <section class="module">
+      <div class="feed__header">
+        <div class="feed__header__text">个人项目</div>
+        <div class="feed__header__meta">Sorted by date</div>
+      </div>
+    </section>
+  </div>
 
-<a href="#" class="featuredstage__button--open"><h3>Click me</h3></a>
+  <div class="col-lg-3 col-sm-6 col-xs-12">
+    <section class="module">
+      <div class="feed__header">
+        <div class="feed__header__text">正在阅读</div>
+        <div class="feed__header__meta">Reading now</div>
+      </div>
+    </section>
+  </div>
 
-<?php the_posts_navigation(array(
-            'prev_text'          => __( '>' ),
-            'next_text'          => __( '<' ),
-            'screen_reader_text' => __( 'Posts navigation' ),
-        )); ?>
+  <div class="col-lg-3 col-sm-6 col-xs-12">
+    <section class="module">
+      <div class="feed__header">
+        <div class="feed__header__text">订阅更新</div>
+        <div class="feed__header__meta">Newsletter</div>
+      </div>
+    </section>
+  </div>
+</div><!-- .row -->

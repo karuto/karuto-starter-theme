@@ -15,7 +15,7 @@ use Roots\Sage\Wrapper;
       </div>
     <![endif]-->
 
-    <div class="wrap--header" id="particles-js">
+    <div class="wrap--header">
       <div class="wrap container" role="header">
         <?php
           do_action('get_header');
@@ -25,9 +25,10 @@ use Roots\Sage\Wrapper;
     </div>
 
     <div class="wrap--content">
-      <div class="wrap container" role="document">
-        <div class="content row">
-          <main class="col-xs-12">
+      <?php get_template_part('templates/hero'); ?>
+      <div class="container" role="document">
+        <div class="row">
+          <main class="wrap--content__main col-xs-12">
             <?php include Wrapper\template_path(); ?>
           </main><!-- /.main -->
           <?php if (Setup\display_sidebar()) : ?>

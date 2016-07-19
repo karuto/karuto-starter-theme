@@ -1,6 +1,18 @@
 /* Guidelines for responsive: 
 http://getbootstrap.com/2.3.2/scaffolding.html
 */
+
+/* Bootstrap grid breakpoints, refer to http://getbootstrap.com/css/#grid */
+$col-lg-breakpoint: 1200px;
+
+/* Mobile bottom-line */
+$mobile-max: 767px;
+@media (max-width: $mobile-max) {}
+
+$desktop-min: 768px;
+/* Non-mobile bottom-line */
+@media (min-width: 768px) {}
+
 /* Large desktop */
 @media (min-width: 1200px) {}
  
@@ -13,15 +25,15 @@ http://getbootstrap.com/2.3.2/scaffolding.html
 /* Landscape phones and down */
 @media (max-width: 480px) {}
 
+
 // Glyphicons font path
 $icon-font-path:        "../fonts/";
+
 
 // Grid settings
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
-// Colors
-$brand-primary:         #8B0000;
 
 // Greys
 $color-light-gray: #ECECEC;
@@ -35,17 +47,30 @@ $color-medium:     $color-silver;
 $color-dark:       $color-chalkboard;
 $color-darker:     #000;
 $color-darkest:    #000;
-
+$color-white:      #FFF;
 $color-transparent: rgba(255,255,255,.6);
-
 $darken-percent: 10%;
 
+
+// Colors
+$brand-primary: #cba54d; /* Fabulous gold */
+$brand-meta: $color-light; /* For all the meta components */
+
+
 // Text Colors
-$base-text-color:  $color-granite;
-$subtle-text-color:  $color-light;
+$hightlight-color: $brand-primary;
+$base-text-color: $color-granite;
+$subtler-text-color: $color-light;
+$subtle-text-color: $color-silver;
+$header-text-color: $color-darkest;
+$hero-text-color: $color-white;
 
-// Spacing
 
+// Override Bootstrap
+$nav-link-hover-bg: transparent;
+
+
+// Globally applicable spacings
 $spacing-rem-base: 16px;
 $spacing: $spacing-rem-base;
 $spacing-xxsmall: ($spacing * 0.25);
@@ -53,23 +78,29 @@ $spacing-small: ($spacing * 0.5);
 $spacing-smaller: ($spacing * 0.75);
 $spacing-medium: ($spacing * 1.5);
 $spacing-large: ($spacing * 2);
-$spacing-xlarge: ($spacing * 2.20);
+$spacing-xlarge: ($spacing * 2.5);
 $spacing-xxlarge: ($spacing * 3);
 $spacing-xxxlarge: ($spacing * 4);
 $spacing-gigantic: ($spacing * 6);
 $spacing-list: 0.8rem;
-
 $column-spacing: $spacing;
 $column-gutter: $column-spacing * 2;
 $column-padding-tablet: ($spacing * 1.25);
 
-$base-font-size:   100%;
-$base-line-height: 150%;
 
-@mixin body-font-family() {
-  $base-font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-  font-family: $base-font-family;
-  html:lang(ja) & {
-    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
-  }
-}
+// Layout specific spacings
+$headernav-total-height: $spacing-gigantic;
+$hero-total-height: 500px;
+$hero-bottom-offset: $spacing-gigantic;
+$hero-wrapper-padding: $spacing-xlarge;
+
+
+// Typography
+$base-font-size: 1.4rem; // 14px
+$base-line-height: 1.5;
+$subtle-font-size: 1.2rem;
+$subtle-line-height: 1.5;
+$content-font-size: 1.6rem; // 16px
+$content-line-height: 2;
+$singlehero-font-size: 48px;
+$singlehero-line-height: 1.2;

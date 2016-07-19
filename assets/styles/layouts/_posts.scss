@@ -1,69 +1,75 @@
+$single-maxwidth: 750px;
+
 .karu-theme.single {
-  .container {
-    width: auto;
+  .wrap--content__main {
+    margin-top: 0; /* Override global */
   }
-  .wrap--header {
-    @media (max-width: 991px) {
-    }
-    @media (min-width: 992px) {
-      width: 30%;
-      height: 100%;
-      min-height: 100vh;
-      display: inline-block;
-      opacity: 1;
-      position: fixed;
-    }
-    transition: all 0.2s ease;
+  .hero__content {
+    margin: 0 auto;
+    max-width: $single-maxwidth; /* Override global, matching .hentry width */
   }
-  .wrap--content {
-    @media (max-width: 991px) {
-    }
-    @media (min-width: 992px) {
-      width: 70%;
-      float: right;
-    }
-    padding: $spacing-large 0 $spacing-gigantic;
-    transition: all 0.2s ease;
+  .hentry {
   }
-  .entryintro {
-    position: relative;
-  }
-  .entryintro__wrapper {
-
-  }
-  .entryintro__title {
-    padding: $spacing-large 0;
-  }
-}
-
-.karu-theme {
-  .featuredstage {
-    width: 99%;
-    background-color: $color-light-gray;
-    z-index: -1;
-
-    /* Ajax appilcable */
-    @include m(active) {
-      transform: translateX(0px) !important;
-    }
-
-    /* Ajax appilcable */
-    @include e(mask) {
-      width: 100%;
-      background-color: $color-mid-gray;
-      z-index: -2;
-      @include m(active) {
-        transform: translateX(0px) !important;
+  .entry__wrapper {
+    background-color: $color-white;
+    .hero__content { /* Override the traditional hero__content which is outside of .hentry */
+      padding: $headernav-total-height 0 $hero-wrapper-padding;
+      color: $color-darkest;      
+      @media (max-width: $mobile-max) {
+        padding: $spacing 0 0;
       }
     }
-
-    /* Single page appilcable (everything below) */
-    .single & {
-      width: auto;
+    .hero__content__meta__excerpt {
+      color: $subtler-text-color;
+      @media (max-width: $mobile-max) {
+        display: none;
+      }
     }
-
-    @include e(content) {
-      margin: $spacing-large;
+  }
+  .has-post-thumbnail .entry__wrapper { /* Override global (ONLY if thumbnail exists) */
+    @media (min-width: $desktop-min) {
+      margin-top: -$hero-bottom-offset;
+      padding-top: $hero-wrapper-padding;
+      border-radius: 2px;
     }
-  }  
+    .hero__content { /* hide it because hero__content will be shown in traditional hero is outside of .hentry */
+      display: none;
+    }
+  }
+  .entry__content {
+    max-width: $single-maxwidth;
+    margin: 0 auto $spacing-medium;
+    & > p {
+      margin-bottom: $spacing-medium;
+      color: $color-darkest;
+      font-weight: 400;
+      font-style: normal;
+      font-size: $content-font-size;
+      line-height: $content-line-height;
+      letter-spacing: normal;    
+      word-wrap: break-word;
+      word-break: break-word;
+      text-align: justify;
+    }
+  }
+  .entry__meta {
+    position: relative;
+    text-transform: uppercase;
+    color: $subtler-text-color;
+    font-size: $subtle-font-size;
+    line-height: $subtle-line-height;
+    @media (min-width: $desktop-min) {
+      float: left;
+      width: $spacing-gigantic;
+      margin-left: $spacing-xxlarge;
+      margin-right: $spacing-xxlarge;
+      margin-top: 8px; /* Line up with .entry__content baseline */
+    }
+    @media (max-width: $mobile-max) {
+      margin: $hero-wrapper-padding auto;
+    }
+  }
+  .entry__meta__date {
+    text-align: center;
+  }
 }

@@ -1,0 +1,64 @@
+.karu-theme {
+  .hero {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease;
+
+    @media (min-width: $desktop-min) {
+      height: $hero-total-height;
+    }
+    @media (max-width: $mobile-max) {
+      height: 300px;
+    }
+  }
+  .hero__bg {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    @include gradientmask();
+  }
+  .hero__wrapper {
+    display: inline-block;
+    padding-top: $headernav-total-height;
+    align-self: flex-end; /* bottom-align itself in flex parent */
+    @media (min-width: $desktop-min) {
+      padding-bottom: $hero-bottom-offset;
+    }
+    @media (max-width: $mobile-max) {
+    }
+  }
+  .hero__content {
+    margin-top: 0; /* Reset Bootstrap values */
+    margin-bottom: 0; /* Reset Bootstrap values */
+    padding-bottom: $hero-wrapper-padding;
+    color: $hero-text-color;
+  }
+  .hero__content__header {
+    margin-top: 0; /* Reset Bootstrap values */
+    margin-bottom: 0; /* Reset Bootstrap values */
+    line-height: 1.25;
+  }
+  .hero__content__meta {
+    margin-top: $spacing-small;
+  }
+  .hero__content__meta__excerpt {
+    margin-top: 0; /* Reset Bootstrap values */
+    margin-bottom: 0; /* Reset Bootstrap values */
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+  }
+}
