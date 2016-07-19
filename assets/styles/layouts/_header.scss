@@ -8,22 +8,15 @@
     position: relative;
     float: none;
     margin: 0; /* Reset Bootstrap values */
-    padding: $spacing-large 0 $spacing-large;
+    padding: $spacing-xxlarge 0 $spacing-large;
   }
   .wrap--header__banner__logo {
     display: inline-block;
-    padding: $spacing-small $spacing-smaller;
-    margin: 0 $spacing $spacing 0;
-    border: 1px solid $brand-meta;
     color: $subtler-text-color;
     text-transform: uppercase;
-    &:hover {
-      border: 1px solid $brand-primary;
-    }
   }
   .wrap--header__banner__navi {
     display: inline-block;
-    margin-top: 9px; /* 8px padding + 1px border to match logo baseline */
     @media (min-width: $desktop-min) {
       float: right;
     }
