@@ -16,7 +16,7 @@ var singleFunc = (function($) {
 
   var init = function() {
     x(a);
-    loadFeaturedImage();
+    // loadFeaturedImage();
   };
 
   return function() {

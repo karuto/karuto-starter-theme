@@ -26,16 +26,6 @@ $single-maxwidth: 750px;
       }
     }
   }
-  .has-post-thumbnail .entry__wrapper { /* Override global (ONLY if thumbnail exists) */
-    @media (min-width: $desktop-min) {
-      margin-top: -$hero-bottom-offset;
-      padding-top: $hero-wrapper-padding;
-      border-radius: 2px;
-    }
-    .hero__content { /* hide it because hero__content will be shown in traditional hero is outside of .hentry */
-      display: none;
-    }
-  }
   .entry__content {
     max-width: $single-maxwidth;
     margin: 0 auto $spacing-medium;
@@ -68,8 +58,5 @@ $single-maxwidth: 750px;
     @media (max-width: $mobile-max) {
       margin: $hero-wrapper-padding auto;
     }
-  }
-  .entry__meta__date {
-    text-align: center;
   }
 }
