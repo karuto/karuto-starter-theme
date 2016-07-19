@@ -48,6 +48,7 @@
     color: $hero-text-color;
   }
   .hero__content__header {
+    font-size: $singlehero-font-size;
     margin-top: 0; /* Reset Bootstrap values */
     margin-bottom: 0; /* Reset Bootstrap values */
     line-height: 1.25;

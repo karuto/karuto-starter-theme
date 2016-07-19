@@ -98,9 +98,9 @@ $hero-wrapper-padding: $spacing-xlarge;
 // Typography
 $base-font-size: 1.4rem; // 14px
 $base-line-height: 1.5;
-$subtle-font-size: 1.2rem;
+$subtle-font-size: $spacing-smaller;
 $subtle-line-height: 1.5;
-$content-font-size: 1.6rem; // 16px
-$content-line-height: 2;
-$singlehero-font-size: 48px;
+$content-font-size: $spacing-rem-base; // 16px
+$content-line-height: $spacing-large;
+$singlehero-font-size: $spacing-xxlarge;
 $singlehero-line-height: 1.2;
