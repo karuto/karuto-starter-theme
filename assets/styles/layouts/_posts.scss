@@ -2,11 +2,12 @@ $single-maxwidth: 750px;
 
 .karu-theme.single {
   .wrap--content__main {
-    margin-top: 0; /* Override global */
+    /*margin-top: 0;  Override global */
   }
-  .hero__content {
-    margin: 0 auto;
-    max-width: $single-maxwidth; /* Override global, matching .hentry width */
+  .hero__header {
+    margin-top: 0;
+    margin-bottom: $spacing-large;
+    font-size: $singlehero-font-size;
   }
   .hero__meta {
     float: left;
@@ -15,6 +16,14 @@ $single-maxwidth: 750px;
     &:first-child {
       width: 49%;
     }
+  }
+  .hero__meta__title {
+    text-transform: uppercase;
+    color: gray;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 $spacing-xxsmall;
   }
   .hentry {
   }
