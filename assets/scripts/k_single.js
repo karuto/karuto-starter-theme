@@ -2,7 +2,7 @@ var singleFunc = (function($) {
   var x = function(y) {
     console.log(y);
   };
-  var a = 'single';
+  var a = 'single x';
 
   var loadFeaturedImage = function() {
     var imagesrc = $('.entryintro').first().attr('data-imagesrc');

@@ -4,6 +4,9 @@ $single-maxwidth: 750px;
   .wrap--content__main {
     /*margin-top: 0;  Override global */
   }
+  .hero {
+    margin-bottom: 8rem;
+  }
   .hero__header {
     margin-top: 0;
     margin-bottom: $spacing-large;
@@ -13,9 +16,9 @@ $single-maxwidth: 750px;
     float: left;
     width: auto;
     margin-right: $spacing-xlarge;
-    &:first-child {
-      width: 49%;
-    }
+  }
+  .hero__meta--first {
+    width: 49%;
   }
   .hero__meta__title {
     text-transform: uppercase;
