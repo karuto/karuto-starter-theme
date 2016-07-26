@@ -2,10 +2,15 @@
   <article <?php post_class(); ?>>
   <div class="entry entry__wrapper">
 
-    <div class="hero">
+    <div class="hero clearfix">
       <h1 class="hero__header"><?php single_post_title(); ?></h1>
       <div class="hero__meta">
-        <div class=""><?php the_time('M d, Y'); ?></div>
+        <div class="hero__meta__title">Excerpt</div>
+        <?php the_excerpt(); ?>
+      </div>
+      <div class="hero__meta">
+        <div class="hero__meta__title">Time</div>
+        <p><?php the_time('M d, Y'); ?></p>
       </div>
     </div>
 

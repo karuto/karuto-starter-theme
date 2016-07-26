@@ -8,6 +8,14 @@ $single-maxwidth: 750px;
     margin: 0 auto;
     max-width: $single-maxwidth; /* Override global, matching .hentry width */
   }
+  .hero__meta {
+    float: left;
+    width: auto;
+    margin-right: $spacing-xlarge;
+    &:first-child {
+      width: 49%;
+    }
+  }
   .hentry {
   }
   .entry__wrapper {
