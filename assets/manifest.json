@@ -2,8 +2,8 @@
   "dependencies": {
     "main.js": {
       "files": [
-        "scripts/k_*.js",
-        "scripts/main.js"
+        "scripts/_*.js",
+        "scripts/app.js"
       ],
       "main": true
     },
@@ -12,11 +12,6 @@
         "styles/main.scss"
       ],
       "main": true
-    },
-    "customizer.js": {
-      "files": [
-        "scripts/customizer.js"
-      ]
     },
     "jquery.js": {
       "bower": ["jquery"]

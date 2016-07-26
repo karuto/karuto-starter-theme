@@ -3,6 +3,7 @@ var globalFunc = (function($) {
     console.log(y);
   };
   var a = 'yoo';
+  console.log('entered global');
 
   var contentStackController = function(cardName) {
   };

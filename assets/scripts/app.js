@@ -13,7 +13,7 @@
 (function($) {
 
   // Use this variable to set up the common and page specific functions
-  var krNamespace = {
+  var appNamespace = {
     // All pages
     'common': {
       init: function() {
@@ -37,6 +37,7 @@
       init: function() {
         // JavaScript to be fired on the single page
         singleFunc();
+        console.log('test');
       },
       finalize: function() {
         // JavaScript to be fired on the single page, after the init JS
@@ -55,7 +56,7 @@
   var UTIL = {
     fire: function(func, funcname, args) {
       var fire;
-      var namespace = krNamespace;
+      var namespace = appNamespace;
       funcname = (funcname === undefined) ? 'init' : funcname;
       fire = func !== '';
       fire = fire && namespace[func];
