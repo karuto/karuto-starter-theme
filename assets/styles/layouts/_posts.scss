@@ -1,11 +1,12 @@
-$single-maxwidth: 750px;
+$single-maxwidth: 650px;
 
 .karu-theme.single {
   .wrap--content__main {
-    /*margin-top: 0;  Override global */
+    margin-top: 10rem;
   }
   .hero {
-    margin-bottom: 8rem;
+    margin: 0 auto 10rem;
+    max-width: $single-maxwidth;
   }
   .hero__header {
     margin-top: 0;
@@ -15,14 +16,14 @@ $single-maxwidth: 750px;
   .hero__meta {
     float: left;
     width: auto;
-    margin-right: $spacing-xlarge;
+    margin-right: $spacing-xxlarge;
   }
   .hero__meta--first {
     width: 49%;
   }
   .hero__meta__title {
-    text-transform: uppercase;
     color: gray;
+    text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 1rem;
     font-weight: 700;

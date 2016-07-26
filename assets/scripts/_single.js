@@ -3,7 +3,6 @@ var singleFunc = (function($) {
     console.log(y);
   };
   var a = '_single';
-  console.log('entered single');
 
   var loadFeaturedImage = function() {
     var imagesrc = $('.entryintro').first().attr('data-imagesrc');

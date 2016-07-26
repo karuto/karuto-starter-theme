@@ -18,6 +18,7 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        globalFunc();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -37,7 +38,6 @@
       init: function() {
         // JavaScript to be fired on the single page
         singleFunc();
-        console.log('test');
       },
       finalize: function() {
         // JavaScript to be fired on the single page, after the init JS
