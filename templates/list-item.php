@@ -1,4 +1,4 @@
-<article <?php post_class('feed clearfix col-xs-12'); ?>>
+<article <?php post_class('feed clearfix'); ?>>
 
   <h1 class="feed__title">
      <a href="<?php the_permalink(); ?>" class="feed__title__link"><?php the_title(); ?></a>

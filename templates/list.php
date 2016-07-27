@@ -9,7 +9,7 @@
 
   <?php if( is_front_page() && is_home() ): /* HOMEPAGE FEED */ ?>
 
-    <div class="feeds row">
+    <div class="feeds">
       <?php global $post; $myposts = get_posts('numberposts=10');
        foreach($myposts as $post) : ?>
         <?php get_template_part('templates/list-item', 
