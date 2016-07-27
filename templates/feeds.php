@@ -12,7 +12,7 @@
     <div class="feeds">
       <?php global $post; $myposts = get_posts('numberposts=10');
        foreach($myposts as $post) : ?>
-        <?php get_template_part('templates/list-item', 
+        <?php get_template_part('templates/feed', 
         get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
       <?php endforeach; ?>
     </div>
