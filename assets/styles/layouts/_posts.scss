@@ -8,11 +8,6 @@ $single-maxwidth: 650px;
     margin: 0 auto 10rem;
     max-width: $single-maxwidth;
   }
-  .hero__header {
-    margin-top: 0;
-    margin-bottom: $spacing-large;
-    font-size: $singlehero-font-size;
-  }
   .hero__meta {
     float: left;
     width: auto;
@@ -25,27 +20,9 @@ $single-maxwidth: 650px;
     color: gray;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 1rem;
+    font-size: $tiny-font-size;
     font-weight: 700;
     margin: 0 0 $spacing-xxsmall;
-  }
-  .hentry {
-  }
-  .entry__wrapper {
-    background-color: $color-white;
-    .hero__content { /* Override the traditional hero__content which is outside of .hentry */
-      padding: $headernav-total-height 0 $hero-wrapper-padding;
-      color: $color-darkest;      
-      @media (max-width: $mobile-max) {
-        padding: $spacing 0 0;
-      }
-    }
-    .hero__content__meta__excerpt {
-      color: $subtler-text-color;
-      @media (max-width: $mobile-max) {
-        display: none;
-      }
-    }
   }
   .entry__content {
     max-width: $single-maxwidth;
@@ -61,23 +38,6 @@ $single-maxwidth: 650px;
       word-wrap: break-word;
       word-break: break-word;
       text-align: justify;
-    }
-  }
-  .entry__meta {
-    position: relative;
-    text-transform: uppercase;
-    color: $subtler-text-color;
-    font-size: $subtle-font-size;
-    line-height: $subtle-line-height;
-    @media (min-width: $desktop-min) {
-      float: left;
-      width: $spacing-gigantic;
-      margin-left: $spacing-xxlarge;
-      margin-right: $spacing-xxlarge;
-      margin-top: 8px; /* Line up with .entry__content baseline */
-    }
-    @media (max-width: $mobile-max) {
-      margin: $hero-wrapper-padding auto;
     }
   }
 }
