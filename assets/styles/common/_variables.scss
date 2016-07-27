@@ -31,21 +31,16 @@ $icon-font-path:        "../fonts/";
 
 
 // Greys
+$color-white:      #FFF;
 $color-lighter-gray: #F5F5F5;
 $color-light-gray: #d3d3d3;
 $color-mid-gray:   #CCC;
 $color-dark-gray:  #878787;
 $color-light:      #999;
-$color-silver:     #666;
-$color-granite:    #444;
-$color-chalkboard: #333;
-$color-medium:     $color-silver;
-$color-dark:       $color-chalkboard;
+$color-medium:     #777;
+$color-dark:       #333;
 $color-darker:     #000;
 $color-darkest:    #000;
-$color-white:      #FFF;
-$color-transparent: rgba(255,255,255,.6);
-$darken-percent: 10%;
 
 
 // Colors
@@ -55,9 +50,7 @@ $brand-meta: $color-light; /* For all the meta components */
 
 // Text Colors
 $hightlight-color: $brand-primary;
-$base-text-color: $color-granite;
 $subtler-text-color: $color-light;
-$subtle-text-color: $color-silver;
 $header-text-color: $color-darkest;
 $hero-text-color: $color-white;
 
@@ -80,14 +73,23 @@ $spacing-xxxlarge: ($spacing * 4); /* 64px */
 $spacing-gigantic: ($spacing * 6); /* 96px */
 
 
-// Typography
-$base-font-size: 1.4rem; // 14px
+// Typography - sizes and heights
+$base-font-size: 14px;
 $base-line-height: 1.5;
-$tiny-font-size: 1rem;
+$tiny-font-size: 10px;
 $tiny-line-height: 1.5;
-$subtle-font-size: 1.2rem;
+$subtle-font-size: 12px;
 $subtle-line-height: 1.5;
-$content-font-size: $spacing-rem-base; // 16px
+$content-font-size: 16px;
 $content-line-height: $spacing-large;
-$singlehero-font-size: $spacing-xxlarge;
+$singlehero-font-size: 48px;
 $singlehero-line-height: 1.2;
+
+// Typography - fonts
+$normal-font: 'Source Sans Pro', "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
+$hero-font: 'Merriweather', "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
+
+// Typography - weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;

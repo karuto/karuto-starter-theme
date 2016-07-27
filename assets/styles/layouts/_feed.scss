@@ -7,12 +7,12 @@
     border-bottom: 1px solid $color-lighter-gray;
   }
   .feed__title {
-    font-size: 2.8rem;
-    margin-top: $spacing-small;
-    margin-bottom: $spacing;
+    font-size: 28px;
+    margin-top: 0px;
+    margin-bottom: $spacing-small;
   }
   .feed__metas {
-    float: right;
+    margin-top: 19px;
   }
   .feed__meta {
     float: left;
@@ -27,7 +27,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: $tiny-font-size;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     margin: 0 0 $spacing-xxsmall;
   }
 

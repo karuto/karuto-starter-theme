@@ -3,7 +3,7 @@
   @extend .form-inline;
 }
 .search-form label {
-  font-weight: normal;
+  font-weight: $font-weight-normal;
   @extend .form-group;
 }
 .search-form .search-field {

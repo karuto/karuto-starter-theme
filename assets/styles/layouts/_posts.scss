@@ -21,7 +21,7 @@ $single-maxwidth: 650px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: $tiny-font-size;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     margin: 0 0 $spacing-xxsmall;
   }
   .entry__content {
@@ -29,8 +29,8 @@ $single-maxwidth: 650px;
     margin: 0 auto $spacing-medium;
     & > p {
       margin-bottom: $spacing-medium;
-      color: $color-darkest;
-      font-weight: 400;
+      color: $color-dark;
+      font-weight: $font-weight-normal;
       font-style: normal;
       font-size: $content-font-size;
       line-height: $content-line-height;

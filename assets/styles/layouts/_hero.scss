@@ -1,6 +1,7 @@
 .karu-theme {
   /* Generic hero style */
   .hero__title {
+    font-family: $hero-font;
     font-size: $singlehero-font-size;
     line-height: $singlehero-line-height;
     margin: 0 0 $spacing-large;
