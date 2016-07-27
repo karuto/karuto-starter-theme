@@ -3,10 +3,9 @@
 
 <!-- ### CONTENT FEED -->
 <?php get_template_part('templates/list'); ?>
-<?php /*get_template_part('templates/feed');*/ ?>
 
 <div class="modules-container row">
-  <div class="col-lg-6 col-xs-12">
+<!--   <div class="col-lg-6 col-xs-12">
     <section class="module">
       <div class="feed__header">
         <div class="feed__header__text">个人项目</div>
@@ -31,5 +30,5 @@
         <div class="feed__header__meta">Newsletter</div>
       </div>
     </section>
-  </div>
+  </div> -->
 </div><!-- .row -->
