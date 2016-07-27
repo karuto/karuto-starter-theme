@@ -4,28 +4,20 @@
     width: 100%;
     overflow: hidden;
   }
-  .wrap--header__banner {
+  .header {
     position: relative;
     float: none;
     margin: 0; /* Reset Bootstrap values */
-    padding: $spacing-xxlarge 0 $spacing-large;
+    padding: $spacing-xxlarge 0;
   }
-  .wrap--header__banner__logo {
-    display: inline-block;
+  .header__logo {
     color: $subtler-text-color;
     text-transform: uppercase;
   }
-  .wrap--header__banner__navi {
-    display: inline-block;
-    @media (min-width: $desktop-min) {
-      float: right;
-    }
-    @media (max-width: $mobile-max) {
-      float: none;
-    }
+  .header__nav {
+    float: right;
 
     .menu-item {
-      display: inline-block;
       &:hover {
         background-color: none; /* Reset Bootstrap values */
       }
@@ -38,10 +30,10 @@
           background-color: transparent; /* Reset Bootstrap values */
         }
       }
-      &:first-child > a {
-        margin-left: 0;
-      }
     }
 
+  }
+  .header__nav__group  {
+    margin-right: $spacing-xxlarge;
   }
 }
