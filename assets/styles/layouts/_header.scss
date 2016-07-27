@@ -11,7 +11,7 @@
     padding: $spacing-xxlarge 0;
   }
   .header__logo {
-    color: $subtler-text-color;
+    color: $subtle-text-color;
     text-transform: uppercase;
   }
   .header__nav {
@@ -24,7 +24,7 @@
       & > a {
         padding: 0; /* Reset Bootstrap values */
         margin-left: $spacing-medium;
-        color: $subtler-text-color;
+        color: $subtle-text-color;
         &:hover {
           color: $brand-primary;
           background-color: transparent; /* Reset Bootstrap values */

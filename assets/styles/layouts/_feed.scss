@@ -3,7 +3,7 @@
     display: block;
   }
   .feed {
-    padding: $spacing-xlarge 0;
+    padding: $spacing-medium 0;
     border-bottom: 1px solid $color-lighter-gray;
   }
   .feed__title {
@@ -19,6 +19,7 @@
     width: auto;
     margin-right: $spacing-xxlarge;
     font-size: $subtle-font-size;
+    color: $subtle-text-color;
   }
   .feed__meta--summary {
   }

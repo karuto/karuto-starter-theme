@@ -50,13 +50,9 @@ $brand-meta: $color-light; /* For all the meta components */
 
 // Text Colors
 $hightlight-color: $brand-primary;
-$subtler-text-color: $color-medium;
+$subtle-text-color: $color-medium;
 $header-text-color: $color-dark;
 $hero-text-color: $color-darkest;
-
-
-// Override Bootstrap
-$nav-link-hover-bg: transparent;
 
 
 // Globally applicable spacings
@@ -85,9 +81,11 @@ $content-line-height: $spacing-large;
 $singlehero-font-size: 48px;
 $singlehero-line-height: 1.2;
 
+
 // Typography - fonts
 $normal-font: "Source Sans Pro", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
 $hero-font: "Merriweather", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
+
 
 // Typography - weights
 $font-weight-light: 300;

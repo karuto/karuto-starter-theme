@@ -12,12 +12,13 @@ $single-maxwidth: 650px;
     float: left;
     width: auto;
     margin-right: $spacing-xxlarge;
+    color: $subtle-text-color;
   }
   .hero__meta--summary {
     width: 49%;
   }
   .hero__meta__title {
-    color: gray;
+    color: $color-light-gray;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: $tiny-font-size;
