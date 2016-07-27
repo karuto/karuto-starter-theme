@@ -4,7 +4,7 @@
 
     <div class="hero clearfix">
       <h1 class="hero__header"><?php single_post_title(); ?></h1>
-      <div class="hero__meta hero__meta--first">
+      <div class="hero__meta hero__meta--summary">
         <div class="hero__meta__title">Summary</div>
         <?php the_excerpt(); ?>
       </div>

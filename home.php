@@ -2,7 +2,8 @@
 <?php /*get_template_part('templates/page-header');*/ ?>
 
 <!-- ### CONTENT FEED -->
-<?php get_template_part('templates/feed'); ?>
+<?php get_template_part('templates/list'); ?>
+<?php /*get_template_part('templates/feed');*/ ?>
 
 <div class="modules-container row">
   <div class="col-lg-6 col-xs-12">

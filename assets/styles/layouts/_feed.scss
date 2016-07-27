@@ -1,4 +1,43 @@
 .karu-theme {
+  .feeds {
+
+  }
+  .feed {
+    padding: $spacing-xlarge 0;
+    border-bottom: 1px solid lightgray;
+  }
+  .feed__title {
+    font-size: 2.8rem;
+    margin-top: $spacing-small;
+    margin-bottom: $spacing;
+  }
+  .feed__metas {
+    float: right;
+  }
+  .feed__meta {
+    float: left;
+    width: auto;
+    margin-right: $spacing-xxlarge;
+    font-size: 1.2rem;
+  }
+  .feed__meta--summary {
+  }
+  .feed__meta__title {
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 $spacing-xxsmall;
+  }
+
+
+
+
+
+
+
+
   /***
   High level containers
   ***/
@@ -13,7 +52,6 @@
     border-top: 2px solid $brand-meta;
   }
   .feed {
-    margin: 0 0 $spacing;
   }
   .feed--featured {
     @include flexstretch();
