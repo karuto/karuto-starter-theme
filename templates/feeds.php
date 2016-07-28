@@ -9,7 +9,11 @@
 
   <?php if( is_front_page() && is_home() ): /* HOMEPAGE FEED */ ?>
 
-    <div class="feeds">
+    <div class="feeds__header">
+      All articles / Only the best
+    </div>
+
+    <div class="module feeds">
       <?php global $post; $myposts = get_posts('numberposts=10');
        foreach($myposts as $post) : ?>
         <?php get_template_part('templates/feed', 

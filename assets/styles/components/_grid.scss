@@ -1,4 +1,13 @@
-.container {
+.karu-theme {
+  .container {
     padding-left: 30px;
     padding-right: 30px;
+    /* Large desktop */
+    @media (min-width: 1200px) {
+    }
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 1199px) {
+      width: auto;
+    }
+  }
 }

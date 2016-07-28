@@ -1,0 +1,29 @@
+.karu-theme {
+  .xsells {
+
+  }
+  .xsell {
+    max-width: 50%;
+  }
+  .xsell--social {
+    .xsell__image, .xsell__content {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .xsell__content {
+      padding-left: $spacing-large;
+    }
+    .xsell__header {
+      color: $color-light-gray;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: $tiny-font-size;
+      font-weight: $font-weight-bold;
+      margin: 0;
+    }
+    .xsell__text {
+      font-size: $content-font-size;
+    }
+  }
+}

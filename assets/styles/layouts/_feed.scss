@@ -2,6 +2,9 @@
   .feeds {
     display: block;
   }
+  .feeds__header {
+    color: $subtle-text-color;
+  }
   .feed {
     padding: $spacing-medium 0;
     border-bottom: 1px solid $color-lighter-gray;

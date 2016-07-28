@@ -8,7 +8,7 @@
     position: relative;
     float: none;
     margin: 0; /* Reset Bootstrap values */
-    padding: $spacing-xxlarge 0;
+    padding-top: $spacing-xxlarge;
   }
   .header__logo {
     color: $subtle-text-color;
