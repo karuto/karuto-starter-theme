@@ -3,6 +3,9 @@
 
   }
   .xsell {
+    background-color: $block-bg-color;
+    border-radius: 5px;
+    padding: $spacing $spacing-large;
     max-width: 50%;
   }
   .xsell--social {
