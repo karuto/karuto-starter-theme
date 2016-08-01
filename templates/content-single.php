@@ -1,6 +1,6 @@
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
-  <div class="entry entry__wrapper">
+  <div class="entry">
 
     <div class="hero clearfix">
       <h1 class="hero__title"><?php single_post_title(); ?></h1>
@@ -23,10 +23,7 @@
     </div>
 
     <?php comments_template('/templates/comments.php'); ?>
-    <footer>
-      <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
-    </footer>
-
+    <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
 
   </div>
   </article>

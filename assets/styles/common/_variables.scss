@@ -72,8 +72,10 @@ $spacing-gigantic: ($spacing * 6); /* 96px */
 
 // Page specific but reusable spacings
 $spacing-module: $spacing-gigantic;
+$spacing-module-large: 10rem;
 $border-radius-module: 4px;
-
+$single-maxwidth: 650px;
+$border-line: 1px solid $color-lighter-gray;
 
 // Typography - sizes and heights
 $base-font-size: 14px;

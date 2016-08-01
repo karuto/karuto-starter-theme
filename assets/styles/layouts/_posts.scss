@@ -1,12 +1,13 @@
-$single-maxwidth: 650px;
-
 .karu-theme.single {
   .wrap--content__main {
-    margin-top: 10rem;
+    margin-top: $spacing-module-large;
+  }
+  .entry {
+    margin: 0 auto $spacing-module-large;
+    max-width: $single-maxwidth;
   }
   .hero {
-    margin: 0 auto 10rem;
-    max-width: $single-maxwidth;
+    margin-bottom: $spacing-module-large;
   }
   .hero__meta {
     float: left;
@@ -26,8 +27,9 @@ $single-maxwidth: 650px;
     margin: 0 0 $spacing-xxsmall;
   }
   .entry__content {
-    max-width: $single-maxwidth;
-    margin: 0 auto $spacing-medium;
+    padding-bottom: $spacing-medium;
+    border-bottom: $border-line;
+    margin-bottom: $spacing-module;
     & > p {
       margin-bottom: $spacing-medium;
       color: $color-dark;

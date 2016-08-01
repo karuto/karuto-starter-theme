@@ -7,7 +7,7 @@
   }
   .feed {
     padding: $spacing-medium 0;
-    border-bottom: 1px solid $color-lighter-gray;
+    border-bottom: $border-line;
   }
   .feed__title {
     font-size: 28px;
