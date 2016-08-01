@@ -4,8 +4,8 @@
   }
   .xsell {
     background-color: $block-bg-color;
-    border-radius: 5px;
-    padding: $spacing $spacing-large;
+    border-radius: $border-radius-module;
+    padding: $spacing-large;
     max-width: 50%;
   }
   .xsell--social {
@@ -15,7 +15,7 @@
       vertical-align: middle;
     }
     .xsell__content {
-      padding-left: $spacing-large;
+      padding-right: $spacing-large;
     }
     .xsell__header {
       color: $color-light-gray;

@@ -18,6 +18,6 @@
       <h2 class="xsell__header">Featured on social media</h2>
       <p class="xsell__text">Follow me on social media</p>
     </div>
-    <img class="xsell__image" src="http://placehold.it/150x150/f5f5f5/FFB6C1">
+    <img class="xsell__image" src="http://placehold.it/150x150/ffffff/FFB6C1">
   </div>
 </div>

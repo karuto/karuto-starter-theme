@@ -9,6 +9,7 @@
 
   /* Specific hero style */
   .hero--home {
+    border-radius: $border-radius-module;
     background-color: $block-bg-color;
     padding: $spacing-gigantic;
     font-size: 16px;
