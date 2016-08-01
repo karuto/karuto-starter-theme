@@ -35,8 +35,8 @@ use Roots\Sage\Wrapper;
               <?php include Wrapper\sidebar_path(); ?>
             </aside><!-- /.sidebar -->
           <?php endif; ?>
-        </div><!-- /.content -->
-      </div><!-- /.wrap -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
       <?php
         do_action('get_footer');
         get_template_part('templates/footer');
