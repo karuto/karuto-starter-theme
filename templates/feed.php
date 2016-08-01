@@ -1,13 +1,15 @@
 <article <?php post_class('feed clearfix'); ?>>
 
-  <div class="float-left">
+  <a href="<?php the_permalink(); ?>">
+  <div class="feed__content float-left">
     <h1 class="feed__title">
-       <a href="<?php the_permalink(); ?>" class="feed__title__link"><?php the_title(); ?></a>
+       <?php the_title(); ?>
     </h1>
     <div class="feed__meta feed__meta--summary">
       <?php the_excerpt(); ?>
     </div>
   </div>
+  </a>
 
   <div class="feed__metas float-right">
     <div class="feed__meta">

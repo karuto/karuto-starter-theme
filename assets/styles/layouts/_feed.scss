@@ -6,6 +6,9 @@
     padding: $spacing-medium 0;
     border-bottom: $border-line;
   }
+  .feed__content {
+    max-width: 70%;
+  }
   .feed__title {
     font-size: 28px;
     margin-top: 0px;
