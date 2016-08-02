@@ -7,7 +7,7 @@
   .header {
     position: relative;
     float: none;
-    margin: 0; /* Reset Bootstrap values */
+    margin: 0 0 $spacing-module-large; /* Reset Bootstrap values */
     padding-top: $spacing-xxlarge;
   }
   .header__logo {
