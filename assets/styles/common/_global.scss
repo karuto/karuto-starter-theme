@@ -32,9 +32,6 @@ body, button, input, select, textarea {
   .flex-stretch {
     @include flexstretch();
   }
-  .wrap--content__main {
-    margin-top: $spacing-xlarge;
-  }
   .no-vertical-spacing {
     margin-top: 0;
     margin-bottom: 0;

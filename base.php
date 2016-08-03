@@ -27,7 +27,7 @@ use Roots\Sage\Wrapper;
     <div class="wrap--content">
       <div class="container" role="document">
         <div class="row">
-          <main class="wrap--content__main col-xs-12">
+          <main class="col-xs-12">
             <?php include Wrapper\template_path(); ?>
           </main><!-- /.main -->
           <?php if (Setup\display_sidebar()) : ?>

@@ -1,6 +1,5 @@
-.karu-theme.single {
-  .wrap--content__main {
-  }
+/* Handles both single POST and PAGE */
+.karu-theme.single, .karu-theme.page {
   .entry {
     margin: 0 auto $spacing-module-large;
     max-width: $single-maxwidth;

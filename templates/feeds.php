@@ -15,7 +15,13 @@
     <?php while ( have_posts() ) : the_post(); ?>
       <?php get_template_part('templates/feed', 
       get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-    <?php endwhile; ?>
+    <?php endwhile; ?>    
+
+    <?php the_posts_navigation(array(
+                'prev_text'          => __( '>' ),
+                'next_text'          => __( '<' ),
+                'screen_reader_text' => __( 'Posts navigation' ),
+    )); ?>
   </div>
 
 <?php endif; ?>
