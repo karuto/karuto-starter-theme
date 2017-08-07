@@ -6,8 +6,9 @@
   }
   .header {
     position: relative;
-    float: none;
-    margin: 0 0 $spacing-module-large; /* Reset Bootstrap values */
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 $spacing-xxlarge; /* Reset Bootstrap values */
     padding-top: $spacing-xxlarge;
   }
   .header__logo {
@@ -15,9 +16,10 @@
     text-transform: uppercase;
   }
   .header__nav {
-    float: right;
 
     .menu-item {
+      display: inline-block; /* Reset Bootstrap values */
+
       &:hover {
         background-color: none; /* Reset Bootstrap values */
       }
