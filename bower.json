@@ -8,8 +8,7 @@
   "private": true,
   "dependencies": {
     "jquery": "~2.2.0",
-    "particles.js": "^2.0.0"
+    "normalize-css": "^7.0.0"
   },
-  "overrides": {
-  }
+  "overrides": {}
 }

@@ -1,10 +1,5 @@
-/* Guidelines for responsive:
-http://getbootstrap.com/2.3.2/scaffolding.html
-*/
 
-/* Bootstrap grid breakpoints, refer to http://getbootstrap.com/css/#grid */
-$col-lg-breakpoint: 1200px;
-
+// Breakpoints
 /* Mobile bottom-line */
 $mobile-max: 767px;
 @media (max-width: $mobile-max) {}
@@ -76,6 +71,7 @@ $spacing-module-large: 13rem;
 $border-radius-module: 4px;
 $single-maxwidth: 650px;
 $border-line: 1px solid $color-lighter-gray;
+
 
 // Typography - sizes and heights
 $base-font-size: 14px;

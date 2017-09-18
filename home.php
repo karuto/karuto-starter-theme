@@ -11,13 +11,3 @@
 </div>
 
 <?php get_template_part('templates/feeds'); ?>
-
-<!-- <div class="module xsells clearfix">
-  <div class="xsell xsell--social">
-    <div class="xsell__content">
-      <h2 class="xsell__header">Featured on social media</h2>
-      <p class="xsell__text">Follow me on social media</p>
-    </div>
-    <img class="xsell__image" src="http://placehold.it/150x150/ffffff/FFB6C1">
-  </div>
-</div> -->

@@ -1,8 +1,8 @@
 /* Global DOM definitions */
 html, body {
-  margin: 0; 
+  margin: 0;
   padding: 0;
-  height: 100%; 
+  height: 100%;
 }
 body, button, input, select, textarea {
   color: $color-dark;
@@ -17,37 +17,26 @@ body, button, input, select, textarea {
 }
 
 /* Global elements and helper functions */
-.karu-theme {
-  a {
-    transition: all 0.5s ease;
-    color: $color-darkest;
-    &:hover {
-      color: $hightlight-color;
-      text-decoration: none;
-    }
+a {
+  transition: all 0.5s ease;
+  color: $color-darkest;
+  &:hover {
+    color: $hightlight-color;
+    text-decoration: none;
   }
-  .module {
-    margin-bottom: $spacing-module;
-  }
-  .flex-stretch {
-    @include flexstretch();
-  }
-  .no-vertical-spacing {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .col--marginbased { /* NOT USED because it breaks Bootstrap grid */
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .float-left {
-    float: left;
-  }
-  .float-right {
-    float: right;
-  }
+}
+.flex-stretch {
+  @include flexstretch();
+}
+.no-vertical-spacing {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
 }
