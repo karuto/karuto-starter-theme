@@ -1,6 +1,13 @@
 footer {
   box-sizing: border-box;
-  background-color: $block-bg-color;
   width: auto;
-  padding: $spacing-gigantic;
+  margin: 0 0 $spacing-gigantic;
+}
+.footer__nav {
+
+}
+.footer__link {
+  color: $subtle-text-color;
+  text-transform: uppercase;
+  margin: 0 $spacing-large 0 0;
 }

@@ -9,7 +9,7 @@
   </div>
 
   <div class="feed__metas">
-    Written On <?php the_time('M d, Y'); ?>
+    Written On <?php the_date(); ?>
   </div>
 
 </article>

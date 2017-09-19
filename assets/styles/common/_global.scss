@@ -40,9 +40,20 @@ a {
 .flex-stretch {
   @include flexstretch();
 }
-.no-vertical-spacing {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+
+
+/* WP generated prev & next classes */
+.navigation {
+  margin: 0 0 $spacing-gigantic;
+  .screen-reader-text {
+    display: none;
+  }
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+.nav-previous, .nav-next {
+  text-transform: uppercase;
+  margin: 0 $spacing-medium;
 }
