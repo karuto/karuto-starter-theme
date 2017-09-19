@@ -7,7 +7,7 @@
   <?php get_search_form(); ?>
 <?php else: /* If there are posts */ ?>
 
-  <div class="feeds">
+  <section class="feeds">
     <div class="feeds__header">
       <?= Titles\title(); ?> - All articles / Only the best
     </div>
@@ -22,6 +22,6 @@
                 'next_text'          => __( 'Next' ),
                 'screen_reader_text' => __( 'Posts navigation' ),
     )); ?>
-  </div>
+  </section>
 
 <?php endif; ?>

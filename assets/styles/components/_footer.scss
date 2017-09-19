@@ -1,5 +1,6 @@
 footer {
+  box-sizing: border-box;
   background-color: $block-bg-color;
-  width: 100%;
+  width: auto;
   padding: $spacing-gigantic;
 }

@@ -1,5 +1,5 @@
 <!-- ### CONTENT FEED -->
-<div class="hero hero--home">
+<section class="hero hero--home">
   <h2 class="hero__title">
     Title here
   </h2>
@@ -7,6 +7,6 @@
     Vincent Zhang is a frontend engineer working at <s>MIT</s> <s>his startup</s> <a href="#">OpenTable.</a><br/>
     He writes about <a href="#">CSS</a> and what he's doing <a href="#">now</a>. You can also <a href="#">subscribe for updates.</a>
   </p>
-</div>
+</section>
 
 <?php get_template_part('templates/feeds'); ?>

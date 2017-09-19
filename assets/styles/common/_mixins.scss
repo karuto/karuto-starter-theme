@@ -18,6 +18,14 @@
   }
 }
 
+@mixin subtlefont() {
+  color: $color-mid-gray;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: $tiny-font-size;
+  font-weight: $font-weight-bold;
+}
+
 @mixin flexstretch() {
   display: -webkit-flex;
   display: -ms-flexbox;

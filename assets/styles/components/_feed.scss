@@ -1,0 +1,23 @@
+.feeds {}
+.feeds__header {
+  @include subtlefont();
+  margin: 0 0 $spacing-medium;
+}
+
+
+.feed {
+  margin: 0 0 $spacing-medium;
+  border-bottom: $border-line;
+}
+.feed__title {
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  font-weight: $font-weight-normal;
+  margin: 0 0 0 0;
+}
+.feed__excerpt {
+}
+.feed__metas {
+  @include subtlefont();
+  margin: $spacing-small 0 $spacing-medium;
+}
