@@ -1,4 +1,4 @@
-<header class="header" role="header">
+<header role="header">
   <a class="header__logo" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
   <nav class="header__nav">
     <ul class="header__ul">

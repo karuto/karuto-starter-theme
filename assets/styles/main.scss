@@ -7,13 +7,13 @@
  - Each file should style a single, self-contained piece of HTML.
 */
 @import "components/hero";
+@import "components/header";
+@import "components/footer";
 
 /* Criteria for adding a layout stylesheet:
  - Each file should style what? How does it differ from component?
 */
 @import "layouts/feed";
-@import "layouts/footer";
-@import "layouts/header";
 @import "layouts/single";
 @import "layouts/xsell";
 @import "layouts/sidebar";

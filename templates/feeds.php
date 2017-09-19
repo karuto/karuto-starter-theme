@@ -7,19 +7,19 @@
   <?php get_search_form(); ?>
 <?php else: /* If there are posts */ ?>
 
-  <div class="feeds__header">
-    <?= Titles\title(); ?> - All articles / Only the best
-  </div>
-
   <div class="feeds">
+    <div class="feeds__header">
+      <?= Titles\title(); ?> - All articles / Only the best
+    </div>
+
     <?php while ( have_posts() ) : the_post(); ?>
       <?php get_template_part('templates/feed',
       get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
     <?php endwhile; ?>
 
     <?php the_posts_navigation(array(
-                'prev_text'          => __( '>' ),
-                'next_text'          => __( '<' ),
+                'prev_text'          => __( 'Previous' ),
+                'next_text'          => __( 'Next' ),
                 'screen_reader_text' => __( 'Posts navigation' ),
     )); ?>
   </div>
