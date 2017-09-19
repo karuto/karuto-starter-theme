@@ -1,35 +1,30 @@
 /* Handles both single POST and PAGE */
 .karu-theme.single, .karu-theme.page {
   .entry {
-    margin: 0 auto $spacing-module-large;
-    max-width: $container-maxwidth;
+    margin: 0 0 $spacing-gigantic;
   }
-  .hero {
-    margin-bottom: $spacing-module-large;
+
+  .entry__metas {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 $spacing-large;
   }
-  .hero__meta {
-    float: left;
-    width: auto;
-    margin-right: $spacing-xxlarge;
-    color: $subtle-text-color;
+  .entry__meta {
   }
-  .hero__meta--summary {
-    width: 49%;
+  .entry__meta--summary {
+    width: 65%;
   }
-  .hero__meta__title {
-    color: $color-light-gray;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: $tiny-font-size;
-    font-weight: $font-weight-bold;
+  .entry__meta__title {
+    @include subtlefont();
     margin: 0 0 $spacing-xxsmall;
   }
+
   .entry__content {
-    padding-bottom: $spacing-medium;
+    padding: 0 0 $spacing-medium;
     border-bottom: $border-line;
-    margin-bottom: $spacing-module;
+    margin: 0 0 $spacing-gigantic;
     & > p {
-      margin-bottom: $spacing-medium;
+      margin: 0 0 $spacing-medium;
       color: $color-dark;
       font-weight: $font-weight-normal;
       font-style: normal;
