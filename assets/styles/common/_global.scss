@@ -1,8 +1,11 @@
 /* Global DOM definitions */
 html, body {
-  margin: 0;
   padding: 0;
   height: 100%;
+}
+body {
+  width: $container-maxwidth;
+  margin: 0 auto;
 }
 body, button, input, select, textarea {
   color: $color-dark;
@@ -15,9 +18,11 @@ body, button, input, select, textarea {
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
 }
-
-/* Global elements and helper functions */
+ul, ol {
+  list-style: none;
+}
 a {
+  text-decoration: none;
   transition: all 0.5s ease;
   color: $color-darkest;
   &:hover {
@@ -25,6 +30,13 @@ a {
     text-decoration: none;
   }
 }
+
+/* Global utility helper classes */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .flex-stretch {
   @include flexstretch();
 }

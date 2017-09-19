@@ -1,8 +1,7 @@
 <!-- ### CONTENT FEED -->
-<div class="module hero hero--home">
+<div class="hero hero--home">
   <h2 class="hero__title">
-    Essays on understanding <br/>
-    art, design & life experiences.
+    Title here
   </h2>
   <p class="hero__content">
     I'm Karuto, an experience designer and web developer in San Francisco.<br/>

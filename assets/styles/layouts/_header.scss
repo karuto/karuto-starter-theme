@@ -1,41 +1,23 @@
-.karu-theme {
-  .wrap--header {
-    z-index: 2;
-    width: 100%;
-    overflow: hidden;
-  }
-  .header {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 $spacing-xxlarge; /* Reset Bootstrap values */
-    padding-top: $spacing-xxlarge;
-  }
-  .header__logo {
-    color: $subtle-text-color;
-    text-transform: uppercase;
-  }
-  .header__nav {
+.header {
+  width: 100%;
+  margin: $spacing-xxlarge 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  color: $subtle-text-color;
+  text-transform: uppercase;
+}
+.header__ul {
+}
+.header__item {
+  display: inline-block;
+}
 
-    .menu-item {
-      display: inline-block; /* Reset Bootstrap values */
-
-      &:hover {
-        background-color: none; /* Reset Bootstrap values */
-      }
-      & > a {
-        padding: 0; /* Reset Bootstrap values */
-        margin-left: $spacing-medium;
-        color: $subtle-text-color;
-        &:hover {
-          color: $brand-primary;
-          background-color: transparent; /* Reset Bootstrap values */
-        }
-      }
-    }
-
-  }
-  .header__nav__group  {
-    margin-right: $spacing-xxlarge;
+.header__item__link {
+  margin: 0 0 0 $spacing-medium;
+  color: $subtle-text-color;
+  &:hover {
+    color: $brand-primary;
   }
 }

@@ -2,7 +2,7 @@
 .karu-theme.single, .karu-theme.page {
   .entry {
     margin: 0 auto $spacing-module-large;
-    max-width: $single-maxwidth;
+    max-width: $container-maxwidth;
   }
   .hero {
     margin-bottom: $spacing-module-large;
@@ -35,7 +35,7 @@
       font-style: normal;
       font-size: $content-font-size;
       line-height: $content-line-height;
-      letter-spacing: normal;    
+      letter-spacing: normal;
       word-wrap: break-word;
       word-break: break-word;
       text-align: justify;
