@@ -1,6 +1,6 @@
 /* Handles both single POST and PAGE */
 .entry {
-  margin: 0 0 $spacing-gigantic;
+  margin: 0 0 $spacing-xxlarge;
 }
 
 .entry__metas {
@@ -31,9 +31,9 @@
 }
 
 .entry__content {
-  padding: 0 0 $spacing-medium;
+  padding: 0 0 $spacing-xxlarge;
   border-bottom: $border-line;
-  margin: 0 0 $spacing-gigantic;
+  margin: 0 0 $spacing-xxlarge;
   & > p {
     margin: 0 0 $spacing-medium;
     font-weight: $font-weight-normal;

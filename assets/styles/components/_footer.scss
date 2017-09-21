@@ -4,7 +4,8 @@ footer {
   margin: 0 0 $spacing-gigantic;
 }
 .footer__nav {
-
+  display: flex;
+  justify-content: center;
 }
 .footer__link {
   color: $subtle-text-color;
