@@ -12,13 +12,13 @@ header {
 }
 
 .single header {
-  margin: $spacing-medium $header-margin-negative $spacing-xlarge;
+  margin: $spacing-medium $header-margin-negative $spacing-xxlarge;
   background: $block-bg-color;
   border-radius: $base-border-radius;
-}
-.single header:hover {
-  background: darken($block-bg-color, 3%);
-  transition: all 0.5s ease;
+  &:hover {
+    background: darken($block-bg-color, 3%);
+    transition: all 0.5s ease;
+  }
 }
 
 .header__logo {

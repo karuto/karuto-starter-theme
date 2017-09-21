@@ -6,10 +6,19 @@
 .entry__metas {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 $spacing-large;
+  margin: 0 0 $spacing-xxlarge;
 }
 
 .entry__meta {
+  color: $subtle-text-color;
+}
+
+.entry__meta a {
+  /* hate to do this, but must override <a> without classes by the_category */
+  color: $subtle-text-color;
+  &:hover {
+    color: $hightlight-color;
+  }
 }
 
 .entry__meta--summary {

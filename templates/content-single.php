@@ -7,18 +7,18 @@
     </div>
 
     <aside class="entry__metas">
-      <div class="entry__meta entry__meta--summary">
-        <div class="entry__meta__title">Summary</div>
-        <?php the_excerpt(); ?>
-      </div>
-      <div class="entry__meta">
-        <div class="entry__meta__title">Written On</div>
-        <p><?php the_time('M d, Y'); ?></p>
-      </div>
-      <div class="entry__meta">
-        <div class="entry__meta__title">Category</div>
-        <p>Journal</p>
-      </div>
+      <dl class="entry__meta entry__meta--summary">
+        <dt class="entry__meta__title">Summary</dt>
+        <dd><?php echo get_the_excerpt(); ?></dd>
+      </dl>
+      <dl class="entry__meta">
+        <dt class="entry__meta__title">Written On</dt>
+        <dd><?php the_time('M d, Y'); ?></dd>
+      </dl>
+      <dl class="entry__meta">
+        <dt class="entry__meta__title">Category</dt>
+        <dd><?php the_category(' &bull; '); ?></dd>
+      </dl>
     </aside>
 
     <div class="entry__content">

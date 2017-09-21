@@ -24,3 +24,10 @@
   @include subtlefont();
   margin: 0 0 $spacing-medium;
 }
+.feed__metas a {
+  /* hate to do this, but must override <a> without classes by the_category */
+  color: $subtle-text-color;
+  &:hover {
+    color: $hightlight-color;
+  }
+}

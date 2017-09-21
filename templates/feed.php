@@ -9,7 +9,7 @@
   </div>
 
   <div class="feed__metas">
-    Written On <?php the_date(); ?>
+    <?php the_category( ' &bull; ' ); ?> &bull; Written On <?php the_date(); ?>
   </div>
 
 </article>
