@@ -5,10 +5,10 @@
   @include subtlefont();
   margin: 0 0 $spacing-medium;
 }
-
-
 .feed {
   margin: 0 0 $spacing-medium;
+}
+.feed:not(:last-child) {
   border-bottom: $border-line;
 }
 .feed__title {
