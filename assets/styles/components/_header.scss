@@ -6,7 +6,9 @@ header {
 }
 .header__logo {
   color: $subtle-text-color;
-  text-transform: uppercase;
+  font-family: $hero-font;
+  // font-size: $hero-font-size;
+  font-weight: $font-weight-bold;
 }
 .header__ul {
 }
@@ -18,6 +20,6 @@ header {
   margin: 0 0 0 $spacing-medium;
   color: $subtle-text-color;
   &:hover {
-    color: $brand-primary;
+    color: $hightlight-color;
   }
 }

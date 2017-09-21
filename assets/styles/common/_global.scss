@@ -8,7 +8,7 @@ body {
   margin: 0 auto;
 }
 body, button, input, select, textarea {
-  color: $color-dark;
+  color: $base-text-color;
   font-size: $base-font-size; /* 14px */
   line-height: $base-line-height;
   font-weight: $font-weight-normal;
@@ -20,16 +20,21 @@ body, button, input, select, textarea {
 }
 ul, ol {
   list-style: none;
+  margin: 0;
 }
 a {
   text-decoration: none;
   transition: all 0.5s ease;
-  color: $color-darkest;
+  color: $strong-text-color;
   &:hover {
     color: $hightlight-color;
     text-decoration: none;
   }
 }
+body#tinymce { /* what is this about? */
+  margin: 12px !important;
+}
+
 
 /* Global utility helper classes */
 .maxwidth {

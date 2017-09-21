@@ -38,22 +38,26 @@ $color-darker:     #000;
 $color-darkest:    #000;
 
 
-// Colors
+// Brand colors
 $brand-primary: #cba54d; /* Fabulous gold */
 $brand-meta: $color-light; /* For all the meta components */
 
 
-// Text Colors
+// Text colors
+$base-text-color: $color-dark;
+$subtle-text-color: $color-mid-gray;
+$strong-text-color: $color-darkest;
+$strikethrough-text-color: $color-dark-gray;
+
+
+// Non-text colors
 $hightlight-color: $brand-primary;
 $block-bg-color: $color-lighter-gray;
-$subtle-text-color: $color-medium;
-$header-text-color: $color-dark;
-$hero-text-color: $color-darkest;
 
 
 // Globally applicable spacings
-$spacing-rem-base: 16px; /* 1.6rem */
-$spacing: $spacing-rem-base;
+$rem-base: 16px; /* 1.6rem */
+$spacing: $rem-base;
 $spacing-xxsmall: ($spacing * 0.25);
 $spacing-small: ($spacing * 0.5);
 $spacing-smaller: ($spacing * 0.75);
@@ -72,18 +76,16 @@ $border-line: 1px solid $color-lighter-gray;
 
 
 // Typography - sizes and heights
-$base-font-size: 14px;
+$base-font-size: $rem-base;
 $base-line-height: 1.5;
-$tiny-font-size: 12px;
+$tiny-font-size: $rem-base * 0.85;
 $tiny-line-height: 1.5;
-$subtle-font-size: 14px;
-$subtle-line-height: 1.5;
-$content-font-size: 16px;
-$content-line-height: $spacing-large;
+$content-font-size: $rem-base * 1.2;
+$content-line-height: $base-line-height;
 $title-font-size: 28px;
 $title-line-height: 1.15;
-$singlehero-font-size: 48px;
-$singlehero-line-height: 1.2;
+$hero-font-size: 48px; /* no longer 48px */
+$hero-line-height: 1.2;
 
 
 // Typography - fonts

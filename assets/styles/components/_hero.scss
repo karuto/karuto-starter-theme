@@ -10,8 +10,8 @@
 
 .hero__title {
   font-family: $hero-font;
-  font-size: $singlehero-font-size;
-  line-height: $singlehero-line-height;
+  font-size: $hero-font-size;
+  line-height: $hero-line-height;
   margin: 0 0 $spacing-large;
 }
 
@@ -21,7 +21,7 @@
   margin: 0;
 }
 .hero__s {
-  color: $color-dark-gray;
+  color: $strikethrough-text-color;
 
 }
 .hero__link {

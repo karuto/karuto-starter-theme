@@ -10,10 +10,4 @@
 @import "components/footer";
 @import "components/hero";
 @import "components/header";
-
-/* Criteria for adding a layout stylesheet:
- - Each file should style what? How does it differ from component?
-*/
-@import "layouts/single";
-@import "layouts/xsell";
-@import "layouts/tinymce";
+@import "components/entry";

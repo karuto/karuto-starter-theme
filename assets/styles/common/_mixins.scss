@@ -19,7 +19,7 @@
 }
 
 @mixin subtlefont() {
-  color: $color-mid-gray;
+  color: $subtle-text-color;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-size: $tiny-font-size;
