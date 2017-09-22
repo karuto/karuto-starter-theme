@@ -58,7 +58,7 @@ $block-bg-color: $color-lighter-gray;
 // Globally applicable spacings
 $rem-base: 16px; /* 1.6rem */
 $spacing: $rem-base;
-$spacing-xxsmall: ($spacing * 0.25);
+$spacing-xsmall: ($spacing * 0.25);
 $spacing-small: ($spacing * 0.5);
 $spacing-smaller: ($spacing * 0.75);
 $spacing-medium: ($spacing * 1.5);
@@ -95,6 +95,7 @@ $line-height-hero: 1.2;
 $font-family-base: "Source Sans Pro", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
 $font-family-title: "Merriweather", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
 $font-family-logo: "Lato", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
+$font-family-mono: "Source Code Pro", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
 
 // Typography - weights
 $font-weight-light: 300;

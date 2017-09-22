@@ -15,7 +15,7 @@
     </div>
 
     <!-- Disable comments for now. -->
-    <!-- <?php comments_template('/templates/comments.php'); ?> -->
+    <?php /*comments_template('/templates/comments.php');*/ ?>
     <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
 
   </div>
