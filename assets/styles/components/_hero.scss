@@ -9,14 +9,14 @@
 }
 
 .hero__title {
-  font-family: $title-font;
-  font-size: $hero-font-size;
-  line-height: $hero-line-height;
+  font-family: $font-family-title;
+  font-size: $font-size-hero;
+  line-height: $line-height-hero;
   margin: 0 0 $spacing-large;
 }
 
 .hero__content {
-  font-size: $title-font-size;
+  font-size: $font-size-title;
   line-height: 1.45;
   margin: 0;
 }

@@ -78,22 +78,22 @@ $border-line: 1px solid $color-lighter-gray;
 
 
 // Typography - sizes and heights
-$base-font-size: $rem-base;
-$base-line-height: 1.5;
-$tiny-font-size: $rem-base * 0.85;
-$tiny-line-height: 1.5;
-$content-font-size: $rem-base * 1.2;
-$content-line-height: $base-line-height;
-$title-font-size: 28px;
-$title-line-height: 1.15;
-$hero-font-size: 48px; /* no longer 48px */
-$hero-line-height: 1.2;
+$font-size-base: $rem-base;
+$font-size-tiny: $font-size-base * 0.85;
+$font-size-content: $font-size-base * 1.2;
+$font-size-title: $font-size-base * 1.75;
+$font-size-hero: $font-size-base * 3;
+
+$line-height-base: 1.5;
+$line-height-content: $line-height-base;
+$line-height-title: 1.15;
+$line-height-hero: 1.2;
 
 
 // Typography - fonts
-$normal-font: "Source Sans Pro", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
-$title-font: "Merriweather", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
-$logo-font: "Lato", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
+$font-family-base: "Source Sans Pro", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
+$font-family-title: "Merriweather", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
+$font-family-logo: "Lato", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Helvetica, Tahoma, Arial sans-serif;
 
 // Typography - weights
 $font-weight-light: 300;

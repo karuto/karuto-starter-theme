@@ -1,12 +1,24 @@
 footer {
+  display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
-  width: auto;
   margin: 0 0 $spacing-gigantic;
 }
+
+.footer__logo {
+
+}
+
+.footer__logo__link {
+  font-family: $font-family-logo;
+  font-weight: $font-weight-bold;
+}
+
 .footer__nav {
   display: flex;
   justify-content: center;
 }
+
 .footer__link {
   color: $subtle-text-color;
   text-transform: uppercase;
