@@ -4,15 +4,16 @@
   margin: 0 0 $spacing-gigantic;
 }
 
-.entry__metas {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 0 $spacing-xxlarge;
+.entry__excerpt {
+  margin: 0;
+  color: $subtle-text-color;
+  padding: 0 0 $spacing-xxlarge;
+  border-bottom: $border-line;
 }
 
 .entry__meta {
-  width: $entry-meta-width;
-  color: $subtle-text-color;
+  @include subtlefont();
+  margin: 0 0 $spacing-small;
 }
 
 .entry__meta a {
@@ -21,15 +22,6 @@
   &:hover {
     color: $hightlight-color;
   }
-}
-
-.entry__meta--summary {
-  width: 65%;
-}
-
-.entry__meta__title {
-  @include subtlefont();
-  margin: 0 0 $spacing-xxsmall;
 }
 
 .entry__content {

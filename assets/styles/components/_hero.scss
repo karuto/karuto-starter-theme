@@ -1,8 +1,12 @@
 .hero {
-  margin: 0 0 $spacing-gigantic;
+}
+
+.hero--entry {
+  margin: 0 0 $spacing-xxlarge;
 }
 
 .hero--home {
+  margin: 0 0 $spacing-gigantic;
   border-radius: $base-border-radius;
   background-color: $block-bg-color;
   padding: $spacing-gigantic;
@@ -12,7 +16,7 @@
   font-family: $font-family-title;
   font-size: $font-size-hero;
   line-height: $line-height-hero;
-  margin: 0 0 $spacing-large;
+  margin: 0 0 $spacing;
 }
 
 .hero__content {
