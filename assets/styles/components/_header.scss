@@ -1,29 +1,29 @@
 header {
-  // width: 100%;
-  // margin: $spacing-xxlarge 0;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-
   padding: $header-margin;
-  margin: $spacing-medium $header-margin-negative;
-  width: $container-maxwidth + $header-margin * 2;
-  border: 1px solid transparent;
-}
-
-.single header {
   margin: $spacing-medium $header-margin-negative $spacing-xxlarge;
-  background: $block-bg-color;
+  border: 1px solid transparent;
   border-radius: $base-border-radius;
+  background: $block-bg-color;
   &:hover {
     background: darken($block-bg-color, 3%);
     transition: all 0.5s ease;
   }
 }
 
+.home header {
+  margin: $spacing-medium $header-margin-negative;
+  width: $container-maxwidth + $header-margin * 2;
+  background: transparent;
+  &:hover {
+    background: transparent;
+  }
+}
+
 .header__logo {
-  color: $subtle-text-color;
-  font-family: $hero-font;
+  font-family: $logo-font;
   // font-size: $hero-font-size;
   font-weight: $font-weight-bold;
 }
