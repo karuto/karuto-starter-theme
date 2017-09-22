@@ -1,6 +1,7 @@
 /* Handles both single POST and PAGE */
 .entry {
-  margin: 0 0 $spacing-xxlarge;
+  /* anything next to footer should have $spacing-gigantic */
+  margin: 0 0 $spacing-gigantic;
 }
 
 .entry__metas {
@@ -10,6 +11,7 @@
 }
 
 .entry__meta {
+  width: $entyr-meta-width;
   color: $subtle-text-color;
 }
 

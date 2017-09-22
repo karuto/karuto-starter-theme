@@ -48,20 +48,3 @@ body#tinymce { /* what is this about? */
 .flex-stretch {
   @include flexstretch();
 }
-
-
-/* WP generated prev & next classes */
-.navigation {
-  margin: 0 0 $spacing-gigantic;
-  .screen-reader-text {
-    display: none;
-  }
-}
-.nav-links {
-  display: flex;
-  justify-content: center;
-}
-.nav-previous, .nav-next {
-  text-transform: uppercase;
-  margin: 0 $spacing-medium;
-}

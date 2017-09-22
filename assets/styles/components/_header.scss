@@ -13,7 +13,13 @@ header {
   }
 }
 
+.single header {
+  /* make the single post title have $spacing-gigantic around */
+  margin: $spacing-medium $header-margin-negative $spacing-gigantic;
+}
+
 .home header {
+  /* do not show the background block on homepage, because it's next to one */
   margin: $spacing-medium $header-margin-negative;
   width: $container-maxwidth + $header-margin * 2;
   background: transparent;

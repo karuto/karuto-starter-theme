@@ -70,11 +70,12 @@ $spacing-gigantic: ($spacing * 6); /* 96px */
 
 
 // Page specific but reusable spacings
-$base-border-radius: 4px;
-$header-margin: 32px;
+$base-border-radius: $spacing * 0.25;
+$header-margin: $spacing * 2;
 $header-margin-negative: -32px;
-$container-maxwidth: 660px; /* magic number, works for 12, 8, 6, 3, 4 cols */
+$container-maxwidth: $spacing * 41.25; /* 660px, works for 12, 8, 6, 3, 4 cols */
 $border-line: 1px solid $color-lighter-gray;
+$entry-meta-width: $spacing * 6;
 
 
 // Typography - sizes and heights
