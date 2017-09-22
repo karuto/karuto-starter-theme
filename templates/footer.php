@@ -1,13 +1,21 @@
 <footer role="footer">
   <div class="footer__logo">
     <a class="footer__logo__link" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-    <aside class="footer__logo__copyright">&copy; 2017</aside>
+    <aside class="footer__logo__copyright">Copyright &copy; 2017. All rights reserved.</aside>
   </div>
   <nav class="footer__nav">
-    <a class="footer__link" href="#">Sitemap</a>
-    <a class="footer__link" href="#">Contact</a>
-    <!-- GitHub, LinkedIn, Email -->
+    <h4 class="footer__subheader">Navigation</h4>
+    <a class="footer__link" href="/about">About</a>
+    <a class="footer__link" href="/now">Now</a>
+    <a class="footer__link" href="/sitemap">Sitemap</a>
     <a class="footer__link" href="/wp-admin">Login</a>
-    <a class="footer__link" href="#">Search</a>
   </nav>
+  <nav class="footer__nav">
+    <h4 class="footer__subheader">Keep in touch</h4>
+    <a class="footer__link" target="_blank" href="#">Newsletter</a>
+    <a class="footer__link" target="_blank" href="#">Email</a>
+    <a class="footer__link" target="_blank" href="#">GitHub</a>
+    <a class="footer__link" target="_blank" href="#">LinkedIn</a>
+  </nav>
+  <!-- TODO: newsletter sign up box here -->
 </footer>

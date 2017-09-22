@@ -1,12 +1,16 @@
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   box-sizing: border-box;
   margin: 0 0 $spacing-gigantic;
 }
 
 .footer__logo {
-
+  /* some tricky shit to break justify-content, write a blog about it
+  https://stackoverflow.com/questions/23621650/how-to-justify-a-single-flexbox-item-override-justify-content
+  */
+  margin: 0 auto 0 0;
+  align-self: flex-start;
 }
 
 .footer__logo__link {
@@ -16,15 +20,21 @@ footer {
 }
 
 .footer__logo__copyright {
+  color: $subtle-text-color;
 }
 
 .footer__nav {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+}
+
+.footer__subheader {
+  color: $subtle-text-color;
+  margin: 0 0 $spacing-small;
+  text-transform: uppercase;
 }
 
 .footer__link {
   color: $subtle-text-color;
-  text-transform: uppercase;
-  margin: 0 0 0 $spacing-large;
 }

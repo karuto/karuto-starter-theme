@@ -29,7 +29,7 @@ $icon-font-path:        "../fonts/";
 $color-white:      #FFF;
 $color-lighter-gray: #F5F5F5;
 $color-light-gray: #d3d3d3;
-$color-mid-gray:   #BBB;
+$color-mid-gray:   #AAA;
 $color-dark-gray:  #878787;
 $color-light:      #999;
 $color-medium:     #777;
@@ -45,7 +45,7 @@ $brand-meta: $color-light; /* For all the meta components */
 
 // Text colors
 $base-text-color: $color-darkest;
-$subtle-text-color: $color-mid-gray;
+$subtle-text-color: $color-light;
 $strong-text-color: $color-darkest;
 $strikethrough-text-color: $color-dark-gray;
 
