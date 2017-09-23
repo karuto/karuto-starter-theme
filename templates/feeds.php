@@ -9,7 +9,7 @@
 
   <section class="feeds">
     <div class="feeds__header">
-      <?= Titles\title(); ?> - All articles / Only the best
+      <?= Titles\title(); ?><!-- - All articles / Only the best -->
     </div>
 
     <?php while ( have_posts() ) : the_post(); ?>
