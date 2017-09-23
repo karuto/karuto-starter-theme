@@ -25,36 +25,4 @@
   }
 }
 
-.entry__content {
-  padding: 0 0 $spacing-xxlarge;
-  border-bottom: $border-line;
-  margin: 0 0 $spacing-xxlarge;
-
-  p {
-    margin: 0 0 $spacing-medium;
-    font-size: $font-size-content;
-    line-height: $line-height-content;
-    font-weight: $font-weight-normal;
-    letter-spacing: normal;
-    word-wrap: break-word;
-    word-break: break-word;
-    text-align: justify;
-  }
-
-  h2 {
-    margin: $spacing-xxlarge 0 $spacing-medium;
-    font-size: $font-size-title;
-    font-family: $font-family-title;
-    font-weight: $font-weight-bold;
-    line-height: $line-height-title;
-  }
-
-  code {
-    background: $block-bg-color;
-    padding: 2px $spacing-small;
-    border-radius: $spacing-xsmall;
-    margin: 0 $spacing-xsmall;
-    font-size: $font-size-tiny;
-    font-family: $font-family-mono;
-  }
-}
+@import "./content.scss";
