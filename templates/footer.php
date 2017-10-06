@@ -13,9 +13,9 @@
   <nav class="footer__nav">
     <h4 class="footer__subheader">Keep in touch</h4>
     <a class="footer__link" target="_blank" href="#">Newsletter</a>
-    <a class="footer__link" target="_blank" href="#">Email</a>
-    <a class="footer__link" target="_blank" href="#">GitHub</a>
-    <a class="footer__link" target="_blank" href="#">LinkedIn</a>
+    <a class="footer__link" target="_blank" href="mailto:hi@vincentzh.com">Email</a>
+    <a class="footer__link" target="_blank" href="//www.github.com/karuto/">GitHub</a>
+    <a class="footer__link" target="_blank" href="//www.linkedin.com/in/vincentyaozhang/">LinkedIn</a>
   </nav>
   <!-- TODO: newsletter sign up box here -->
 </footer>
