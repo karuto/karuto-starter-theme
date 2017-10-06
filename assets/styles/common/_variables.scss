@@ -25,17 +25,19 @@ $desktop-min: 768px;
 $icon-font-path:        "../fonts/";
 
 
-// Greys
-$color-white:      #FFF;
-$color-lighter-gray: #F5F5F5;
-$color-light-gray: #d3d3d3;
-$color-mid-gray:   #AAA;
-$color-dark-gray:  #878787;
-$color-light:      #999;
-$color-medium:     #777;
-$color-dark:       #333;
-$color-darker:     #000;
-$color-darkest:    #000;
+// Greys - the colors should not be used outside of this file
+$color-white:        #FFFFFF;
+$color-lightest-gray: #F5F5F5;
+$color-lighter-gray:   #E8E8E8;
+$color-light-gray:     #DBDBDB;
+$color-mid-gray:     #CECECE;
+$color-dark-gray:    #878787;
+$color-comfort-gray: #FAF5F5; /* slight red tint; not used */
+$color-light:        #999;
+$color-medium:       #777;
+$color-dark:         #333;
+$color-darker:       #000;
+$color-darkest:      #000;
 
 
 // Brand colors
@@ -51,8 +53,9 @@ $strikethrough-text-color: $color-dark-gray;
 
 
 // Non-text colors
-$hightlight-color: $brand-primary;
+$page-bg-color: $color-lightest-gray;
 $block-bg-color: $color-lighter-gray;
+$hightlight-color: $brand-primary;
 
 
 // Globally applicable spacings
@@ -74,7 +77,7 @@ $base-border-radius: $spacing * 0.25;
 $header-margin: $spacing * 2;
 $header-margin-negative: -32px;
 $container-maxwidth: $spacing * 41.25; /* 660px, works for 12, 8, 6, 3, 4 cols */
-$border-line: 1px solid $color-lighter-gray;
+$border-line: 1px solid $color-lightest-gray;
 $entry-meta-width: $spacing * 6;
 
 

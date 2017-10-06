@@ -4,6 +4,7 @@ html, body {
   height: 100%;
 }
 body {
+  background-color: $page-bg-color;
   width: $container-maxwidth;
   margin: 0 auto;
 }
