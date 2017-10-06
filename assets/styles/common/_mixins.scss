@@ -26,6 +26,17 @@
   font-weight: $font-weight-bold;
 }
 
+@mixin contentfont() {
+  margin: 0 0 $spacing-medium;
+  font-size: $font-size-content;
+  line-height: $line-height-content;
+  font-weight: $font-weight-normal;
+  letter-spacing: normal;
+  word-wrap: break-word;
+  word-break: break-word;
+  text-align: justify;
+}
+
 @mixin flexstretch() {
   display: -webkit-flex;
   display: -ms-flexbox;

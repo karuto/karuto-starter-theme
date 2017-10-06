@@ -4,15 +4,12 @@
   margin: 0 0 $spacing-xxlarge;
   overflow: hidden;
 
-  p {
-    margin: 0 0 $spacing-medium;
-    font-size: $font-size-content;
-    line-height: $line-height-content;
-    font-weight: $font-weight-normal;
-    letter-spacing: normal;
-    word-wrap: break-word;
-    word-break: break-word;
-    text-align: justify;
+  p,
+  & > ul,
+  & > ol,
+  li {
+    /* These are all "paragraph level" content */
+    @include contentfont();
   }
 
   a {
@@ -33,16 +30,12 @@
     line-height: $line-height-title;
   }
 
-  & > ul, & > ol, li {
-    margin: 0 0 $spacing-medium;
-  }
-
   ul {
-    list-style: disc;
+    list-style: circle outside;
   }
 
   ol {
-    list-style: decimal;
+    list-style: decimal outside;
   }
 
   code {
