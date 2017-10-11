@@ -1,15 +1,15 @@
 {
-  "name": "sage",
+  "name": "karu-theme",
   "version": "8.4.0",
-  "author": "Ben Word <ben@benword.com>",
-  "homepage": "https://roots.io/sage/",
+  "author": "Vincent Zhang <hi@vincentzh.com>",
+  "homepage": "https://vincentzh.com",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/roots/sage.git"
+    "url": "git://github.com/karuto/karu-theme.git"
   },
   "bugs": {
-    "url": "https://github.com/roots/sage/issues"
+    "url": "https://github.com/karuto/karu-theme/issues"
   },
   "licenses": [
     {
