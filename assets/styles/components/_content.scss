@@ -2,7 +2,6 @@
   padding: 0 0 $spacing-xxlarge;
   border-bottom: $border-line;
   margin: 0 0 $spacing-xxlarge;
-  overflow: hidden;
 
   p,
   & > ul,
@@ -31,7 +30,7 @@
   }
 
   ul {
-    list-style: circle outside;
+    list-style: square outside;
   }
 
   ol {

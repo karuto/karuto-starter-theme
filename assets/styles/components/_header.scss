@@ -1,7 +1,6 @@
 header {
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
   padding: $header-margin;
   margin: $spacing-medium $header-margin-negative $spacing-xxlarge;
   border: 1px solid transparent;

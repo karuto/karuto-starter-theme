@@ -1,4 +1,7 @@
 /* Global DOM definitions */
+* {
+  box-sizing: border-box;
+}
 html, body {
   padding: 0;
   height: 100%;
@@ -20,9 +23,9 @@ body, button, input, select, textarea {
   -webkit-backface-visibility: hidden;
 }
 ul, ol {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 dl, dd, dt {
   margin: 0;
