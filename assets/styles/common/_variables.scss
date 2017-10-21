@@ -1,28 +1,24 @@
 
 // Breakpoints
-/* Mobile bottom-line */
+/* NEED - Mobile bottom-line */
 $mobile-max: 767px;
 @media (max-width: $mobile-max) {}
 
+/* NEED - Non-mobile bottom-line */
 $desktop-min: 768px;
-/* Non-mobile bottom-line */
-@media (min-width: 768px) {}
+@media (min-width: $desktop-min) {}
 
-/* Large desktop */
+/* NICE TO HAVE - Large desktop */
 @media (min-width: 1200px) {}
 
-/* Portrait tablet to landscape and desktop */
+/* NICE TO HAVE - Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {}
 
-/* Landscape phone to portrait tablet */
+/* NICE TO HAVE - Landscape phone to portrait tablet */
 @media (max-width: 767px) {}
 
-/* Landscape phones and down */
+/* NICE TO HAVE - Landscape phones and down */
 @media (max-width: 480px) {}
-
-
-// Glyphicons font path
-$icon-font-path:        "../fonts/";
 
 
 // Greys - the colors should not be used outside of this file
@@ -49,7 +45,6 @@ $brand-meta: $color-light; /* For all the meta components */
 $base-text-color: $color-darkest;
 $subtle-text-color: $color-light;
 $strong-text-color: $color-darkest;
-$strikethrough-text-color: $color-dark-gray;
 
 
 // Non-text colors
@@ -74,8 +69,6 @@ $spacing-gigantic: ($spacing * 6); /* 96px */
 
 // Page specific but reusable spacings
 $base-border-radius: $spacing * 0.25;
-$header-margin: $spacing * 2;
-$header-margin-negative: -32px;
 $container-maxwidth: $spacing * 41.25; /* 660px, works for 12, 8, 6, 3, 4 cols */
 $border-line: 1px solid $color-lighter-gray;
 $entry-meta-width: $spacing * 6;
@@ -83,15 +76,15 @@ $entry-meta-width: $spacing * 6;
 
 // Typography - sizes and heights
 $font-size-base: $rem-base;
-$font-size-tiny: $font-size-base * 0.85;
+$font-size-tiny: $font-size-base * 0.8;
 $font-size-content: $font-size-base * 1.15;
 $font-size-title: $font-size-base * 1.75;
-$font-size-hero: $font-size-base * 3;
+$font-size-hero: $font-size-title;
 
 $line-height-base: 1.5;
 $line-height-content: 1.7;
 $line-height-title: 1.15;
-$line-height-hero: 1.2;
+$line-height-hero: 1.3;
 
 
 // Typography - fonts

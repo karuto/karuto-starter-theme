@@ -2,6 +2,8 @@
 .navigation {
   /* the margin between you and footer is taken care of by your parent */
   margin: 0;
+  font-size: $font-size-tiny;
+  font-weight: bold;
 
   .screen-reader-text {
     display: none;
@@ -10,6 +12,9 @@
   & a {
     /* hate to write this, but adding classes to this takes more work */
     color: $subtle-text-color;
+  }
+  & a:hover {
+    color: $hightlight-color;
   }
 }
 .nav-links {

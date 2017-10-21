@@ -4,10 +4,10 @@
 }
 .feeds__header {
   @include subtlefont();
-  margin: 0 0 $spacing-medium;
+  margin: 0 0 $spacing;
 }
 .feed {
-  margin: 0 0 $spacing-medium;
+  margin: 0 0 $spacing-large;
 }
 .feed:not(:last-child) {
   border-bottom: $border-line;
@@ -17,14 +17,14 @@
   font-size: $font-size-title;
   line-height: $line-height-title;
   font-weight: $font-weight-normal;
-  margin: 0 0 0 0;
+  margin: 0 0 $spacing;
 }
 .feed__excerpt {
-  margin: 0 0 $spacing-small;
+  margin: 0 0 $spacing;
 }
 .feed__metas {
   @include subtlefont();
-  margin: 0 0 $spacing-medium;
+  margin: 0 0 $spacing-large;
 }
 .feed__metas a {
   /* hate to do this, but must override <a> without classes by the_category */

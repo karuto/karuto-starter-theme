@@ -10,9 +10,6 @@
 }
 
 .hero--home {
-  border-radius: $base-border-radius;
-  background-color: $block-bg-color;
-  padding: $spacing-gigantic;
 }
 
 .hero__title {
@@ -23,12 +20,12 @@
 }
 
 .hero__content {
-  font-size: $font-size-title;
-  line-height: 1.45;
+  font-size: $font-size-hero;
+  line-height: $line-height-hero;
   margin: 0;
 }
 .hero__s {
-  color: $strikethrough-text-color;
+  color: $subtle-text-color;
 
 }
 .hero__link {

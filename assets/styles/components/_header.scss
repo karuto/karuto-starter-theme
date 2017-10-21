@@ -1,30 +1,10 @@
-header {
+.header {
   display: flex;
   justify-content: space-between;
-  padding: $header-margin;
-  margin: $spacing-medium $header-margin-negative $spacing-xxlarge;
-  border: 1px solid transparent;
-  border-radius: $base-border-radius;
-  background: $block-bg-color;
-  &:hover {
-    background: darken($block-bg-color, 3%);
-    transition: all 0.5s ease;
-  }
-}
-
-.single header {
-  /* make the single post title have $spacing-gigantic around */
-  margin: $spacing-medium $header-margin-negative $spacing-gigantic;
-}
-
-.home header {
-  /* do not show the background block on homepage, because it's next to one */
-  margin: $spacing-medium $header-margin-negative;
-  width: $container-maxwidth + $header-margin * 2;
-  background: transparent;
-  &:hover {
-    background: transparent;
-  }
+  margin: $spacing-medium 0 $spacing-gigantic;
+  font-size: $font-size-tiny;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .header__logo {

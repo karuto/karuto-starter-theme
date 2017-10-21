@@ -5,7 +5,7 @@
   </a>
 
   <div class="feed__excerpt">
-    <?php the_excerpt(); ?>
+    <?php echo get_the_excerpt(); ?>
   </div>
 
   <div class="feed__metas">

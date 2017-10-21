@@ -1,7 +1,8 @@
-footer {
+.footer {
   display: flex;
   justify-content: flex-end;
   margin: 0 0 $spacing-gigantic;
+  font-size: $font-size-tiny;
 }
 
 .footer__logo {
@@ -16,6 +17,7 @@ footer {
   font-family: $font-family-logo;
   font-weight: $font-weight-bold;
   margin: 0 0 $spacing-small;
+  text-transform: uppercase;
 }
 
 .footer__logo__copyright {

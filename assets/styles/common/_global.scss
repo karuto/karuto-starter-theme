@@ -2,13 +2,16 @@
 * {
   box-sizing: border-box;
 }
+::-moz-selection,
+::selection {
+  background: $hightlight-color;
+}
 html, body {
   padding: 0;
   height: 100%;
 }
 body {
   background-color: $page-bg-color;
-  width: $container-maxwidth;
   margin: 0 auto;
 }
 body, button, input, select, textarea {
@@ -46,8 +49,11 @@ body#tinymce { /* what is this about? */
 
 /* Global utility helper classes */
 .maxwidth {
-  width: 100%;
+  max-width: $container-maxwidth;
   margin: 0 auto;
+  @media (max-width: $mobile-max) {
+    margin: 0 $spacing-large;
+  }
 }
 
 .flex-stretch {

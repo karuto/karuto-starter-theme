@@ -1,4 +1,4 @@
-<footer role="footer">
+<footer class="footer" role="footer">
   <div class="footer__logo">
     <a class="footer__logo__link" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     <aside class="footer__logo__copyright">Copyright &copy; 2017. All rights reserved.</aside>
@@ -7,7 +7,6 @@
     <h4 class="footer__subheader">Navigation</h4>
     <a class="footer__link" href="/about">About</a>
     <a class="footer__link" href="/now">Now</a>
-    <a class="footer__link" href="/sitemap">Sitemap</a>
     <a class="footer__link" href="/wp-admin">Login</a>
   </nav>
   <nav class="footer__nav">
