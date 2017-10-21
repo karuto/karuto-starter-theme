@@ -6,5 +6,5 @@
   <meta name="description" content="Vincent Zhang professional portfolio of modern front-end technologies. Articles on JavaScript, CSS, HTML and long-form essays.">
   <?php wp_head(); ?>
   <link rel="copyright" href="//www.vincentzh.com/copyright">
-  <link href="https://fonts.googleapis.com/css?family=Lato:700|Source+Code+Pro:400:700|Merriweather:400,700|Source+Sans+Pro:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Source+Code+Pro:400:700|Roboto:400,700|" rel="stylesheet">
 </head>
