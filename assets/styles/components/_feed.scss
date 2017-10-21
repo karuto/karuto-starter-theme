@@ -4,7 +4,7 @@
 }
 .feeds__header {
   @include subtlefont();
-  margin: 0 0 $spacing-large;
+  margin: 0 0 $spacing-small;
 }
 .feed {
   margin: 0 0 $spacing-large;
@@ -20,6 +20,7 @@
   margin: 0 0 $spacing-small;
 }
 .feed__excerpt {
+  color: $subtle-text-color;
   font-family: $font-family-content;
   line-height: $line-height-content;
   margin: 0 0 $spacing-small;
