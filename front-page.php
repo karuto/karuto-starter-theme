@@ -8,7 +8,7 @@
     <br/>
     I write about <a class="hero__link" href="/category/dev">CSS</a> and what I'm doing <a class="hero__link" href="/now">now</a>.
     <br/>
-    You should subscribe for <a class="hero__link" href="#">updates.</a>
+    You should <a class="hero__link" target="_blank" href="//eepurl.com/c8ysuj">subscribe for updates.</a>
   </p>
 </section>
 
