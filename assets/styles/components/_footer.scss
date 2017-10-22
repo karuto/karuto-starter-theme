@@ -4,7 +4,7 @@
   margin: 0 0 $spacing-gigantic;
   font-size: $font-size-tiny;
   @media (max-width: $mobile-max) {
-    flex-direction: column;
+    display: block;
   }
 }
 
@@ -12,7 +12,7 @@
   /* some tricky shit to break justify-content, write a blog about it
   https://stackoverflow.com/questions/23621650/how-to-justify-a-single-flexbox-item-override-justify-content
   */
-  margin: 0 auto 0 0;
+  margin: 0 auto $spacing-large 0;
   align-self: flex-start;
 }
 
@@ -31,6 +31,10 @@
   display: flex;
   flex-direction: column;
   width: 20%;
+  @media (max-width: $mobile-max) {
+    width: 50%;
+    float: left;
+  }
 }
 
 .footer__subheader {

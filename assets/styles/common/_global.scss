@@ -55,7 +55,11 @@ body#tinymce { /* what is this about? */
     margin: 0 $spacing-large;
   }
 }
-
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .flex-stretch {
   @include flexstretch();
 }

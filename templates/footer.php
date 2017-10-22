@@ -1,4 +1,4 @@
-<footer class="footer" role="footer">
+<footer class="footer clearfix" role="footer">
   <div class="footer__logo">
     <a class="footer__logo__link" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     <aside class="footer__logo__copyright">Copyright &copy; 2017. All rights reserved.</aside>
