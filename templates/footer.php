@@ -4,7 +4,7 @@
     <aside class="footer__logo__copyright">Copyright &copy; 2017. All rights reserved.</aside>
   </div>
   <nav class="footer__nav">
-    <h4 class="footer__subheader">Navigation</h4>
+    <h4 class="footer__subheader">More to read</h4>
     <a class="footer__link" href="/about">About</a>
     <a class="footer__link" href="/page/1">Writings</a>
     <a class="footer__link" href="/projects">Projects</a>
