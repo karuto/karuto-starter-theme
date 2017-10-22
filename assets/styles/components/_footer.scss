@@ -3,6 +3,9 @@
   justify-content: flex-end;
   margin: 0 0 $spacing-gigantic;
   font-size: $font-size-tiny;
+  @media (max-width: $mobile-max) {
+    flex-direction: column;
+  }
 }
 
 .footer__logo {
