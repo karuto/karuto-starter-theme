@@ -1,4 +1,4 @@
-<!-- ### CONTENT FEED -->
+<!-- ### STATIC FRONT PAGE CONTENT -->
 <section class="hero hero--home">
   <h2 class="hero__title">
     Vincent Zhang
@@ -12,4 +12,5 @@
   </p>
 </section>
 
+<!-- ### CONTENT FEED -->
 <?php get_template_part('templates/feeds'); ?>

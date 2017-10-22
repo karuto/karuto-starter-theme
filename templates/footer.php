@@ -6,12 +6,14 @@
   <nav class="footer__nav">
     <h4 class="footer__subheader">Navigation</h4>
     <a class="footer__link" href="/about">About</a>
+    <a class="footer__link" href="/page/1">Writings</a>
+    <a class="footer__link" href="/projects">Projects</a>
     <a class="footer__link" href="/now">Now</a>
-    <a class="footer__link" href="/wp-admin">Login</a>
+    <a class="footer__link" href="/wp-admin" style="color: rgba(0,0,0,0.025);">Login</a>
   </nav>
   <nav class="footer__nav">
     <h4 class="footer__subheader">Keep in touch</h4>
-    <a class="footer__link" target="_blank" href="#">Newsletter</a>
+    <a class="footer__link" target="_blank" href="//eepurl.com/c8ysuj">Subscribe</a>
     <a class="footer__link" target="_blank" href="mailto:hi@vincentzh.com">Email</a>
     <a class="footer__link" target="_blank" href="//www.github.com/karuto/">GitHub</a>
     <a class="footer__link" target="_blank" href="//www.linkedin.com/in/vincentyaozhang/">LinkedIn</a>
