@@ -6,6 +6,8 @@ This repo stores the WordPress theme that runs on [Vincent Zhang's personal webs
 
 This project is built on top of a legacy version of [Sage version 8.](https://github.com/karuto/sage)
 
+This project requires Node 6. Node 8 and above will throw an error during building.
+
 ### Development
 
 See [Sage documentation.](https://github.com/karuto/karu-theme/blob/master/README-sage.md#theme-development)
