@@ -31,7 +31,7 @@
 						get_template_part( 'template-parts/home' );
 					} else if ( is_single() ) {
 						// any posts; excludes pages and attachments
-						get_template_part( 'template-parts/single' );
+						get_template_part( 'template-parts/post' );
 					} else if ( is_page() ) {
 						// any pages; excludes posts
 						get_template_part( 'template-parts/page' );
