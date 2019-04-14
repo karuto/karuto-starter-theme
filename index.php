@@ -30,9 +30,6 @@ get_template_part( 'template-parts/header' );
 		} else if ( is_page() ) {
 			// any pages; excludes posts
 			get_template_part( 'template-parts/page' );
-		} else if ( is_attachment() ) {
-			// any pages; excludes posts
-			get_template_part( 'template-parts/image' );
 		} else if ( is_archive() ) {
 			get_template_part( 'template-parts/archive' );
 		} else if ( is_search() ) {
