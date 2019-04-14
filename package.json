@@ -1,58 +1,44 @@
 {
-  "name": "karu-theme",
-  "version": "8.4.0",
-  "author": "Vincent Zhang <hi@vincentzh.com>",
-  "homepage": "https://vincentzh.com",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/karuto/karu-theme.git"
-  },
+  "name": "twentynineteen",
+  "version": "1.0.0",
+  "description": "Default WP Theme",
   "bugs": {
-    "url": "https://github.com/karuto/karu-theme/issues"
+    "url": "https://github.com/WordPress/twentynineteen/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
+  "homepage": "https://github.com/WordPress/twentynineteen#readme",
+  "devDependencies": {
+    "@wordpress/browserslist-config": "^2.2.2",
+    "autoprefixer": "^9.1.5",
+    "chokidar-cli": "^1.2.1",
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.0.1",
+    "postcss-focus-within": "^3.0.0",
+    "rtlcss": "^2.4.0"
+  },
+  "rtlcssConfig": {
+    "options": {
+      "autoRename": false,
+      "autoRenameStrict": false,
+      "blacklist": {},
+      "clean": true,
+      "greedy": false,
+      "processUrls": false,
+      "stringMap": []
+    },
+    "plugins": [],
+    "map": false
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
   ],
   "scripts": {
-    "build": "bower install && gulp",
-    "jshint": "gulp jshint",
-    "jscs": "jscs gulpfile.js assets/scripts/*.js"
-  },
-  "engines": {
-    "node": ">= 0.12.0",
-    "npm": ">=2.1.5"
-  },
-  "devDependencies": {
-    "asset-builder": "^1.1.0",
-    "browser-sync": "^2.8.2",
-    "del": "^1.2.1",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^2.3.1",
-    "gulp-changed": "^1.3.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-flatten": "0.1.1",
-    "gulp-if": "^1.2.5",
-    "gulp-imagemin": "^2.3.0",
-    "gulp-jshint": "^1.11.2",
-    "gulp-less": "^3.0.3",
-    "gulp-minify-css": "^1.2.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-rev": "^6.0.0",
-    "gulp-sass": "^2.0.1",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-uglify": "^1.2.0",
-    "imagemin-pngcrush": "^4.1.0",
-    "jshint-stylish": "^2.0.1",
-    "lazypipe": "^1.0.1",
-    "merge-stream": "^1.0.0",
-    "minimist": "^1.1.3",
-    "run-sequence": "^1.1.2",
-    "traverse": "^0.6.6",
-    "wiredep": "^2.2.2"
+    "build:style": "node-sass style.scss style.css --output-style expanded && postcss -r style.css",
+    "build:style-editor": "node-sass style-editor.scss style-editor.css --output-style expanded && postcss -r style-editor.css",
+    "build:style-editor-customizer": "node-sass style-editor-customizer.scss style-editor-customizer.css --output-style expanded && postcss -r style-editor-customizer.css",
+    "build:rtl": "rtlcss style.css style-rtl.css",
+    "build:print": "node-sass print.scss print.css --output-style expanded && postcss -r print.css",
+    "build": "run-p \"build:*\"",
+    "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial"
   }
 }

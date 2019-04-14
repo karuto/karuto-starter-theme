@@ -1,20 +1,65 @@
-# karu-theme
+**Theme Name:** Twenty Nineteen  
+**Theme URI:** https://wordpress.org/themes/twentynineteen/  
+**Contributors:** the WordPress team  
+**Requires at least:** WordPress 4.9.6  
+**Version:** 1.2  
+**License:** GPLv2 or later  
+**License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
+**Tags:** one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
 
-This repo stores the WordPress theme that runs on [Vincent Zhang's personal website.](http://vincentzh.com)
+## Description
 
-## Getting started
+Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
 
-This project is built on top of a legacy version of [Sage version 8.](https://github.com/karuto/sage)
+## Installation
 
-This project requires Node 6. Node 8 and above will throw an error during building.
+1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
+2. Type in Twenty Nineteen in the search form and press the 'Enter' key on your keyboard.
+3. Click on the 'Activate' button to use your new theme right away.
+4. Go to https://codex.wordpress.org/Twenty_Nineteen for a guide on how to customize this theme.
+5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
-### Development
+## Copyright
 
-See [Sage documentation.](https://github.com/karuto/karu-theme/blob/master/README-sage.md#theme-development)
+Twenty Nineteen WordPress Theme, Copyright 2018 WordPress.org
+Twenty Nineteen is distributed under the terms of the GNU GPL.
 
-### Deployment
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
 
-1. Disable current theme in WordPress dashboard and backup the database.
-2. Log in to VPS with info [here](https://bitbucket.org/karuto/sysadmin/src), credentials required.
-3. Run [this script](https://github.com/karuto/sysadmin-notes/blob/master/theme-sync.sh) inside the home directory of VPS.
-4. Switch to new theme in WordPress dashboard and run integrity checks.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+Twenty Nineteen bundles the following third-party resources:
+
+_s, Copyright 2015-2018 Automattic, Inc.
+**License:** GPLv2 or later
+Source: https://github.com/Automattic/_s/
+
+normalize.css, Copyright 2012-2016 Nicolas Gallagher and Jonathan Neal
+**License:** MIT
+Source: https://necolas.github.io/normalize.css/
+
+## Changelog
+
+### 1.0
+
+* Released: 12-06-2019
+
+Initial release
+
+### 1.1
+
+* Released: 12-19-2019
+
+Bug Fixes
+
+### 1.2
+
+* Released: 01-09-2019
+
+Bug Fixes
