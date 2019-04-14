@@ -1,11 +1,11 @@
 {
-  "name": "twentynineteen",
+  "name": "karu-theme",
   "version": "1.0.0",
-  "description": "Default WP Theme",
+  "description": "Karuto's base theme",
   "bugs": {
-    "url": "https://github.com/WordPress/twentynineteen/issues"
+    "url": "https://github.com/karuto/karu-theme/issues"
   },
-  "homepage": "https://github.com/WordPress/twentynineteen#readme",
+  "homepage": "https://github.com/karuto/karu-theme#readme",
   "devDependencies": {
     "@wordpress/browserslist-config": "^2.2.2",
     "autoprefixer": "^9.1.5",
