@@ -12,7 +12,7 @@
 
 <?php if ( have_posts() ) : ?>
 	<?php
-	get_template_part( 'template-parts/page-header' );
+	get_template_part( 'templates/page-header' );
 
 	// Start the Loop.
 	while ( have_posts() ) :
@@ -23,7 +23,7 @@
 			* If you want to override this in a child theme, then include a file
 			* called content-___.php (where ___ is the Post Format name) and that will be used instead.
 			*/
-		get_template_part( 'template-parts/content/content', 'excerpt' );
+		get_template_part( 'templates/content/content', 'excerpt' );
 
 		// End the loop.
 	endwhile;
@@ -33,7 +33,7 @@
 
 	// If no content, include the "No posts found" template.
 else :
-	get_template_part( 'template-parts/content/content', 'none' );
+	get_template_part( 'templates/content/content', 'none' );
 
 endif;
 ?>

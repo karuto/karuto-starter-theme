@@ -14,7 +14,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( ! twentynineteen_can_show_post_thumbnail() ) : ?>
 	<header class="entry-header">
-		<?php get_template_part( 'template-parts/entry-header' ); ?>
+		<?php get_template_part( 'templates/entry-header' ); ?>
 	</header>
 	<?php endif; ?>
 
@@ -53,6 +53,6 @@
 		<?php twentynineteen_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 
-	<?php get_template_part( 'template-parts/content/content-post-author-bio' ); ?>
+	<?php get_template_part( 'templates/content/content-post-author-bio' ); ?>
 
 </article><!-- #post-${ID} -->
