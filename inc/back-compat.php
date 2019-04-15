@@ -7,7 +7,7 @@
  * relies on many newer functions and markup changes introduced in 4.7.
  *
  * @package WordPress
- * @subpackage Twenty_Nineteen
+ * @subpackage karuto_starter_theme
  * @since Twenty Nineteen 1.0.0
  */
 

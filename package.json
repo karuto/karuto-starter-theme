@@ -1,11 +1,11 @@
 {
-  "name": "karu-theme",
+  "name": "karuto-starter-theme",
   "version": "1.0.0",
   "description": "Karuto's base theme",
   "bugs": {
-    "url": "https://github.com/karuto/karu-theme/issues"
+    "url": "https://github.com/karuto/karuto-starter-theme/issues"
   },
-  "homepage": "https://github.com/karuto/karu-theme#readme",
+  "homepage": "https://github.com/karuto/karuto-starter-theme#readme",
   "devDependencies": {
     "@wordpress/browserslist-config": "^2.2.2",
     "autoprefixer": "^9.1.5",

@@ -3,7 +3,7 @@
  * SVG icons related functions
  *
  * @package WordPress
- * @subpackage Twenty_Nineteen
+ * @subpackage karuto_starter_theme
  * @since 1.0.0
  */
 

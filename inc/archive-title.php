@@ -3,7 +3,7 @@
  * Archive title processing.
  *
  * @package WordPress
- * @subpackage Twenty_Nineteen
+ * @subpackage karuto_starter_theme
  * @since added by Vincent Zhang
  */
 

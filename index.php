@@ -23,7 +23,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Twenty_Nineteen
+ * @subpackage karuto_starter_theme
  * @since 1.0.0
  */
 
@@ -31,7 +31,7 @@
 <html <?php language_attributes(); ?>>
 	<?php get_template_part( 'templates/partials/head' ); ?>
 
-	<body <?php body_class('karu-theme'); ?>>
+	<body <?php body_class('karuto-starter-theme'); ?>>
 		<div id="page" class="site maxwidth">
 		<?php get_template_part( 'templates/partials/header' ); ?>
 			<div id="content">

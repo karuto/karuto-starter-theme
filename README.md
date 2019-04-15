@@ -1,3 +1,7 @@
+# karuto-starter-theme
+
+TODO: fix this README to reflect updates.
+
 **Theme Name:** Twenty Nineteen  
 **Theme URI:** https://wordpress.org/themes/twentynineteen/  
 **Contributors:** the WordPress team  
