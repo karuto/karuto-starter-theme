@@ -14,9 +14,7 @@
 <article <?php post_class(); ?>>
 	<div class="entry">
 
-		<div class="hero hero--entry">
-			<h1 class="hero__title"><?php single_post_title(); ?></h1>
-		</div>
+		<?php get_template_part( 'templates/content/content-page-hero' ); ?>
 
 		<div class="entry__content">
 			<?php the_content(); ?>
