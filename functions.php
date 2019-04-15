@@ -326,3 +326,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Archive title processing.
  */
 require get_template_directory() . '/inc/archive-title.php';
+
+/**
+ * Counts views for posts.
+ */
+require get_template_directory() . '/inc/post-views.php';
