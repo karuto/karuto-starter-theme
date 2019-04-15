@@ -21,38 +21,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Variables
-# Normalize
-# Typography
-	## Headings
-	## Copy
-# Elements
-	## Lists
-	## Tables
-# Forms
-	## Buttons
-	## Fields
-# Navigation
-	## Links
-	## Menus
-	## Next & Previous
-# Accessibility
-# Alignments
-# Clearings
-# Layout
-# Widgets
-# Content
-	## Archives
-	## Posts and pages
-	## Comments
-# Blocks
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
 /* NEED - Mobile bottom-line */
 /* NEED - Non-mobile bottom-line */
 /* NICE TO HAVE - Large desktop */
@@ -949,6 +917,28 @@ body#tinymce {
 .nav-previous, .nav-next {
   text-transform: uppercase;
   margin: 0 24px;
+}
+
+/* WP generated pagination classes */
+.page-numbers {
+  text-transform: uppercase;
+  margin: 0 16px;
+}
+
+.page-numbers.next {
+  /* The wrapper "Previous" */
+}
+
+.page-numbers.prev {
+  /* The wrapper "Next" */
+}
+
+.nav-prev-text {
+  /* The text "Previous" */
+}
+
+.nav-next-text {
+  /* The text "Next" */
 }
 
 .searchform {

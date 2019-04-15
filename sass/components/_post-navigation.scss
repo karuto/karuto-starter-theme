@@ -11,7 +11,7 @@
 
   & a {
     /* hate to write this, but adding classes to this takes more work */  
-    @include linkStyleOverride();
+    // @include linkStyleOverride();
   }
 }
 .nav-links {
@@ -21,4 +21,36 @@
 .nav-previous, .nav-next {
   text-transform: uppercase;
   margin: 0 $spacing-medium;
+}
+
+
+
+/* WP generated pagination classes */
+.page-numbers {
+  text-transform: uppercase;
+  margin: 0 $spacing;
+
+  &.next {
+    /* The wrapper "Previous" */
+
+  }
+
+  &.prev {
+    /* The wrapper "Next" */
+
+  }
+
+  &.current {
+
+  }
+}
+
+.nav-prev-text {
+  /* The text "Previous" */
+
+}
+
+.nav-next-text {
+  /* The text "Next" */
+  
 }

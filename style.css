@@ -900,13 +900,6 @@ body#tinymce {
 
 .navigation a {
   /* hate to write this, but adding classes to this takes more work */
-  color: #333;
-  background: linear-gradient(to bottom, transparent 0%, transparent 50%, #DBDBDB 50%, #DBDBDB 100%);
-}
-
-.navigation a:hover {
-  color: #333;
-  background: linear-gradient(to bottom, transparent 0%, transparent 50%, #cba54d 50%, #cba54d 100%);
 }
 
 .nav-links {
@@ -917,6 +910,28 @@ body#tinymce {
 .nav-previous, .nav-next {
   text-transform: uppercase;
   margin: 0 24px;
+}
+
+/* WP generated pagination classes */
+.page-numbers {
+  text-transform: uppercase;
+  margin: 0 16px;
+}
+
+.page-numbers.next {
+  /* The wrapper "Previous" */
+}
+
+.page-numbers.prev {
+  /* The wrapper "Next" */
+}
+
+.nav-prev-text {
+  /* The text "Previous" */
+}
+
+.nav-next-text {
+  /* The text "Next" */
 }
 
 .searchform {
