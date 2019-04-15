@@ -12,7 +12,7 @@
 
 <?php 
 if ( have_posts() ) {
-	get_template_part( 'templates/page-header' );
+	get_template_part( 'templates/partials/page-header' );
 	// Start the Loop.
 	while ( have_posts() ) {
 		the_post();
@@ -33,7 +33,7 @@ if ( have_posts() ) {
   // This only applies for single post and page pages.
   // This won't apply for numbered pages, such as home or archive pages.
 	if ( comments_open() || get_comments_number() ) {
-		comments_template( '/templates/comments.php' );
+		comments_template( '/templates/partials/comments.php' );
   }
 
   // Previous/next page navigation.

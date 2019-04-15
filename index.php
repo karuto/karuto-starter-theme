@@ -16,11 +16,11 @@
 
 ?><!doctype html>
 <html <?php language_attributes(); ?>>
-	<?php get_template_part( 'templates/head' ); ?>
+	<?php get_template_part( 'templates/partials/head' ); ?>
 
 	<body <?php body_class(); ?>>
 		<div id="page" class="site">
-			<?php get_template_part( 'templates/header' ); ?>
+			<?php get_template_part( 'templates/partials/header' ); ?>
 			<div id="content" class="site-content">
 				<section id="primary" class="content-area">
 					<main id="main" class="site-main">
@@ -33,7 +33,7 @@
 						// any posts; excludes pages and attachments
 						get_template_part( 'templates/post' );
 					} else if ( is_page() ) {
-						// any pages; excludes posts
+						// any pages; excludes posts and attachments
 						get_template_part( 'templates/page' );
 					} else if ( is_archive() ) {
 						get_template_part( 'templates/archive' );
@@ -50,7 +50,7 @@
 				</section><!-- .content-area -->
 
 			</div><!-- #content -->
-			<?php get_template_part( 'templates/footer' ); ?>
+			<?php get_template_part( 'templates/partials/footer' ); ?>
 		</div><!-- #page -->
 	</body>
 </html>
