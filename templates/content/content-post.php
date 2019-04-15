@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying posts
+ * Template part for displaying post content.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -13,14 +13,7 @@
 
 <article <?php post_class(); ?>>
 	<div class="entry">
-
-		<div class="hero hero--entry">
-			<aside class="entry__meta">
-				<?php the_category(' &bull; '); ?> &bull; Written On <?php the_time('M d, Y'); ?>
-			</aside>
-			<h1 class="hero__title"><?php single_post_title(); ?></h1>
-			<aside class="entry__excerpt"><?php echo get_the_excerpt(); ?></aside>
-		</div>
+		<?php get_template_part( 'templates/content/content-post-hero' ); ?>
 
 		<div class="entry__content">
 			<?php the_content(); ?>
