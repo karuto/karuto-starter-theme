@@ -44,12 +44,15 @@
 		?>
 	</div><!-- .entry-content -->
 
+	<?php 
+	/* TODO: I don't like the fact that the PHP functions are generating this entry footer.
+	Make it a real template and remove the PHP functions from template-tags.php.
+	*/
+	?>
 	<footer class="entry-footer">
 		<?php twentynineteen_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 
-	<?php if ( ! is_singular( 'attachment' ) ) : ?>
 	<?php get_template_part( 'template-parts/content/content-post-author-bio' ); ?>
-	<?php endif; ?>
 
 </article><!-- #post-${ID} -->
