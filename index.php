@@ -1,6 +1,8 @@
 <?php
 /**
- * The main template file
+ * The main template file. I've made it to be the universal base template.
+ * Every single page request will be routed to this template, then we use
+ * conditional tags to determine which template to render.
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -18,12 +20,12 @@
 <html <?php language_attributes(); ?>>
 	<?php get_template_part( 'templates/partials/head' ); ?>
 
-	<body <?php body_class(); ?>>
-		<div id="page" class="site">
-			<?php get_template_part( 'templates/partials/header' ); ?>
-			<div id="content" class="site-content">
-				<section id="primary" class="content-area">
-					<main id="main" class="site-main">
+	<body <?php body_class('karu-theme'); ?>>
+		<div id="page" class="site maxwidth">
+		<?php get_template_part( 'templates/partials/header' ); ?>
+			<div id="content">
+				<section id="primary">
+					<main id="main">
 
 					<?php
 					if ( is_home() ) {
@@ -46,11 +48,17 @@
 					}
 					?>
 
-					</main><!-- .site-main -->
-				</section><!-- .content-area -->
+					</main>
+				</section>
 
 			</div><!-- #content -->
 			<?php get_template_part( 'templates/partials/footer' ); ?>
 		</div><!-- #page -->
+
+		<!-- TODO: this section below is specific to the site. Make it adaptable later. -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-41636874-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-41636874-3');
+    </script>
 	</body>
 </html>

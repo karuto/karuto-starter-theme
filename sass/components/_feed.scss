@@ -1,0 +1,74 @@
+.feeds {
+  /* anything next to footer should have $spacing-gigantic */
+  margin: 0 auto $spacing-gigantic;
+  max-width: $onecolumn-maxwidth;
+}
+.feed__header {
+  @include subtlefont();
+  display: inline-block;
+  padding: 0 0 $spacing;
+  margin: 0 0 $spacing-large;
+  border-bottom: $border-line-bold;
+}
+.feed {
+  margin: 0 0 $spacing-large;
+}
+.feed:not(:last-child) {
+  border-bottom: $border-line;
+}
+.feed__title {
+  font-family: $font-family-title;
+  font-size: $font-size-title;
+  line-height: $line-height-title;
+  font-weight: $font-weight-normal;
+  margin: 0 0 $spacing-small;
+}
+.feed__excerpt {
+  color: $subtle-text-color;
+  font-family: $font-family-content;
+  line-height: $line-height-content;
+  margin: 0 0 $spacing-small;
+}
+.feed__metas {
+  @include subtlefont();
+  margin: 0 0 $spacing-large;
+}
+.feed__metas a {
+  /* hate to do this, but must override <a> without classes by the_category */
+  @include linkStyleOverride();
+}
+
+
+/* Hompage desktop - two column feeds */
+.feeds--home {
+  max-width: $container-maxwidth;
+  margin: 0 0 $spacing-gigantic; /* Overriding the auto margin */
+  display: flex;
+}
+.feed--home {
+  flex: 1 0 50%;
+  &:not(:last-child) {
+    padding: 0 $spacing-large 0 0;
+  }
+  @media (max-width: $mobile-max) {
+    margin: 0 0 $spacing-xxxlarge;
+  }
+}
+.feed__header--home {
+  display: block;
+}
+.feed__header__link {
+  @include linkStyleOverride();
+}
+
+/* Hompage mobile - one column feeds */
+@media (max-width: $mobile-max) {
+  .feeds--home {
+    display: block;
+  }
+  .feed--home {    
+    &:not(:last-child) {
+      padding: 0;
+    }
+  }
+}

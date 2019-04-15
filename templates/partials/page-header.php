@@ -13,8 +13,8 @@
 
 <?php
 if ( is_archive() || is_search() || is_404() ) {
-  echo '<header class="page-header">';
-  echo '<h1 class="page-title">';
+  echo '<header class="feed__header">';
+  echo '<div class="page-title">';
 
   if ( is_archive() ) {
     echo get_the_archive_title();
@@ -23,7 +23,7 @@ if ( is_archive() || is_search() || is_404() ) {
   } else if ( is_404() ) {
     _e( 'Oops! That page can&rsquo;t be found.', 'twentynineteen' );
   }
-  echo '</h1>';
+  echo '</div>';
 
   // Extra div just for search result pages.
   if( is_search() ) {

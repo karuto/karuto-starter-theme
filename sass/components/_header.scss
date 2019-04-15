@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: $spacing-medium 0 $spacing-gigantic;
+  font-size: $font-size-tiny;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header__logo {
+  font-family: $font-family-logo;
+  font-weight: $font-weight-bold;
+}
+
+.header__ul {
+}
+
+.header__item {
+  display: inline-block;
+  @media (max-width: $mobile-max) {
+    display: block;
+    text-align: right;
+  }
+}
+
+.header__item__link {
+  margin: 0 0 0 $spacing-medium;
+  @include linkStyleOverride();
+}
