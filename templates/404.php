@@ -11,7 +11,6 @@
 ?>
 
 <div class="error-404 not-found">
-
 	<?php
 	get_template_part( 'templates/partials/page-header' );
 	?>

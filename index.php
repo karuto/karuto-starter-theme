@@ -9,6 +9,17 @@
  * It is used to display a page when nothing more specific matches a query.
  * E.g., it puts together the home page when no home.php file exists.
  *
+ * ===============================================================
+ * Template structure inside this theme
+ * 
+ * templates
+ * --content
+ * 	 [Templates for content types: post, page, excerpt, none...]
+ * 	 [Template partials, exclusive to content: comments, meta, title...]
+ * --partials
+ *   [Template partials, generic (not just for content): footer, header, feed...]
+ * [Top level templates that represent complete pages: 404, archive...]
+ * 
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
