@@ -315,7 +315,7 @@ require get_template_directory() . '/inc/icon-functions.php';
 /**
  * Custom template tags for the theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+require get_template_directory() . '/inc/template-partials.php';
 
 /**
  * Customizer additions.
