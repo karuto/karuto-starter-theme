@@ -6,7 +6,7 @@
  *
  * @package WordPress
  * @subpackage karuto_starter_theme
- * @since 1.0.0
+ * @since added by Vincent Zhang
  */
 ?>
 

@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage karuto_starter_theme
- * @since 1.0.0
+ * @since added by Vincent Zhang
  */
 
 if ( is_active_sidebar( 'sidebar-footer' ) ) : ?>
