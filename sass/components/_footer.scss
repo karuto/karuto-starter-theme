@@ -7,6 +7,7 @@
     display: block;
   }
   .widget-area {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -22,43 +23,4 @@
     @include subtlefont();
     margin: 0 0 $spacing;
   }
-}
-
-.footer__logo {
-  /* some tricky shit to break justify-content, write a blog about it
-  https://stackoverflow.com/questions/23621650/how-to-justify-a-single-flexbox-item-override-justify-content
-  */
-  margin: 0 auto $spacing-large 0;
-  align-self: flex-start;
-}
-
-.footer__logo__link {
-  font-family: $font-family-logo;
-  font-weight: $font-weight-bold;
-  margin: 0 0 $spacing-small;
-  text-transform: uppercase;
-}
-
-.footer__logo__copyright {
-  color: $subtle-text-color;
-}
-
-.footer__nav {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  @media (max-width: $mobile-max) {
-    width: 50%;
-    float: left;
-  }
-}
-
-.footer__subheader {
-  color: $subtle-text-color;
-  margin: 0 0 $spacing-small;
-  text-transform: uppercase;
-}
-
-.footer__link {
-  @include subtlefont();
 }
