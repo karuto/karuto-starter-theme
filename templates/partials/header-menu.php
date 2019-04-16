@@ -8,13 +8,13 @@
  */
 ?>
 
-<?php if ( has_nav_menu( 'menu-1' ) ) : ?>
+<?php if ( has_nav_menu( 'header' ) ) : ?>
   <!-- TODO: the main-navigation class is wrangled with a lot of assumptions. Clean it up later. -->
   <nav id="site-navigation" class="main-navigation header__nav" aria-label="<?php esc_attr_e( 'Top Menu', 'twentynineteen' ); ?>">
     <?php
     wp_nav_menu(
       array(
-        'theme_location' => 'menu-1',
+        'theme_location' => 'header',
         'menu_class'     => 'main-menu',
         'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
       )
