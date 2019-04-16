@@ -760,6 +760,7 @@ body#tinymce {
 }
 
 .footer .widget-area {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -782,51 +783,6 @@ body#tinymce {
   font-size: 14px;
   font-weight: 700;
   margin: 0 0 16px;
-}
-
-.footer__logo {
-  /* some tricky shit to break justify-content, write a blog about it
-  https://stackoverflow.com/questions/23621650/how-to-justify-a-single-flexbox-item-override-justify-content
-  */
-  margin: 0 auto 32px 0;
-  align-self: flex-start;
-}
-
-.footer__logo__link {
-  font-family: "Roboto", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif;
-  font-weight: 700;
-  margin: 0 0 8px;
-  text-transform: uppercase;
-}
-
-.footer__logo__copyright {
-  color: #333;
-}
-
-.footer__nav {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-}
-
-@media (max-width: 767px) {
-  .footer__nav {
-    width: 50%;
-    float: left;
-  }
-}
-
-.footer__subheader {
-  color: #333;
-  margin: 0 0 8px;
-  text-transform: uppercase;
-}
-
-.footer__link {
-  color: #333;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
 }
 
 .header {
