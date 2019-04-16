@@ -8,7 +8,6 @@
  * @subpackage karuto_starter_theme
  * @since 1.0.0
  */
-
 ?>
 
 <article <?php post_class(); ?>>

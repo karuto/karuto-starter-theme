@@ -8,6 +8,5 @@
  * @subpackage karuto_starter_theme
  * @since added by Vincent Zhang
  */
-
 ?>
 

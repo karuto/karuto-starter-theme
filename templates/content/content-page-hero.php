@@ -8,7 +8,6 @@
  * @subpackage karuto_starter_theme
  * @since added by Vincent Zhang
  */
-
 ?>
 
 <div class="hero hero--entry">

@@ -9,11 +9,6 @@
  * @subpackage karuto_starter_theme
  * @since added by Vincent Zhang
  */
-
 ?>
 
-<?php the_category(' &bull; '); ?>
-&bull; 
-<?php get_template_part( 'templates/content/content-post-views' ); ?>
-&bull; 
-Written On <?php the_time('M d, Y'); ?>
+<?php the_category(' &bull; '); ?>&nbsp;&bull;&nbsp;<?php get_template_part( 'templates/content/content-post-views' ); ?>&nbsp;&bull;&nbsp;<?php the_time('M d, Y'); ?>
