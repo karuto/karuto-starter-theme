@@ -216,16 +216,12 @@ add_action( 'after_setup_theme', 'twentynineteen_content_width', 0 );
  * Enqueue scripts and styles.
  */
 function twentynineteen_scripts() {
-	wp_enqueue_style( 'twentynineteen-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
-
-	wp_style_add_data( 'twentynineteen-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'karuto-starter-theme-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
 	if ( has_nav_menu( 'header' ) ) {
 		wp_enqueue_script( 'twentynineteen-priority-menu', get_theme_file_uri( '/js/menu-priority.js' ), array(), '1.1', true );
 		wp_enqueue_script( 'twentynineteen-touch-navigation', get_theme_file_uri( '/js/menu-touch-keyboard-navigation.js' ), array(), '1.1', true );
 	}
-
-	wp_enqueue_style( 'twentynineteen-print-style', get_template_directory_uri() . '/print.css', array(), wp_get_theme()->get( 'Version' ), 'print' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
