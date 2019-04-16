@@ -6,6 +6,22 @@
   @media (max-width: $mobile-max) {
     display: block;
   }
+  .widget-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .widget {
+    /* Gutter; only works with space-between above */
+    width:calc(50% - 16px);
+    @media (max-width: $mobile-max) {
+      width: 100%;
+    }
+  }
+  .widget-title {
+    @include subtlefont();
+    margin: 0 0 $spacing;
+  }
 }
 
 .footer__logo {

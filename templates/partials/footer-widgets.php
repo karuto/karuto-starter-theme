@@ -1,23 +1,23 @@
 <?php
 /**
- * Displays the footer widget area
+ * Displays the footer widget area (in the code it's called "sidebar").
  *
  * @package WordPress
  * @subpackage karuto_starter_theme
  * @since 1.0.0
  */
 
-if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+if ( is_active_sidebar( 'sidebar-footer' ) ) : ?>
 
-	<aside class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Footer', 'twentynineteen' ); ?>">
+	<aside 
+		class="widget-area" 
+		role="complementary" 
+		aria-label="<?php esc_attr_e( 'Footer', 'twentynineteen' ); ?>"
+	>
 		<?php
-			if ( is_active_sidebar( 'sidebar-1' ) ) {
-				?>
-					<div class="widget-column footer-widget-1">
-						<?php dynamic_sidebar( 'sidebar-1' ); ?>
-					</div>
-				<?php
-			}
+		if ( is_active_sidebar( 'sidebar-footer' ) ) {
+			dynamic_sidebar( 'sidebar-footer' );
+		}
 		?>
 	</aside><!-- .widget-area -->
 
