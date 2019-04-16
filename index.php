@@ -27,49 +27,27 @@
  * @since 1.0.0
  */
 
-?><!doctype html>
-<html <?php language_attributes(); ?>>
-	<?php get_template_part( 'templates/partials/head' ); ?>
+?>
 
-	<body <?php body_class('karuto-starter-theme'); ?>>
-		<div id="page" class="site maxwidth">
-		<?php get_template_part( 'templates/partials/header' ); ?>
-			<div id="content">
-				<section id="primary">
-					<main id="main">
-
-					<?php
-					if ( is_home() ) {
-						// only for "recent posts", not for static page as home page
-						get_template_part( 'templates/home' );
-					} else if ( is_single() ) {
-						// any posts; excludes pages and attachments
-						get_template_part( 'templates/post' );
-					} else if ( is_page() ) {
-						// any pages; excludes posts and attachments
-						get_template_part( 'templates/page' );
-					} else if ( is_archive() ) {
-						get_template_part( 'templates/archive' );
-					} else if ( is_search() ) {
-						get_template_part( 'templates/search' );
-					} else if ( is_404() ) {
-						get_template_part( 'templates/404' );
-					} else {
-						get_template_part( 'templates/home' );
-					}
-					?>
-
-					</main>
-				</section>
-
-			</div><!-- #content -->
-			<?php get_template_part( 'templates/partials/footer' ); ?>
-		</div><!-- #page -->
-
-		<!-- TODO: this section below is specific to the site. Make it adaptable later. -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-41636874-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-41636874-3');
-    </script>
-	</body>
-</html>
+<?php
+get_template_part( 'templates/partials/html-starting-tags' );
+if ( is_home() ) {
+	// only for "recent posts", not for static page as home page
+	get_template_part( 'templates/home' );
+} else if ( is_single() ) {
+	// any posts; excludes pages and attachments
+	get_template_part( 'templates/post' );
+} else if ( is_page() ) {
+	// any pages; excludes posts and attachments
+	get_template_part( 'templates/page' );
+} else if ( is_archive() ) {
+	get_template_part( 'templates/archive' );
+} else if ( is_search() ) {
+	get_template_part( 'templates/search' );
+} else if ( is_404() ) {
+	get_template_part( 'templates/404' );
+} else {
+	get_template_part( 'templates/home' );
+}
+get_template_part( 'templates/partials/html-closing-tags' );
+?>
