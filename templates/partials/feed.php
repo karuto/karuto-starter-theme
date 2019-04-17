@@ -34,7 +34,7 @@
     // This only applies for single post and page pages.
     // This won't apply for numbered pages, such as home or archive pages.
     if ( comments_open() || get_comments_number() ) {
-      comments_template( '/templates/partials/comments.php' );
+      comments_template( '/templates/content/comments' );
     }
 
     // Previous/next page navigation.

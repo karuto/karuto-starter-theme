@@ -12,6 +12,7 @@
 
 <article <?php post_class(); ?>>
 	<div class="entry">
+
 		<?php get_template_part( 'templates/content/content-post-hero' ); ?>
 
 		<div class="entry__content">
