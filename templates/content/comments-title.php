@@ -1,3 +1,15 @@
+<?php
+/**
+ * Template part for displaying the comment section's title.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package WordPress
+ * @subpackage karuto_starter_theme
+ * @since added by Vincent Zhang
+ */
+?>
+
 <h2 class="comments-title">
 		<?php
 		if ( comments_open() ) {

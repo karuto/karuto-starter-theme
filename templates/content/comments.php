@@ -33,16 +33,10 @@ $discussion = twentynineteen_get_discussion_data();
 		?>
 	</div><!-- .comments-title-flex -->
 	<?php
-	if ( have_comments() ) :
-
-		// Show comment form at top if showing newest comments at the top.
-		if ( comments_open() ) {
-			twentynineteen_comment_form( 'desc' );
-		}
-
-		?>
-		<ul class="comment-list">
-			<?php
+	if ( comments_open() ) {
+		get_template_part( 'templates/content/comments-form' );
+		if ( have_comments() ) {
+			echo '<ul class="comment-list">';
 			wp_list_comments(
 				array(
 					'walker'      => new TwentyNineteen_Walker_Comment(),
@@ -51,35 +45,10 @@ $discussion = twentynineteen_get_discussion_data();
 					'style'       => 'ul',
 				)
 			);
-			?>
-		</ul><!-- .comment-list -->
-		<?php
-
-		// Show comment form at bottom if showing newest comments at the bottom.
-		if ( comments_open() && 'asc' === strtolower( get_option( 'comment_order', 'asc' ) ) ) :
-			?>
-			<div class="comment-form-flex">
-				<span class="screen-reader-text"><?php _e( 'Leave a comment', 'twentynineteen' ); ?></span>
-				<?php twentynineteen_comment_form( 'asc' ); ?>
-				<h2 class="comments-title" aria-hidden="true"><?php _e( 'Leave a comment', 'twentynineteen' ); ?></h2>
-			</div>
-			<?php
-		endif;
-
-		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() ) :
-			?>
-			<p class="no-comments">
-				<?php _e( 'Comments are closed.', 'twentynineteen' ); ?>
-			</p>
-			<?php
-		endif;
-
-	else :
-
-		// Show comment form.
-		twentynineteen_comment_form( true );
-
-	endif; // if have_comments();
+			echo '</ul><!-- .comment-list -->';
+		}
+	} else {
+		//TODO: comments are closed. Render a simple line.
+	}
 	?>
 </div><!-- #comments -->
