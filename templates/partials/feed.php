@@ -33,9 +33,8 @@
     // If comments are open or we have at least one comment, load up the comment template.
     // This only applies for single post and page pages.
     // This won't apply for numbered pages, such as home or archive pages.
-    if ( comments_open() || get_comments_number() ) {
-      comments_template( '/templates/content/comments' );
-    }
+    // Gotcha: this function requires file extension when looking for templates.
+    comments_template( '/templates/content/comments.php' );
 
     // Previous/next page navigation.
     // This won't apply for single post and page pages.

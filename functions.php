@@ -308,11 +308,6 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/icon-functions.php';
 
 /**
- * Custom template tags for the theme.
- */
-require get_template_directory() . '/inc/template-partials.php';
-
-/**
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';

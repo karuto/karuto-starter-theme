@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying the comment section's title.
+ * Template for displaying the comment section's title.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *

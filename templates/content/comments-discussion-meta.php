@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Current Discussion on posts
+ * Template for displaying Current Discussion on posts
  *
  * @package WordPress
  * @subpackage karuto_starter_theme

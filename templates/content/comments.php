@@ -1,7 +1,9 @@
 <?php
 /**
- * The template that displays the area of the page that contains both the current comments
- * and the comment form.
+ * Template for the overall comments area.
+ * Currently, it only supports posts that allow comments.
+ * If the post does not allow comment, it will render nothing.
+ * TODO: add support for closed comments.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -14,14 +16,14 @@
  * If the current post is protected by a password and
  * the visitor has not yet entered the password we will
  * return early without loading the comments.
+ * Or, if the post does not allow comments. TODO: support?
 */
-if ( post_password_required() ) {
+if ( post_password_required() || !comments_open() ) {
 	return;
 }
 
 $discussion = twentynineteen_get_discussion_data();
 ?>
-
 <div id="comments" class="<?php echo comments_open() ? 'comments-area' : 'comments-area comments-closed'; ?>">
 	<div class="<?php echo $discussion->responses > 0 ? 'comments-title-wrap' : 'comments-title-wrap no-responses'; ?>">
 		<?php get_template_part( 'templates/content/comments-title' ); ?>
@@ -33,22 +35,18 @@ $discussion = twentynineteen_get_discussion_data();
 		?>
 	</div><!-- .comments-title-flex -->
 	<?php
-	if ( comments_open() ) {
-		get_template_part( 'templates/content/comments-form' );
-		if ( have_comments() ) {
-			echo '<ul class="comment-list">';
-			wp_list_comments(
-				array(
-					'walker'      => new TwentyNineteen_Walker_Comment(),
-					'avatar_size' => 60,
-					'short_ping'  => true,
-					'style'       => 'ul',
-				)
-			);
-			echo '</ul><!-- .comment-list -->';
-		}
-	} else {
-		//TODO: comments are closed. Render a simple line.
+	get_template_part( 'templates/content/comments-form' );
+	if ( have_comments() ) {
+		echo '<ul class="comment-list">';
+		wp_list_comments(
+			array(
+				'walker'      => new TwentyNineteen_Walker_Comment(),
+				'avatar_size' => 60,
+				'short_ping'  => true,
+				'style'       => 'ul',
+			)
+		);
+		echo '</ul><!-- .comment-list -->';
 	}
 	?>
 </div><!-- #comments -->
