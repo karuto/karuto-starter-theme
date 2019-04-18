@@ -24,21 +24,21 @@ if ( post_password_required() || !comments_open() ) {
 
 $discussion = twentynineteen_get_discussion_data();
 ?>
-<div id="comments" class="<?php echo comments_open() ? 'comments-area' : 'comments-area comments-closed'; ?>">
-	<div class="<?php echo $discussion->responses > 0 ? 'comments-title-wrap' : 'comments-title-wrap no-responses'; ?>">
-		<?php get_template_part( 'templates/content/comments-title' ); ?>
+<div class="<?php echo comments_open() ? 'discussion' : 'discussion discussion--closed'; ?>">
+	<div class="<?php echo $discussion->responses > 0 ? 'discussion__heading' : 'discussion__heading discussion__heading--no-responses'; ?>">
 		<?php
+		get_template_part( 'templates/content/comments-title' ); 
 		// TODO: enable this later.
 		// Only show discussion meta information when comments are open and available.
 		// if ( have_comments() && comments_open() ) {
 		// 	get_template_part( 'templates/content/comments-discussion-meta' );
 		// }
 		?>
-	</div><!-- .comments-title-flex -->
+	</div><!-- .discussion__heading -->
 	<?php
 	get_template_part( 'templates/content/comments-form' );
 	if ( have_comments() ) {
-		echo '<ul class="comment-list">';
+		echo '<ul class="comments">';
 		wp_list_comments(
 			array(
 				'walker'      => new TwentyNineteen_Walker_Comment(),
@@ -47,7 +47,7 @@ $discussion = twentynineteen_get_discussion_data();
 				'style'       => 'ul',
 			)
 		);
-		echo '</ul><!-- .comment-list -->';
+		echo '</ul><!-- .comments -->';
 	}
 	?>
-</div><!-- #comments -->
+</div><!-- .discussion -->

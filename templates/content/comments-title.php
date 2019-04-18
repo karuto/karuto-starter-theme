@@ -10,7 +10,7 @@
  */
 ?>
 
-<h2 class="comments-title">
+<h2 class="discussion__heading__title">
 		<?php
 		if ( comments_open() ) {
 			if ( have_comments() ) {
@@ -38,4 +38,4 @@
 			}
 		}
 		?>
-		</h2><!-- .comments-title -->
+</h2>
