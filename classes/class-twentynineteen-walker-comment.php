@@ -29,78 +29,70 @@ class TwentyNineteen_Walker_Comment extends Walker_Comment {
 
 		?>
 		<<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( $this->has_children ? 'parent' : '', $comment ); ?>>
-			<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
-				<footer class="comment-meta">
-					<div class="comment-author vcard">
-						<?php
-						$comment_author_link = get_comment_author_link( $comment );
-						$comment_author_url  = get_comment_author_url( $comment );
-						$comment_author      = get_comment_author( $comment );
-						$avatar              = get_avatar( $comment, $args['avatar_size'] );
+			<article id="div-comment-<?php comment_ID(); ?>" class="comment__body">
+				<div class="comment__author vcard">
+					<?php
+					$comment_author_link = get_comment_author_link( $comment );
+					$comment_author_url  = get_comment_author_url( $comment );
+					$comment_author      = get_comment_author( $comment );
+					$avatar              = get_avatar( $comment, $args['avatar_size'] );
 
-						if ( 0 != $args['avatar_size'] ) {
-							if ( empty( $comment_author_url ) ) {
-								echo $avatar;
-							} else {
-								printf( '<a href="%s" rel="external nofollow" class="url">', $comment_author_url );
-								echo $avatar;
-							}
+					if ( 0 != $args['avatar_size'] ) {
+						if ( empty( $comment_author_url ) ) {
+							echo $avatar;
+						} else {
+							printf( '<a href="%s" rel="external nofollow" class="url">', $comment_author_url );
+							echo $avatar;
 						}
+					}
 
-						/*
-						 * Using the `check` icon instead of `check_circle`, since we can't add a
-						 * fill color to the inner check shape when in circle form.
-						 */
-						if ( twentynineteen_is_comment_by_post_author( $comment ) ) {
-							printf( '<span class="post-author-badge" aria-hidden="true">%s</span>', twentynineteen_get_icon_svg( 'check', 24 ) );
-						}
+					/*
+						* Using the `check` icon instead of `check_circle`, since we can't add a
+						* fill color to the inner check shape when in circle form.
+						*/
+					// TODO: add support for post author badge.
+					// if ( twentynineteen_is_comment_by_post_author( $comment ) ) {
+					// 	printf( '<span class="post-author-badge" aria-hidden="true">%s</span>', twentynineteen_get_icon_svg( 'check', 24 ) );
+					// }
 
-						printf(
-							/* translators: %s: comment author link */
-							wp_kses(
-								__( '%s <span class="screen-reader-text says">says:</span>', 'twentynineteen' ),
-								array(
-									'span' => array(
-										'class' => array(),
-									),
-								)
-							),
-							'<b class="fn">' . get_comment_author_link( $comment ) . '</b>'
-						);
+					if ( ! empty( $comment_author_url ) ) {
+						echo '</a>';
+					}
+					?>
+				</div><!-- .comment__author -->
 
-						if ( ! empty( $comment_author_url ) ) {
-							echo '</a>';
-						}
-						?>
-					</div><!-- .comment-author -->
-					<?php 
-					get_template_part( 'templates/content/comments-item-meta' );
-					
-					if ( '0' == $comment->comment_approved ) : ?>
-					<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'twentynineteen' ); ?></p>
-					<?php endif; ?>
-				</footer><!-- .comment-meta -->
+				<div class="comment__content">
+					<footer class="comment__meta">
+						<?php 
+						get_template_part( 'templates/content/comments-item-meta' );
+						
+						if ( '0' == $comment->comment_approved ) : ?>
+						<p class="comment__meta__awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'twentynineteen' ); ?></p>
+						<?php endif; ?>
+					</footer><!-- .comment__meta -->
 
-				<div class="comment-content">
-					<?php comment_text(); ?>
-				</div><!-- .comment-content -->
+					<p class='comment__text'>
+						<?php echo get_comment_text(); ?>
+					</p><!-- .comment__text -->
 
-			</article><!-- .comment-body -->
+					<?php
+					comment_reply_link(
+						array_merge(
+							$args,
+							array(
+								'add_below' => 'div-comment',
+								'depth'     => $depth,
+								'max_depth' => $args['max_depth'],
+								'before'    => '<div class="comment__reply">',
+								'after'     => '</div>',
+							)
+						)
+					);
+					?>
+				</div><!-- .comment__content -->
 
-			<?php
-			comment_reply_link(
-				array_merge(
-					$args,
-					array(
-						'add_below' => 'div-comment',
-						'depth'     => $depth,
-						'max_depth' => $args['max_depth'],
-						'before'    => '<div class="comment-reply">',
-						'after'     => '</div>',
-					)
-				)
-			);
-			?>
+			</article><!-- .comment__body -->
+
 		<?php
 	}
 }

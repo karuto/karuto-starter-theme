@@ -1,5 +1,5 @@
 .discussion {
-  /* Discussion = submit comment + existing comments */
+  /* Discussion = submit a comment + comments */
 
 }
 .discussion--closed {
@@ -12,4 +12,46 @@
 }
 .discussion__heading__title {
 
+}
+.comments {
+}
+.comment {
+
+  &.depth-2, 
+  &.depth-3, 
+  &.depth-4, 
+  &.depth-5, 
+  &.depth-6 {
+    // calc($spacing-xxlarge + $spacing) = 48 + 16 = 64;
+    margin: 0 0 0 64px;
+  }
+}
+.comment__body {
+  display: flex;
+}
+.comment__author {
+  margin: 0 $spacing 0 0;
+  .avatar {
+    border-radius: $base-border-radius;
+  }
+}
+.comment__meta {
+  @include subtlefont();
+  margin: 0 0 $spacing-small;
+}
+.comment__meta__data {
+  
+}
+.comment__meta__awaiting-moderation {
+  
+}
+.comment__content {
+  flex-grow: 2;
+}
+.comment__text {
+  margin: 0 0 $spacing-small;
+}
+.comment__reply {
+  @include subtlefont();
+  margin: 0 0 $spacing-large;
 }

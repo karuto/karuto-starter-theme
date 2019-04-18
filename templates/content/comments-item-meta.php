@@ -1,11 +1,24 @@
-<div class="comment-metadata">
+<div class="comment__meta__data">
+  <?php
+  printf(
+    /* translators: %s: comment author link */
+    wp_kses(
+      __( '%s <span class="screen-reader-text says">says:</span>', 'twentynineteen' ),
+      array(
+        'span' => array(
+          'class' => array(),
+        ),
+      )
+    ),
+    '<b class="fn">' . get_comment_author_link( $comment ) . '</b>'
+  );
+
+  $comment_relative_time = sprintf( __( '%1$s at %2$s', 'twentynineteen' ), get_comment_date( '', $comment ), get_comment_time() );
+  ?>
+  &nbsp;&bull;&nbsp;
   <a href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>">
-    <?php
-      /* translators: 1: comment date, 2: comment time */
-      $comment_timestamp = sprintf( __( '%1$s at %2$s', 'twentynineteen' ), get_comment_date( '', $comment ), get_comment_time() );
-    ?>
-    <time datetime="<?php comment_time( 'c' ); ?>" title="<?php echo $comment_timestamp; ?>">
-      <?php echo $comment_timestamp; ?>
+    <time datetime="<?php comment_time( 'c' ); ?>">
+      <?php echo $comment_relative_time; ?>
     </time>
   </a>
   <?php
