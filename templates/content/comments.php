@@ -28,10 +28,11 @@ $discussion = twentynineteen_get_discussion_data();
 	<div class="<?php echo $discussion->responses > 0 ? 'comments-title-wrap' : 'comments-title-wrap no-responses'; ?>">
 		<?php get_template_part( 'templates/content/comments-title' ); ?>
 		<?php
-			// Only show discussion meta information when comments are open and available.
-		if ( have_comments() && comments_open() ) {
-			get_template_part( 'templates/content/comments-discussion-meta' );
-		}
+		// TODO: enable this later.
+		// Only show discussion meta information when comments are open and available.
+		// if ( have_comments() && comments_open() ) {
+		// 	get_template_part( 'templates/content/comments-discussion-meta' );
+		// }
 		?>
 	</div><!-- .comments-title-flex -->
 	<?php
@@ -41,7 +42,7 @@ $discussion = twentynineteen_get_discussion_data();
 		wp_list_comments(
 			array(
 				'walker'      => new TwentyNineteen_Walker_Comment(),
-				'avatar_size' => 60,
+				'avatar_size' => 48,
 				'short_ping'  => true,
 				'style'       => 'ul',
 			)

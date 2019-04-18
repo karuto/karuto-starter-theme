@@ -60,7 +60,7 @@ function twentynineteen_comment_form_defaults( $defaults ) {
 	$comment_field = $defaults['comment_field'];
 
 	// Adjust height of comment form.
-	$defaults['comment_field'] = preg_replace( '/rows="\d+"/', 'rows="5"', $comment_field );
+	$defaults['comment_field'] = preg_replace( '/rows="\d+"/', 'rows="2"', $comment_field );
 
 	return $defaults;
 }
