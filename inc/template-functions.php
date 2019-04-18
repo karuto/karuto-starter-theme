@@ -80,13 +80,6 @@ function twentynineteen_image_filters_enabled() {
 }
 
 /**
- * Returns the size for avatars used in the theme.
- */
-function twentynineteen_get_avatar_size() {
-	return 60;
-}
-
-/**
  * Returns true if comment is by author of the post.
  *
  * @see get_comment_class()
