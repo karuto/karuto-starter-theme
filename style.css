@@ -506,10 +506,17 @@ body#tinymce {
 */
 .discussion {
   /* Discussion = submit a comment + comments */
+  margin: -64px 0 0;
 }
 
-.comment.depth-2, .comment.depth-3, .comment.depth-4, .comment.depth-5, .comment.depth-6 {
+.comment.depth-2, .comment.depth-3, .comment.depth-4, .comment.depth-5 {
   margin: 0 0 0 64px;
+}
+
+@media (max-width: 767px) {
+  .comment.depth-2, .comment.depth-3, .comment.depth-4, .comment.depth-5 {
+    margin: 0;
+  }
 }
 
 .comment__body {

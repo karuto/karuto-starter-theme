@@ -1,6 +1,6 @@
 .discussion {
   /* Discussion = submit a comment + comments */
-
+  margin: -$spacing-xxxlarge 0 0;
 }
 .discussion--closed {
 }
@@ -17,13 +17,16 @@
 }
 .comment {
 
+
   &.depth-2, 
   &.depth-3, 
   &.depth-4, 
-  &.depth-5, 
-  &.depth-6 {
+  &.depth-5 {
     // calc($spacing-xxlarge + $spacing) = 48 + 16 = 64;
     margin: 0 0 0 64px;
+    @media (max-width: $mobile-max) {
+      margin: 0;
+    }
   }
 }
 .comment__body {
