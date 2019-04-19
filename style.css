@@ -512,23 +512,30 @@ body#tinymce {
   /* The <input> tag that actually is the submit button */
 }
 
-.comment-form .comment__body {
-  margin: 0;
-}
-
-.comment-form input[name="author"],
-.comment-form input[name="email"],
-.comment-form input[name="url"],
-.comment-form textarea {
+.comment-form .comment__input {
   border: 2px solid #E8E8E8;
   border-radius: 4px;
   padding: 4px;
 }
 
+.comment-form .comment__input__label, .comment-form .comment__checkbox {
+  display: inline-block;
+  min-width: 48px;
+  margin: 0 16px 0 0;
+}
+
+.comment-form .comment__body {
+  line-height: 1;
+  margin: 0 0 8px;
+}
+
+.comment-form .comment__input {
+  width: 100%;
+}
+
 .comment-form textarea {
   height: 48px;
   /* align horizontally with avatar */
-  width: 100%;
 }
 
 .comment-form .comment-form-comment {
@@ -544,6 +551,10 @@ body#tinymce {
 .comment-form .comment__submit {
   /* Align to the right end */
   align-self: flex-end;
+}
+
+.comment-form .comment__checkbox__label {
+  line-height: 1.5;
 }
 
 /* This stylesheet targets existing comments only. Also see comments-form.scss */

@@ -291,7 +291,6 @@ require get_template_directory() . '/classes/class-twentynineteen-svg-icons.php'
 require get_template_directory() . '/classes/class-twentynineteen-walker-comment.php';
 
 require get_template_directory() . '/inc/archive-title.php';
-require get_template_directory() . '/inc/comment-form-default-fields.php';
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/icon-functions.php';
 require get_template_directory() . '/inc/post-views.php';
