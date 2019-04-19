@@ -11,7 +11,8 @@
 
   %input {
     border: 2px solid $block-bg-color;
-    border-radius: 4px;
+    border-radius: $base-border-radius;
+    padding: $base-border-radius;
   }
 
   /* TODO: make the textarea adaptable to input */

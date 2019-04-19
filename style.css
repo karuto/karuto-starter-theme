@@ -522,6 +522,7 @@ body#tinymce {
 .comment-form textarea {
   border: 2px solid #E8E8E8;
   border-radius: 4px;
+  padding: 4px;
 }
 
 .comment-form textarea {

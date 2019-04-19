@@ -287,37 +287,13 @@ function twentynineteen_colors_css_wrap() {
 }
 add_action( 'wp_head', 'twentynineteen_colors_css_wrap' );
 
-/**
- * SVG Icons class.
- */
 require get_template_directory() . '/classes/class-twentynineteen-svg-icons.php';
-
-/**
- * Custom Comment Walker template.
- */
 require get_template_directory() . '/classes/class-twentynineteen-walker-comment.php';
 
-/**
- * Enhance the theme by hooking into WordPress.
- */
-require get_template_directory() . '/inc/template-functions.php';
-
-/**
- * SVG Icons related functions.
- */
-require get_template_directory() . '/inc/icon-functions.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Archive title processing.
- */
 require get_template_directory() . '/inc/archive-title.php';
-
-/**
- * Counts views for posts.
- */
+require get_template_directory() . '/inc/comment-form-default-fields.php';
+require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/icon-functions.php';
 require get_template_directory() . '/inc/post-views.php';
+require get_template_directory() . '/inc/relative-comment-time.php';
+require get_template_directory() . '/inc/template-functions.php';
