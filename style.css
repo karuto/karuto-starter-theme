@@ -506,7 +506,7 @@ body#tinymce {
 */
 /* This stylesheet targets "submit new comment" form only. Also see comments.scss */
 .comment-form {
-  margin: 0 0 48px;
+  margin: 0;
   /* TODO: make the textarea adaptable to input */
   /* The <p> tag that WordPress automatically generates to the submit button */
   /* The <input> tag that actually is the submit button */
@@ -584,7 +584,13 @@ body#tinymce {
 /* This stylesheet targets existing comments only. Also see comments-form.scss */
 .discussion {
   /* Discussion = submit a comment + comments */
-  margin: -64px 0 0;
+  margin: -48px 0 96px;
+  padding: 0 0 48px;
+  border-bottom: 6px double #333;
+}
+
+.comments {
+  margin: 48px 0 0;
 }
 
 /* This isn't the best class to target individual comment, because a thread is one "comment" */
@@ -1077,6 +1083,10 @@ body#tinymce {
 }
 
 .hero--entry {
+  margin: 0 0 48px;
+}
+
+.hero--discussion {
   margin: 0 0 48px;
 }
 

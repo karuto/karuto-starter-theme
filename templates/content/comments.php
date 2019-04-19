@@ -25,17 +25,14 @@ if ( post_password_required() || !comments_open() ) {
 $discussion = twentynineteen_get_discussion_data();
 ?>
 <div class="<?php echo comments_open() ? 'discussion' : 'discussion discussion--closed'; ?>">
-	<div class="<?php echo $discussion->responses > 0 ? 'discussion__heading' : 'discussion__heading discussion__heading--no-responses'; ?>">
-		<?php
-		get_template_part( 'templates/content/comments-title' ); 
-		// TODO: enable this later.
-		// Only show discussion meta information when comments are open and available.
-		// if ( have_comments() && comments_open() ) {
-		// 	get_template_part( 'templates/content/comments-discussion-meta' );
-		// }
-		?>
-	</div><!-- .discussion__heading -->
 	<?php
+	get_template_part( 'templates/content/comments-title' ); 
+	// TODO: enable this later.
+	// Only show discussion meta information when comments are open and available.
+	// if ( have_comments() && comments_open() ) {
+	// 	get_template_part( 'templates/content/comments-discussion-meta' );
+	// }
+
 	get_template_part( 'templates/content/comments-form' );
 	if ( have_comments() ) {
 		echo '<ul class="comments">';

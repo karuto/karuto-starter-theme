@@ -2,7 +2,9 @@
 
 .discussion {
   /* Discussion = submit a comment + comments */
-  margin: -$spacing-xxxlarge 0 0;
+  margin: -$spacing-xxlarge 0 $spacing-gigantic;
+  padding: 0 0 $spacing-xxlarge;
+  border-bottom: $border-line-bold;
 }
 .discussion--closed {
 }
@@ -16,6 +18,7 @@
 
 }
 .comments {
+  margin: $spacing-xxlarge 0 0;
 }
 /* This isn't the best class to target individual comment, because a thread is one "comment" */
 .comment {
