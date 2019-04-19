@@ -1,0 +1,42 @@
+/* This stylesheet targets "submit new comment" form only. Also see comments.scss */
+
+
+
+.comment-form {
+  margin: 0 0 $spacing-large;
+
+  .comment__body {
+    margin: 0;
+  }
+
+  %input {
+    border: 2px solid $block-bg-color;
+    border-radius: 4px;
+  }
+
+  /* TODO: make the textarea adaptable to input */
+  input[name="author"],
+  input[name="email"],
+  input[name="url"],
+  textarea {
+    @extend %input;
+  }
+  textarea {
+    height: $spacing-xxlarge; /* align horizontally with avatar */
+    width: 100%;
+  }
+  .comment-form-comment {
+    margin: 0;
+  }
+  /* The <p> tag that WordPress automatically generates to the submit button */
+  .form-submit {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  /* The <input> tag that actually is the submit button */
+  .comment__submit {
+    /* Align to the right end */
+    align-self: flex-end;
+  }
+}

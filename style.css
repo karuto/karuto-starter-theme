@@ -504,11 +504,54 @@ body#tinymce {
 /* Criteria for adding a component stylesheet:
  - Each file should style a single, self-contained piece of HTML.
 */
+/* This stylesheet targets "submit new comment" form only. Also see comments.scss */
+.comment-form {
+  margin: 0 0 32px;
+  /* TODO: make the textarea adaptable to input */
+  /* The <p> tag that WordPress automatically generates to the submit button */
+  /* The <input> tag that actually is the submit button */
+}
+
+.comment-form .comment__body {
+  margin: 0;
+}
+
+.comment-form input[name="author"],
+.comment-form input[name="email"],
+.comment-form input[name="url"],
+.comment-form textarea {
+  border: 2px solid #E8E8E8;
+  border-radius: 4px;
+}
+
+.comment-form textarea {
+  height: 48px;
+  /* align horizontally with avatar */
+  width: 100%;
+}
+
+.comment-form .comment-form-comment {
+  margin: 0;
+}
+
+.comment-form .form-submit {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form .comment__submit {
+  /* Align to the right end */
+  align-self: flex-end;
+}
+
+/* This stylesheet targets existing comments only. Also see comments-form.scss */
 .discussion {
   /* Discussion = submit a comment + comments */
   margin: -64px 0 0;
 }
 
+/* This isn't the best class to target individual comment, because a thread is one "comment" */
 .comment.depth-2, .comment.depth-3, .comment.depth-4, .comment.depth-5 {
   margin: 0 0 0 64px;
 }
@@ -519,8 +562,11 @@ body#tinymce {
   }
 }
 
+/* This is the best class to target individual comment */
+/* Also being used in submit new comment form */
 .comment__body {
   display: flex;
+  margin: 0 0 32px;
 }
 
 .comment__author {
@@ -528,6 +574,8 @@ body#tinymce {
 }
 
 .comment__author .avatar {
+  width: 48px;
+  height: 48px;
   border-radius: 4px;
 }
 
@@ -537,6 +585,10 @@ body#tinymce {
   font-size: 14px;
   font-weight: 700;
   margin: 0 0 8px;
+}
+
+.comment__meta__data {
+  line-height: 1;
 }
 
 .comment__content {
@@ -552,7 +604,7 @@ body#tinymce {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
-  margin: 0 0 32px;
+  margin: 0;
 }
 
 .entry__content {
