@@ -13,8 +13,6 @@
 <?php 
 $logged_in_as = '<p class="comment__logged-in-as">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>';
 
-$comment_notes = '<p class="comment__notes">' . __( 'Your email address will not be published.' ) . ( $req ? $required_text : '' ) . '</p>';
-
 $default_avatar = 'https://c.disquscdn.com/uploads/forums/128/5454/avatar92.jpg?1330293846';
 $comment_content = '<div class="comment__body">';
 $comment_content .= '<div class="comment__author">';
@@ -35,12 +33,12 @@ $fields =  array(
   'email' =>
     '<div class="comment__body"><label class="comment__input__label" for="email">' . 'Email' .
     ( $req ? '<span class="required">*</span>' : '' ) . '</label>' .
-    '<input class="comment__input" id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+    '<input class="comment__input" id="email" name="email" type="text" placeholder="Your email address will not be published" value="' . esc_attr(  $commenter['comment_author_email'] ) .
     '" size="30"' . $aria_req . ' /></div>',
 
   'url' =>
     '<div class="comment__body"><label class="comment__input__label" for="url">' . 'Site' . '</label>' .
-    '<input class="comment__input" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
+    '<input class="comment__input" id="url" name="url" type="text" placeholder="Your personal website URL" value="' . esc_attr( $commenter['comment_author_url'] ) .
     '" size="30" /></div>',
 
   'cookies' => 
@@ -53,7 +51,7 @@ $comments_args = array(
   'class_submit'=> 'comment__submit',
   'title_reply' => '',
   'logged_in_as' => $logged_in_as,
-  'comment_notes_before' => $comment_notes,
+  'comment_notes_before' => '',
   'comment_notes_after' => '',
   'comment_field' => $comment_content,
   'fields' => apply_filters( 'comment_form_default_fields', $fields ),
