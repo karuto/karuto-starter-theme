@@ -3,7 +3,7 @@
 
 
 .comment-form {
-  margin: 0 0 $spacing-large;
+  margin: 0 0 $spacing-xxlarge;
 
   %input {
     border: 2px solid $block-bg-color;
@@ -15,6 +15,7 @@
     min-width: $spacing-xxlarge;
     margin: 0 $spacing 0 0;
   }
+  .comment__logged-in-as,
   .comment__notes,
   .comment__body {
     line-height: 1;
@@ -26,6 +27,7 @@
     width: 100%;
   }
   textarea {
+    resize: vertical;
     height: $spacing-xxlarge; /* align horizontally with avatar */
   }
   .comment-form-comment {
@@ -41,6 +43,15 @@
   .comment__submit {
     /* Align to the right end */
     align-self: flex-end;
+    border-radius: $base-border-radius;
+    border: 2px solid $block-bg-color;
+    background: $block-bg-color;
+    padding: $spacing-xsmall $spacing-small;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background: $hightlight-color;
+    }
   }
   .comment__input__label {
     @extend %leftSide;
