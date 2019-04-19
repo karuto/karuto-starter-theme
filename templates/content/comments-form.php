@@ -11,8 +11,9 @@
 ?>
 
 <?php 
-$default_avatar = 'https://c.disquscdn.com/uploads/forums/128/5454/avatar92.jpg?1330293846';
+$comment_notes = '<p class="comment__notes">' . __( 'Your email address will not be published.' ) . ( $req ? $required_text : '' ) . '</p>';
 
+$default_avatar = 'https://c.disquscdn.com/uploads/forums/128/5454/avatar92.jpg?1330293846';
 $comment_content = '<div class="comment__body">';
 $comment_content .= '<div class="comment__author">';
 $comment_content .= '<img class="avatar" src="' . $default_avatar . '">';
@@ -36,7 +37,7 @@ $fields =  array(
     '" size="30"' . $aria_req . ' /></div>',
 
   'url' =>
-    '<div class="comment__body"><label class="comment__input__label" for="url">' . 'Website' . '</label>' .
+    '<div class="comment__body"><label class="comment__input__label" for="url">' . 'Site' . '</label>' .
     '<input class="comment__input" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
     '" size="30" /></div>',
 
@@ -49,6 +50,7 @@ $comments_args = array(
   'label_submit'=>'Submit',
   'class_submit'=> 'comment__submit',
   'title_reply'=>'',
+  'comment_notes_before' => $comment_notes,
   'comment_notes_after' => '',
   'comment_field' => $comment_content,
   'fields' => apply_filters( 'comment_form_default_fields', $fields ),

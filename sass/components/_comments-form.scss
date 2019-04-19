@@ -10,13 +10,12 @@
     border-radius: $base-border-radius;
     padding: $base-border-radius;
   }
-
   %leftSide {
     display: inline-block;
     min-width: $spacing-xxlarge;
     margin: 0 $spacing 0 0;
   }
-
+  .comment__notes,
   .comment__body {
     line-height: 1;
     margin: 0 0 $spacing-small;
@@ -48,8 +47,9 @@
   }
   .comment__checkbox {
     @extend %leftSide;
+    width: $spacing-xxlarge;
   }
   .comment__checkbox__label {
-    line-height: $line-height-base;
+    // line-height: $line-height-base;
   }
 }

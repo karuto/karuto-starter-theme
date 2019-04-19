@@ -524,6 +524,7 @@ body#tinymce {
   margin: 0 16px 0 0;
 }
 
+.comment-form .comment__notes,
 .comment-form .comment__body {
   line-height: 1;
   margin: 0 0 8px;
@@ -553,8 +554,8 @@ body#tinymce {
   align-self: flex-end;
 }
 
-.comment-form .comment__checkbox__label {
-  line-height: 1.5;
+.comment-form .comment__checkbox {
+  width: 48px;
 }
 
 /* This stylesheet targets existing comments only. Also see comments-form.scss */
