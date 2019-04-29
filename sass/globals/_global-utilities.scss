@@ -11,9 +11,6 @@
   display: table;
   clear: both;
 }
-.flex-stretch {
-  @include flexstretch();
-}
 
 
 
@@ -38,7 +35,7 @@
 		clip-path: none;
 		color: $color-dark;
 		display: block;
-		@include font-size(0.875);
+		font-size: 0.875rem;
 		font-weight: bold;
 		height: auto;
 		left: 5px;

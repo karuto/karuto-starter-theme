@@ -1,92 +1,3 @@
-// Rem output with px fallback
-@mixin font-size($sizeValue: 1) {
-	font-size: ($sizeValue * 16) * 1px;
-	font-size: $sizeValue * 1rem;
-}
-
-// Center block
-@mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-// Clearfix
-@mixin clearfix() {
-	content: "";
-	display: table;
-	table-layout: fixed;
-}
-
-// Clear after (not all clearfix need this also)
-@mixin clearfix-after() {
-	clear: both;
-}
-
-// Column width with margin
-@mixin column-width($numberColumns: 3) {
-	width: map-get($columns, $numberColumns) - (($columns__margin * ($numberColumns - 1)) / $numberColumns);
-}
- 
-@mixin filter-duotone {
-
-	&:before {
-		background: $color__link;
-		mix-blend-mode: screen;
-		opacity: 0.1;
-		z-index: 2;
-	}
-
-	&:after {
-		background: $color__link;
-		mix-blend-mode: multiply;
-		opacity: .8;
-		z-index: 3;
-
-		/* Browsers supporting mix-blend-mode don't need opacity < 1 */
-		@supports (mix-blend-mode: multiply) {
-			opacity: 1;
-		}
-	}
-}
-
-@mixin filter-grayscale {
-
-	position: relative;
-	filter: grayscale(100%);
-	z-index: 1;
-
-	&:after {
-		display: block;
-		width: 100%;
-		height: 100%;
-		z-index: 10;
-	}
-}
-
-@mixin post-section-dash {
-
-	&:before {
-		background: $color__text-light;
-		content: "\020";
-		display: block;
-		height: 2px;
-		margin: $size__spacing-unit 0;
-		width: 1em;
-	}
-}
-
-/* If we add the border using a regular CSS border, it won't look good on non-retina devices,
- * since its edges can look jagged due to lack of antialiasing. In this case, we are several
- * layers of box-shadow to add the border visually, which will render the border smoother. */
-
-@mixin box-shadow( $size ) {
-	box-shadow:
-		0 0 0 $size $color__text-light inset,         	// Original border.
-		0 0 0 ($size + 1px) $color__text-light inset, 	// Antialiasing, inner edge.
-		0 0 1px 0 rgba( $color__text-light, 0.7 );  	// Antialiasing, outer edge.
-}
-
 /* Fallback for non-latin fonts */
 
 @mixin non-latin-fonts( $wrapper_classname: '.site' ) {
@@ -175,107 +86,10 @@
 	}
 }
 
-/* Calculates maximum width for post content */
-@mixin postContentMaxWidth() {
-
-	@include media(tablet) {
-		max-width: $size__site-tablet-content;
-	}
-
-	@include media(desktop) {
-		max-width: $size__site-desktop-content;
-	}
-}
-
-/* Nested sub-menu padding: 10 levels deep */
-@mixin nestedSubMenuPadding() {
-
-	ul {
-		counter-reset: submenu;
-	}
-
-	ul > li > a::before {
-		font-family: $font__body;
-		font-weight: normal;
-		content: "\2013\00a0" counters(submenu, "\2013\00a0", none);
-		counter-increment: submenu
-	}
-}
-
-@mixin media( $res ) {
-	@if mobile == $res {
-		@media only screen and (min-width: $mobile_width) {
-			@content;
-		}
-	}
-
-	@if tablet == $res {
-		@media only screen and (min-width: $tablet_width) {
-			@content;
-		}
-	}
-
-	@if desktop == $res {
-		@media only screen and (min-width: $desktop_width) {
-			@content;
-		}
-	}
-
-	@if wide == $res {
-		@media only screen and (min-width: $wide_width) {
-			@content;
-		}
-	}
-}
-
-@mixin link-transition( $attr: color ) {
-	transition: $attr $link_transition ease-in-out;
-}
-
-@mixin button-transition() {
-	transition: background $button_transition ease-in-out;
-}
-
-@mixin button-all-transition() {
-	transition: all $button_transition ease-in-out;
-}
-
-@mixin background-transition() {
-	transition: background $background_transition ease-in-out;
-}
-
-@mixin selection {
-	::-moz-selection {
-		@content;
-	}
-	::selection {
-		@content;
-	}
-}
-
 
 
 /* vincentzh-theme mixins */
-@mixin e($elements...) {
-  $selector: ();
-  @each $element in $elements {
-    $selector: append($selector, unquote("&__" + $element), comma);
-  }
-  #{$selector} {
-    @content;
-  }
-}
-
-@mixin m($modifiers...) {
-  $selector: ();
-  @each $modifier in $modifiers {
-    $selector: append($selector, unquote("&--" + $modifier), comma);
-  }
-  #{$selector} {
-    @content;
-  }
-}
-
+// Provide site-wide "link" style
 @mixin linkStyleOverride() {
   color: $subtle-text-color;
   background: linear-gradient(to bottom, transparent 0%, transparent 50%, $color-light-gray 50%, $color-light-gray 100%);
@@ -285,6 +99,7 @@
   }
 }
 
+// Provide site-wide "subtle font" style
 @mixin subtlefont() {
   color: $subtle-text-color;
   text-transform: uppercase;
@@ -292,6 +107,7 @@
   font-weight: $font-weight-bold;
 }
 
+// Provide site-wide "content font" style
 @mixin contentfont() {
   margin: 0 0 $spacing-medium;
   font-size: $font-size-content;
@@ -304,6 +120,7 @@
   text-align: left;
 }
 
+// Flex container style that forces all elements to be vertically equal
 @mixin flexstretch() {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -317,19 +134,21 @@
   align-items: stretch; /* force all elements to be vertically equal! */
 }
 
-@mixin gradientmask() {
-  &:after {
-    overflow: hidden;
-    text-indent: -9999rem;
-    font-size: 0;
-    line-height: 0;
-    background: linear-gradient(45deg, rgba(247,211,67,0.1) 0%, rgba(186,149,63,0.4) 100%),linear-gradient(transparent 5%, rgba(0,0,0,0.8) 100%); /* w3c */
-/*    background: linear-gradient(135deg, rgba(255,101,100,0.4) 0%, rgba(255,101,100,0) 50%, rgba(255,101,100,0) 100%),linear-gradient(45deg, rgba(40,0,215,0) 0%, rgba(40,0,215,0) 50%, rgba(40,0,215,0.4) 100%),linear-gradient(transparent 5%, rgba(0,0,0,0.8) 100%);*/
-    content: "gradient mask for image";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
 }
