@@ -1045,6 +1045,12 @@ body#tinymce {
   text-transform: uppercase;
 }
 
+@media (max-width: 767px) {
+  .header {
+    display: block;
+  }
+}
+
 .header__title {
   margin: 0;
   font-family: "Roboto", "Hiragino Sans GB", "冬青黑", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif;
@@ -1056,14 +1062,21 @@ body#tinymce {
   /* TODO: accommodate this later. */
 }
 
+@media (max-width: 767px) {
+  .header__nav .menu {
+    display: flex;
+    overflow: scroll;
+  }
+}
+
 .header__nav .menu-item {
   display: inline-block;
 }
 
 @media (max-width: 767px) {
   .header__nav .menu-item {
-    display: block;
-    text-align: right;
+    white-space: nowrap;
+    /* force text on one line */
   }
 }
 
@@ -1076,6 +1089,12 @@ body#tinymce {
 .header__nav .menu-item a:hover {
   color: #333;
   background: linear-gradient(to bottom, transparent 0%, transparent 50%, #cba54d 50%, #cba54d 100%);
+}
+
+@media (max-width: 767px) {
+  .header__nav .menu-item a {
+    margin: 0 24px 0 0;
+  }
 }
 
 .hero {

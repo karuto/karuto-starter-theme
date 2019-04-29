@@ -5,6 +5,10 @@
   font-size: $font-size-tiny;
   font-weight: bold;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-max) {
+    display: block;
+  }
 }
 
 .header__title {
@@ -18,15 +22,24 @@
 }
 
 .header__nav {
+  .menu {
+    @media (max-width: $mobile-max) {
+      display: flex;
+      overflow: scroll;
+    }
+  }
+
   .menu-item {
     display: inline-block;
     @media (max-width: $mobile-max) {
-      display: block;
-      text-align: right;
+      white-space: nowrap; /* force text on one line */
     }
     a {
       margin: 0 0 0 $spacing-medium;
       @include linkStyleOverride();
+      @media (max-width: $mobile-max) {
+        margin: 0 $spacing-medium 0 0;
+      }
     }
   }
 }
