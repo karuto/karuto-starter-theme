@@ -287,6 +287,7 @@ require get_template_directory() . '/classes/class-twentynineteen-walker-comment
 
 require get_template_directory() . '/inc/archive-title.php';
 require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/hide-password-posts.php';
 require get_template_directory() . '/inc/icon-functions.php';
 require get_template_directory() . '/inc/post-views.php';
 require get_template_directory() . '/inc/relative-comment-time.php';
