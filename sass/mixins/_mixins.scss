@@ -155,7 +155,7 @@
 
 @mixin buttonPrimary() {
 	@include subtleFont();
-	color: $color-white;
+	color: $strong-text-color;
 	border: none;
 	border-radius: $base-border-radius;
 	background-color: $block-bg-color;
@@ -181,7 +181,7 @@
   outline: transparent none medium; /* reset browser defaults */
 
 	&:hover {
-		background: $hightlight-color;
+		border: 2px solid $hightlight-color;
 	}
 }
 

@@ -29,7 +29,7 @@
   }
   textarea {
     resize: vertical;
-    height: calc($spacing-xxlarge * 2); /* align horizontally with avatar */
+    height: $spacing-gigantic;
   }
   .comment-form-comment {
     margin: 0;

@@ -16,6 +16,12 @@
     @include linkStyleOverride();
   }
 
+  img {
+    border-radius: $base-border-radius;
+    max-width: 100%;
+    height: auto;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     margin: $spacing-xxlarge 0 $spacing-medium;
     font-family: $font-family-title;
@@ -76,11 +82,10 @@
 
 
 .entry__copyright {
-  margin: 0;
-  color: $subtle-text-color;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
-  font-family: $font-family-base;
+  margin: $spacing-xxlarge 0 0;
+  @include subtleFont();
+  font-weight: $font-weight-normal;
+  text-transform: none;
 
   &__link {
     font-weight: $font-weight-bold;
