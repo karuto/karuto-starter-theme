@@ -1,7 +1,8 @@
 .footer {
   display: flex;
   justify-content: flex-end;
-  margin: 0 0 $spacing-gigantic;
+  margin: 0;
+  padding: 0 0 $spacing-gigantic;
   font-size: $font-size-tiny;
   @media (max-width: $mobile-max) {
     display: block;
@@ -20,7 +21,7 @@
     }
   }
   .widget-title {
-    @include subtlefont();
+    @include subtleFont();
     margin: 0 0 $spacing;
   }
 }

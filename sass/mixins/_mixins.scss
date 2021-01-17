@@ -100,7 +100,7 @@
 }
 
 // Provide site-wide "subtle font" style
-@mixin subtlefont() {
+@mixin subtleFont() {
   color: $subtle-text-color;
   text-transform: uppercase;
   font-size: $font-size-tiny;
@@ -108,7 +108,7 @@
 }
 
 // Provide site-wide "content font" style
-@mixin contentfont() {
+@mixin contentFont() {
   margin: 0 0 $spacing-medium;
   font-size: $font-size-content;
   line-height: $line-height-content;
@@ -121,7 +121,7 @@
 }
 
 // Flex container style that forces all elements to be vertically equal
-@mixin flexstretch() {
+@mixin flexStretch() {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +135,7 @@
 }
 
 // Center block
-@mixin center-block {
+@mixin centerBlock {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -149,6 +149,42 @@
 }
 
 // Clear after (not all clearfix need this also)
-@mixin clearfix-after() {
+@mixin clearfixAfter() {
 	clear: both;
+}
+
+@mixin buttonPrimary() {
+	@include subtleFont();
+	color: $color-white;
+	border: none;
+	border-radius: $base-border-radius;
+	background-color: $block-bg-color;
+	padding: $spacing-small $spacing;
+	transition: all 0.5s ease;
+  outline-offset: 0px; /* reset browser defaults */
+  outline: transparent none medium; /* reset browser defaults */
+
+	&:hover {
+		cursor: pointer;
+		color: $color-white;
+		background-color: darken( $block-bg-color, 30% );
+	}
+}
+
+@mixin formInput() {
+	background-color: $color-white;
+	border: 2px solid $block-bg-color;
+	border-radius: $base-border-radius;
+	padding: $spacing-xsmall $spacing-small;
+	transition: all 0.5s ease;
+  outline-offset: 0px; /* reset browser defaults */
+  outline: transparent none medium; /* reset browser defaults */
+
+	&:hover {
+		background: $hightlight-color;
+	}
+}
+
+@mixin formInputInlineOverride() {
+	border-radius: $base-border-radius 0 0 $base-border-radius;
 }

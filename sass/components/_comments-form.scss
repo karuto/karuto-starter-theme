@@ -5,13 +5,8 @@
 .comment-form {
   margin: 0;
 
-  %input {
-    border: 2px solid $block-bg-color;
-    border-radius: $base-border-radius;
-    padding: $spacing-xsmall $spacing-small;
-  }
   %leftSide {
-    @include subtlefont();
+    @include subtleFont();
     display: inline-block;
     min-width: $spacing-xxlarge;
     margin: 0 $spacing 0 0;
@@ -27,12 +22,14 @@
   }
   /* TODO: make the textarea adaptable to input */
   .comment__input {
-    @extend %input;
+    @include formInput();
+    @include subtleFont();
+    font-weight: $font-weight-normal; /* override the subtleFont boldness */
     width: 100%;
   }
   textarea {
     resize: vertical;
-    height: $spacing-xxlarge; /* align horizontally with avatar */
+    height: calc($spacing-xxlarge * 2); /* align horizontally with avatar */
   }
   .comment-form-comment {
     margin: 0;
@@ -47,16 +44,8 @@
   .comment__submit {
     /* Align to the right end */
     align-self: flex-end;
-    @include subtlefont();
-    border-radius: $base-border-radius;
-    border: 2px solid $block-bg-color;
-    background: $block-bg-color;
-    padding: $spacing-xsmall $spacing-small;
-    transition: all 0.5s ease;
-
-    &:hover {
-      background: $hightlight-color;
-    }
+    @include subtleFont();
+    @include buttonPrimary();
   }
   .comment__input__label {
     @extend %leftSide;
@@ -66,6 +55,16 @@
     width: $spacing-xxlarge;
   }
   .comment__checkbox__label {
-    // line-height: $line-height-base;
+    @include subtleFont();
+    font-weight: $font-weight-normal; /* override the subtleFont boldness */
   }
+}
+
+#respond.comment-respond {
+  margin: $spacing-large 0;
+  padding: 0 0 $spacing-large; /* for the border-bottom effect */
+  border-bottom: $border-line-bold;
+}
+#cancel-comment-reply-link {
+  @include buttonPrimary();
 }

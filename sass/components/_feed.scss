@@ -4,7 +4,7 @@
   max-width: $onecolumn-maxwidth;
 }
 .feed__header {
-  @include subtlefont();
+  @include subtleFont();
   display: inline-block;
   padding: 0 0 $spacing;
   margin: 0 0 $spacing-large;
@@ -30,7 +30,7 @@
   margin: 0 0 $spacing-small;
 }
 .feed__metas {
-  @include subtlefont();
+  @include subtleFont();
   margin: 0 0 $spacing-large;
 }
 .feed__metas a {

@@ -494,12 +494,6 @@ body#tinymce {
   /* The <input> tag that actually is the submit button */
 }
 
-.comment-form .comment__input {
-  border: 2px solid #E8E8E8;
-  border-radius: 4px;
-  padding: 4px 8px;
-}
-
 .comment-form .comment__input__label, .comment-form .comment__checkbox {
   color: #333;
   text-transform: uppercase;
@@ -522,12 +516,31 @@ body#tinymce {
 }
 
 .comment-form .comment__input {
+  background-color: #FFFFFF;
+  border: 2px solid #E8E8E8;
+  border-radius: 4px;
+  padding: 4px 8px;
+  transition: all 0.5s ease;
+  outline-offset: 0px;
+  /* reset browser defaults */
+  outline: transparent none medium;
+  /* reset browser defaults */
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  font-weight: 400;
+  /* override the subtleFont boldness */
   width: 100%;
+}
+
+.comment-form .comment__input:hover {
+  background: #cba54d;
 }
 
 .comment-form textarea {
   resize: vertical;
-  height: 48px;
+  height: calc($spacing-xxlarge * 2);
   /* align horizontally with avatar */
 }
 
@@ -548,19 +561,69 @@ body#tinymce {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  border: none;
   border-radius: 4px;
-  border: 2px solid #E8E8E8;
-  background: #E8E8E8;
-  padding: 4px 8px;
+  background-color: #E8E8E8;
+  padding: 8px 16px;
   transition: all 0.5s ease;
+  outline-offset: 0px;
+  /* reset browser defaults */
+  outline: transparent none medium;
+  /* reset browser defaults */
 }
 
 .comment-form .comment__submit:hover {
-  background: #cba54d;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #9c9c9c;
 }
 
 .comment-form .comment__checkbox {
   width: 48px;
+}
+
+.comment-form .comment__checkbox__label {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  font-weight: 400;
+  /* override the subtleFont boldness */
+}
+
+#respond.comment-respond {
+  margin: 32px 0;
+  padding: 0 0 32px;
+  /* for the border-bottom effect */
+  border-bottom: 6px double #333;
+}
+
+#cancel-comment-reply-link {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  background-color: #E8E8E8;
+  padding: 8px 16px;
+  transition: all 0.5s ease;
+  outline-offset: 0px;
+  /* reset browser defaults */
+  outline: transparent none medium;
+  /* reset browser defaults */
+}
+
+#cancel-comment-reply-link:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #9c9c9c;
 }
 
 /* This stylesheet targets existing comments only. Also see comments-form.scss */
@@ -982,7 +1045,8 @@ body#tinymce {
 .footer {
   display: flex;
   justify-content: flex-end;
-  margin: 0 0 96px;
+  margin: 0;
+  padding: 0 0 96px;
   font-size: 14px;
 }
 
